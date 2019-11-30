@@ -1,0 +1,5 @@
+@VLogin_CTR_VALIDATION
+Feature: Testing visible, tab index of Control of VLogin_CTR
+  Scenario:  Testing visible, tab index of Control of VLogin_CTR
+    Then Kiem tra cac Control hien thi day du tren LOGIN
+    Then Kiem tra Tab Index cac Control tren LOGIN

@@ -1,0 +1,36 @@
+@DangKyNghi_CTR
+Feature: Sample of DangKyNghi_CTR
+
+  Scenario Outline: Sample of DangKyNghi_CTR
+    Given Thiet lap du lieu nhu "<DATA KEY>"
+      | KEY | Session Data KEY | Session Data Value |
+      | 001 | EMAIL            | huyenttl@vnpt.vn   |
+      | 001 | PASSWORD         | Vnpt#123           |
+    When Nguoi dung dang nhap vao he thong nhu "<LOGIN>"
+      | KEY | Email            | Password | Hien Thi Thong Bao |
+      | 001 | huyenttl@vnpt.vn | Vnpt#123 |                    |
+    When Nguoi dung vao menu nhu "<MENU>"
+      | KEY | MENU                                   |
+      | 001 | Quản lý ngày nghỉ>Đăng ký nghỉ>Tạo mới |
+    Given Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu "<NHAP TMDKN>"
+      | KEY | Kính gửi             | Người duyệt  | Lý do    | Người liên quan | Địa điểm nghỉ phép | Nhân sự được ủy quyền | Nghỉ đi nước ngoài | Loại nghỉ | Từ ngày    | Đến ngày   | Số ngày nghỉ | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
+      | 002 | Ông: Nguyễn Hồng Sơn | Account Test | Nằm viện |                 | 30 Phạm Hùng       |                       |                    | nghỉ bù   | 20/10/2019 | 25/10/2019 |            5 |         |                |       |              |
+      | 003 | @BLANK@              |              |          |                 |                    |                       |                    |           |            |            |              |         |                |       |              |
+    Then Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu "<KIEM TRA TMDKN>"
+      | KEY | Kính gửi | Người duyệt | Lý do | Người liên quan | Địa điểm nghỉ phép | Nhân sự được ủy quyền | Nghỉ đi nước ngoài | Loại nghỉ | Từ ngày | Đến ngày | Số ngày nghỉ | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
+      | NA  |          |             |       |                 |                    |                       |                    |           |         |          |              |         |                |       |              |
+    When Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu "<THUC HIEN TMDKN>"
+      | KEY           | Lưu | Hủy bỏ | Gửi phê duyệt | Sửa | Tạo | Soạn thảo | MESSAGE  | MESSAGE_ACTION | ALERT | ALERT_ACTION |
+      | TAO           |     |        |               |     | Y   |           |          |                |       |              |
+      | SUA           |     |        |               | Y   |     |           |          |                |       |              |
+      | HUY           |     | Y      |               |     |     |           |          |                |       |              |
+      | GUI_PHE_DUYET |     |        | Y             |     |     |           |          |                |       |              |
+      |           002 | Y   |        |               |     |     |           | Success  |                |       |              |
+      |           003 | Y   |        |               |     |     |           | Kính gửi |                |       |              |
+
+    Examples: 
+      | LOGIN | DATA KEY | MENU | NHAP TMDKN | KIEM TRA TMDKN | THUC HIEN TMDKN | VERIFY DB |
+      |   001 |      001 |  001 |            |                |                 |           |
+      |       |          |      |        002 |                |             002 |           |
+      |       |          |      |            |                | TAO             |           |
+      |       |          |      |        003 |                |             003 |           |
