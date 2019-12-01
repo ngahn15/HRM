@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Sample of DuyetDangKyNghi_CTR" skipped="0" tests="1" time="115.15" timestamp="2019-12-01 03:47:07"><testcase name="Sample of DuyetDangKyNghi_CTR"><error message="Column [KEY] not found in Data Table [TU_CHOI_KIEM_TRA]. Re check data !" type="java.lang.IllegalArgumentException">Column [KEY] not found in Data Table [TU_CHOI_KIEM_TRA]. Re check data !</error><system-err>Column [KEY] not found in Data Table [TU_CHOI_KIEM_TRA]. Re check data !&#13;
+hrm.lib.SessionData.getDataTbRowsByValEqualInCol(SessionData.java:1584)&#13;
+hrm.steps.defs.TuChoiDefs.Kiem_tra_TU_CHOI_nhu(TuChoiDefs.java:77)&#13;
+✽.Kiem tra TỪ CHỐI nhu ""(src/test/resources/features/3_DuyetDangKyNghi_CTR_DATA.feature:55)&#13;
+</system-err></testcase></testsuite>

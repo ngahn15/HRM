@@ -8115,8 +8115,7 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class\u003d\u0027o_dialog_warning modal-body\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:350)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:358)\r\n\tat hrm.common.pages.CommonPage.get_modal(CommonPage.java:54)\r\n\tat hrm.common.steps.CommonSteps.get_modal(CommonSteps.java:140)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023.CGLIB$get_modal$5(\u003cgenerated\u003e)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023$$FastClassByCGLIB$$624f1563.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023.get_modal(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:715)\r\n\tat ✽.Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"008\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:30)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027o_dialog_warning modal-body\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: dd1942998a1340d83e5dd2e0e50eeade\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027o_dialog_warning modal-body\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:350)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:358)\r\n\tat hrm.common.pages.CommonPage.get_modal(CommonPage.java:54)\r\n\tat hrm.common.steps.CommonSteps.get_modal(CommonSteps.java:140)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023.CGLIB$get_modal$5(\u003cgenerated\u003e)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023$$FastClassByCGLIB$$624f1563.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023.get_modal(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:715)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -8150,7 +8149,7 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Sample of DangKyNghi_CTR",
@@ -8477,8 +8476,7 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:350)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:358)\r\n\tat hrm.lib.MyPageObject.waitClearAndTypeThenTab(MyPageObject.java:547)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_tu_ngay(TaoMoiDangKyNghiPage.java:209)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_tu_ngay(TaoMoiDangKyNghiSteps.java:225)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_tu_ngay$3(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_tu_ngay(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:83)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"010\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: dd1942998a1340d83e5dd2e0e50eeade\n*** Element info: {Using\u003dxpath, value\u003d//div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:350)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:358)\r\n\tat hrm.lib.MyPageObject.waitClearAndTypeThenTab(MyPageObject.java:547)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_tu_ngay(TaoMoiDangKyNghiPage.java:209)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_tu_ngay(TaoMoiDangKyNghiSteps.java:225)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_tu_ngay$3(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_tu_ngay(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:83)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
@@ -8532,7 +8530,7 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"010\"",
@@ -8769,7 +8767,7 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -8803,7 +8801,7 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Sample of DangKyNghi_CTR",
@@ -14020,5 +14018,1321 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.uri("src/test/resources/features/3_DuyetDangKyNghi_CTR_DATA.feature");
+formatter.feature({
+  "name": "Sample of DuyetDangKyNghi_CTR",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@DuyetDangKyNghi_CTR"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "Sample of DuyetDangKyNghi_CTR",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "Thiet lap du lieu nhu \"\u003cDATA KEY\u003e\"",
+  "keyword": "Given ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Session Data KEY",
+        "Session Data Value"
+      ]
+    },
+    {
+      "cells": [
+        "LOGIN",
+        "EMAIL",
+        "acoount_test@vnpt.vn"
+      ]
+    },
+    {
+      "cells": [
+        "LOGIN",
+        "PASSWORD",
+        "Vnpt#123"
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Nguoi dung dang nhap vao he thong nhu \"\u003cLOGIN\u003e\"",
+  "keyword": "When ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Email",
+        "Password",
+        "Mat Khau",
+        "Hien Thi Thong Bao"
+      ]
+    },
+    {
+      "cells": [
+        "LOGIN",
+        "account_test@vnpt.vn",
+        "Vnpt#123",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Nguoi dung vao menu nhu \"\u003cMENU\u003e\"",
+  "keyword": "When ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MENU"
+      ]
+    },
+    {
+      "cells": [
+        "MENU",
+        "Quản lý ngày nghỉ\u003ePhê duyệt ngày nghỉ"
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Nhap DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cNHAP DDKN\u003e\"",
+  "keyword": "Given ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Tìm kiếm",
+        "Các bộ lọc",
+        "Nhóm theo",
+        "Yêu thích",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TimKiem-01",
+        "Trần Thị Lương Huyền, Nhân sự",
+        "Chờ phê duyệt",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Nhap LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cNHAP LHTTTDKN\u003e\"",
+  "keyword": "Given ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Page",
+        "Page Size",
+        "Row",
+        "Total Record",
+        "Nhân sự",
+        "Đơn vị / Phong ban",
+        "Ngày bắt đầu",
+        "Ngày kết thúc",
+        "Lý do nghỉ",
+        "Số ngày nghỉ",
+        "Người duyệt",
+        "Trạng thái",
+        "Lý do từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cKIEM TRA LHTTTDKN\u003e\"",
+  "keyword": "Then ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Page",
+        "Page Size",
+        "Row",
+        "Total Record",
+        "Nhân sự",
+        "Đơn vị / Phong ban",
+        "Ngày bắt đầu",
+        "Ngày kết thúc",
+        "Lý do nghỉ",
+        "Số ngày nghỉ",
+        "Người duyệt",
+        "Trạng thái",
+        "Lý do từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TimKiem-01",
+        "",
+        "",
+        "1",
+        "1",
+        "0114 - Trần Thị Lương Huyền",
+        "VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT",
+        "02/12/2019",
+        "05/12/2019",
+        "Đi du lịch",
+        "4,0",
+        "0002 - Account Test",
+        "Chờ phê duyệt",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Thuc hien LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cTHUC HIEN LHTTTDKN\u003e\"",
+  "keyword": "When ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Page",
+        "Page Size",
+        "Row",
+        "Total Record",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Kiem tra DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cKIEM TRA DDKN\u003e\"",
+  "keyword": "Then ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Tìm kiếm",
+        "Các bộ lọc",
+        "Nhóm theo",
+        "Yêu thích",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Thuc hien DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cTHUC HIEN DDKN\u003e\"",
+  "keyword": "When ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Xem chi tiết",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TimKiem-01",
+        "Y",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Nhap XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\u003cNHAP XCTDKN\u003e\"",
+  "keyword": "Given ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Kiem tra XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\u003cKIEM TRA XCTDKN\u003e\"",
+  "keyword": "Then ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Nhân sự",
+        "Lý do",
+        "Loại nghỉ",
+        "Từ ngày",
+        "Đến ngày",
+        "Số ngày nghỉ",
+        "Ngày tạo",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "XemChiTiet",
+        "0114 - Trần Thị Lương Huyền",
+        "Đi du lịch",
+        "PHép",
+        "02/12/2019",
+        "05/12/2019",
+        "4,0",
+        "30/11/2019",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Thuc hien XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\u003cTHUC HIEN XCTDKN\u003e\"",
+  "keyword": "When ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Phê duyệt",
+        "Từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Pheduyet-01",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "Tuchoi-01",
+        "",
+        "Y",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Nhap PHÊ DUYỆT nhu \"\u003cNHAP PD\u003e\"",
+  "keyword": "Given ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Người phê duyệt lần 2",
+        "Duyệt lần 2",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Pheduyet-01",
+        "",
+        "NN",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Kiem tra PHÊ DUYỆT nhu \"\u003cKIEM TRA PD\u003e\"",
+  "keyword": "Then ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Nhân sự",
+        "Người phê duyệt lần 2",
+        "Duyệt lần 2",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Thuc hien PHÊ DUYỆT nhu \"\u003cTHUC HIEN PD\u003e\"",
+  "keyword": "When ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Phê duyệt",
+        "Hủy bỏ",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Pheduyet-01",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Nhap TỪ CHỐI nhu \"\u003cNHAP TC\u003e\"",
+  "keyword": "Given ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Lý do từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Tuchoi-01",
+        "Có lịch công tác khác",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Kiem tra TỪ CHỐI nhu \"\u003cKIEM TRA TC\u003e\"",
+  "keyword": "Then ",
+  "rows": [
+    {
+      "cells": [
+        "NA",
+        "Nhân sự",
+        "Lý do từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Thuc hien TỪ CHỐI nhu \"\u003cTHUC HIEN TC\u003e\"",
+  "keyword": "When ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Từ chối",
+        "Hủy bỏ",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Tuchoi-01",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Nguoi dung lay du lieu tu DB nhu \"\u003cDATA DB\u003e\"",
+  "keyword": "Given ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Session Data KEY",
+        "SQL Statement"
+      ]
+    }
+  ]
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "DATA KEY",
+        "LOGIN",
+        "MENU",
+        "NHAP DDKN",
+        "KIEM TRA DDKN",
+        "THUC HIEN DDKN",
+        "NHAP LHTTTDKN",
+        "KIEM TRA LHTTTDKN",
+        "THUC HIEN LHTTTDKN",
+        "NHAP XCTDKN",
+        "KIEM TRA XCTDKN",
+        "THUC HIEN XCTDKN",
+        "NHAP PD",
+        "KIEM TRA PD",
+        "THUC HIEN PD",
+        "NHAP TC",
+        "KIEM TRA TC",
+        "THUC HIEN TC",
+        "VERIFY DB"
+      ]
+    },
+    {
+      "cells": [
+        "LOGIN",
+        "LOGIN",
+        "MENU",
+        "TimKiem-01",
+        "",
+        "TimKiem-01",
+        "",
+        "TimKiem-01",
+        "",
+        "",
+        "XemChiTiet",
+        "Pheduyet-01",
+        "Pheduyet-01",
+        "",
+        "Pheduyet-01",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Sample of DuyetDangKyNghi_CTR",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@DuyetDangKyNghi_CTR"
+    }
+  ]
+});
+formatter.step({
+  "name": "Thiet lap du lieu nhu \"LOGIN\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Session Data KEY",
+        "Session Data Value"
+      ]
+    },
+    {
+      "cells": [
+        "LOGIN",
+        "EMAIL",
+        "acoount_test@vnpt.vn"
+      ]
+    },
+    {
+      "cells": [
+        "LOGIN",
+        "PASSWORD",
+        "Vnpt#123"
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nguoi dung dang nhap vao he thong nhu \"LOGIN\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Email",
+        "Password",
+        "Mat Khau",
+        "Hien Thi Thong Bao"
+      ]
+    },
+    {
+      "cells": [
+        "LOGIN",
+        "account_test@vnpt.vn",
+        "Vnpt#123",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nguoi dung vao menu nhu \"MENU\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MENU"
+      ]
+    },
+    {
+      "cells": [
+        "MENU",
+        "Quản lý ngày nghỉ\u003ePhê duyệt ngày nghỉ"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nhap DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Tìm kiếm",
+        "Các bộ lọc",
+        "Nhóm theo",
+        "Yêu thích",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TimKiem-01",
+        "Trần Thị Lương Huyền, Nhân sự",
+        "Chờ phê duyệt",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "DuyetDangKyNghiDefs.Nhap_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nhap LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Page",
+        "Page Size",
+        "Row",
+        "Total Record",
+        "Nhân sự",
+        "Đơn vị / Phong ban",
+        "Ngày bắt đầu",
+        "Ngày kết thúc",
+        "Lý do nghỉ",
+        "Số ngày nghỉ",
+        "Người duyệt",
+        "Trạng thái",
+        "Lý do từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "DuyetDangKyNghiDefs.Nhap_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Page",
+        "Page Size",
+        "Row",
+        "Total Record",
+        "Nhân sự",
+        "Đơn vị / Phong ban",
+        "Ngày bắt đầu",
+        "Ngày kết thúc",
+        "Lý do nghỉ",
+        "Số ngày nghỉ",
+        "Người duyệt",
+        "Trạng thái",
+        "Lý do từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TimKiem-01",
+        "",
+        "",
+        "1",
+        "1",
+        "0114 - Trần Thị Lương Huyền",
+        "VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT",
+        "02/12/2019",
+        "05/12/2019",
+        "Đi du lịch",
+        "4,0",
+        "0002 - Account Test",
+        "Chờ phê duyệt",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DuyetDangKyNghiDefs.Kiem_tra_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Thuc hien LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Page",
+        "Page Size",
+        "Row",
+        "Total Record",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "DuyetDangKyNghiDefs.Thuc_hien_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kiem tra DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Tìm kiếm",
+        "Các bộ lọc",
+        "Nhóm theo",
+        "Yêu thích",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DuyetDangKyNghiDefs.Kiem_tra_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Thuc hien DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Xem chi tiết",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TimKiem-01",
+        "Y",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "DuyetDangKyNghiDefs.Thuc_hien_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nhap XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "XemChiTietDangKyNghiDefs.Nhap_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kiem tra XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"XemChiTiet\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Nhân sự",
+        "Lý do",
+        "Loại nghỉ",
+        "Từ ngày",
+        "Đến ngày",
+        "Số ngày nghỉ",
+        "Ngày tạo",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "XemChiTiet",
+        "0114 - Trần Thị Lương Huyền",
+        "Đi du lịch",
+        "PHép",
+        "02/12/2019",
+        "05/12/2019",
+        "4,0",
+        "30/11/2019",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "XemChiTietDangKyNghiDefs.Kiem_tra_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Thuc hien XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"Pheduyet-01\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Phê duyệt",
+        "Từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Pheduyet-01",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "Tuchoi-01",
+        "",
+        "Y",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "XemChiTietDangKyNghiDefs.Thuc_hien_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nhap PHÊ DUYỆT nhu \"Pheduyet-01\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Người phê duyệt lần 2",
+        "Duyệt lần 2",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Pheduyet-01",
+        "",
+        "NN",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "PheDuyetDefs.Nhap_PHE_DUYET_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kiem tra PHÊ DUYỆT nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Nhân sự",
+        "Người phê duyệt lần 2",
+        "Duyệt lần 2",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "NA",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PheDuyetDefs.Kiem_tra_PHE_DUYET_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Thuc hien PHÊ DUYỆT nhu \"Pheduyet-01\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Phê duyệt",
+        "Hủy bỏ",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Pheduyet-01",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "PheDuyetDefs.Thuc_hien_PHE_DUYET_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nhap TỪ CHỐI nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Lý do từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Tuchoi-01",
+        "Có lịch công tác khác",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TuChoiDefs.Nhap_TU_CHOI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Kiem tra TỪ CHỐI nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "NA",
+        "Nhân sự",
+        "Lý do từ chối",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TuChoiDefs.Kiem_tra_TU_CHOI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "error_message": "java.lang.IllegalArgumentException: Column [KEY] not found in Data Table [TU_CHOI_KIEM_TRA]. Re check data !\r\n\tat hrm.lib.SessionData.getDataTbRowsByValEqualInCol(SessionData.java:1584)\r\n\tat hrm.steps.defs.TuChoiDefs.Kiem_tra_TU_CHOI_nhu(TuChoiDefs.java:77)\r\n\tat ✽.Kiem tra TỪ CHỐI nhu \"\"(src/test/resources/features/3_DuyetDangKyNghi_CTR_DATA.feature:55)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "Thuc hien TỪ CHỐI nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Từ chối",
+        "Hủy bỏ",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "Tuchoi-01",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "TuChoiDefs.Thuc_hien_TU_CHOI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Nguoi dung lay du lieu tu DB nhu \"\u003cDATA DB\u003e\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Session Data KEY",
+        "SQL Statement"
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

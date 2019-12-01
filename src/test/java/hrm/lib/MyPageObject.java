@@ -5,6 +5,8 @@ import com.google.common.base.Predicate;
 import hrm.lib.LoadConfig;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
+import net.serenitybdd.screenplay.actions.ClickOnElement;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -173,7 +175,7 @@ public abstract class MyPageObject extends PageObject {
 	 *              when doing any action. Using before or after each action.
 	 */
 	public void waitForEverythingComplete(int _timeoutInSeconds) {
-//		waitABit(30);
+		waitABit(30);
 		waitUntilHTMLReady(_timeoutInSeconds);
 		waitUntiljQueryRequestCompletes(_timeoutInSeconds);
 //		waitUntilAjaxCompletes(_timeoutInSeconds);
@@ -637,6 +639,7 @@ public abstract class MyPageObject extends PageObject {
 				|| _value.toLowerCase().equals("y")) {
 			checkChkbox(_xPathCheckBox);
 		} else {
+			System.out.println("unchecked");
 			uncheckChkbox(_xPathCheckBox);
 		}
 	}
@@ -659,8 +662,10 @@ public abstract class MyPageObject extends PageObject {
 	 */
 	public void uncheckChkbox(String _xPathCheckBox) {
 		if (x(_xPathCheckBox).isSelected()) {
-			clickOnElement(_xPathCheckBox);
+			System.out.println("________________Checked");
+			clickOnElement("//div[@name='is_duyetcap2_display']");
 		} else {
+			System.out.println("NOOOOOOOOOOOOOOOOOOO");
 			highlightElement(_xPathCheckBox + "//ancestor-or-self::div[1]");
 		}
 	}
@@ -2396,6 +2401,23 @@ public abstract class MyPageObject extends PageObject {
 	public void selectDDLWithLabel(String _labelName, String _value) {
 		selectDDLWithLabel("", _labelName, 1, 1, _value);
 	}
+	
+//	textbox Search have filter
+	
+	public void selectSearchFilter(String _xPath, String _keySearch) {
+		String[] strSearch = _keySearch.split(",");
+		String _value = strSearch[0].trim();
+		String _option = strSearch[1].trim();
+		
+		XH(_xPath).type(_value);
+		String _xPathListFillter = _xPath + "//preceding-sibling::div[@class='dropdown-menu o_searchview_autocomplete']";
+		if(element(_xPathListFillter).isVisible()) {
+			String _xPathOption = _xPathListFillter + "//li//em[contains(text(),'" + _option + "')]" ;
+			clickOnElement(_xPathOption);
+		}else {
+			return;
+		}
+	}
 
 	// Search Multi Drop Down List (Search Multi DDL)
 	/**
@@ -2685,6 +2707,30 @@ public abstract class MyPageObject extends PageObject {
 
 	public void selectSearchDDLWithLabel(String _label, String _option) {
 		selectSearchDDLWithLabel("", _label, 1, 1, _option);
+	}
+	
+	public void selectSearchFilterList(String _xpath, String _option) {
+		String xPath = _xpath;
+		if (!XH(xPath + "//button//span").getText().trim().equals(_option)) {
+			if (_option.contains("@>@")) {// Case search then select
+				String[] lTemp = _option.split("@>@");
+				// Open
+				clickOnElement(xPath + "//button[contains(@class,'dropdown')]");
+				// Search
+				waitClearAndTypeThenEnter(xPath + "//input[@type='text']", lTemp[0]);
+				waitForEverythingComplete();
+				// Select
+				clickOnElement(xPath + "//li//a[label" + sTextPredicates(lTemp[1]) + "]");
+			} else {// select only
+				// Open
+				clickOnElement(xPath + "//button[contains(@class,'dropdown')]");
+				// Clear
+				clickOnElement(xPath + "//i[@class='glyphicon glyphicon-remove-circle']");
+				// Select
+				// clickOnElement(xPath + "//li//a[label" + sTextPredicates(_option) + "]");
+
+			}
+		}
 	}
 
 	public void selectSearchDDLWithXpath(String _xpath, String _option) {

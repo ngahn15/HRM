@@ -3,6 +3,7 @@ package hrm.pages;
 import org.openqa.selenium.WebDriver;
 
 import hrm.lib.MyPageObject;
+import net.sourceforge.htmlunit.corejs.javascript.ast.SwitchCase;
 
 /**
  * @author AUTO
@@ -57,14 +58,43 @@ public class MainPage extends MyPageObject {
 	}
 
 	// Begin Vao menu
+//	public void vao_menu(String _duongDanDenMenu) {
+//		String[] asMenuPath = _duongDanDenMenu.split(">");
+//		vao_man_hinh_trong_menu_header(asMenuPath[0]);
+//		waitForEverythingComplete();
+//		vao_man_hinh_trong_danh_sach_cap_1(asMenuPath[1]);
+//		waitForEverythingComplete();
+//		vao_man_hinh_tao_moi();
+//		waitForEverythingComplete();
+//	}
+
 	public void vao_menu(String _duongDanDenMenu) {
 		String[] asMenuPath = _duongDanDenMenu.split(">");
-		vao_man_hinh_trong_menu_header(asMenuPath[0]);
-		waitForEverythingComplete();
-		vao_man_hinh_trong_danh_sach_cap_1(asMenuPath[1]);
-		waitForEverythingComplete();
-		vao_man_hinh_tao_moi();
-		waitForEverythingComplete();
+		int numPath = asMenuPath.length;
+
+		switch (numPath) {
+		case 1:
+			vao_man_hinh_trong_menu_header(asMenuPath[0]);
+			waitForEverythingComplete();
+			break;
+		case 2:
+			vao_man_hinh_trong_menu_header(asMenuPath[0]);
+			waitForEverythingComplete();
+			vao_man_hinh_trong_danh_sach_cap_1(asMenuPath[1]);
+			waitForEverythingComplete();
+			break;
+		case 3:
+			vao_man_hinh_trong_menu_header(asMenuPath[0]);
+			waitForEverythingComplete();
+			vao_man_hinh_trong_danh_sach_cap_1(asMenuPath[1]);
+			waitForEverythingComplete();
+			vao_man_hinh_tao_moi();
+			waitForEverythingComplete();
+			break;
+		default:
+			break;
+		}
+
 	}
 
 	private boolean module_header_bar_show(String _module) {
@@ -76,18 +106,20 @@ public class MainPage extends MyPageObject {
 		String xPathMenuHeaders = "//ul[@class='o_menu_sections']//li//a//span[contains(text(),'" + _tenManHinh + "')]";
 		if (module_header_bar_show(_tenManHinh)) {
 			clickOnElement(xPathMenuHeaders);
-		}else {
+		} else {
+			System.out.println("HAHAHAH");
 			String xPathMenuMore = "//ul[@class='o_menu_sections']//li//a[@class='nav-link dropdown-toggle o-no-caret']";
 			clickOnElement(xPathMenuMore);
-			String xPathModule = "//ul[@class='dropdown-menu show']//li//a//span[contains(text(),'" + _tenManHinh + "')]";
+			String xPathModule = "//ul[@class='dropdown-menu show']//li//a//span[contains(text(),'" + _tenManHinh
+					+ "')]";
 			clickOnElement(xPathModule);
 		}
 
 	}
 
 	private void vao_man_hinh_trong_danh_sach_cap_1(String _tenDanhSachCap1) {
-		String xPathMenuLv1 = "//a[@class='dropdown-item link-item o_menu_entry_lvl_1 active']//span[contains(text(),'"
-				+ _tenDanhSachCap1 + "')]";
+		String xPathMenuLv1 = "//div[@class='mk_apps_sidebar_panel']//li//span[contains(text(),'" + _tenDanhSachCap1
+				+ "')]";
 		clickOnElement(xPathMenuLv1);
 	}
 

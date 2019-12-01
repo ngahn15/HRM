@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 738167317,
+              "duration": 710217982,
               "status": "passed"
             },
             "line": 5,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 24268920421,
+              "duration": 24079757260,
               "status": "passed"
             },
             "line": 17,
@@ -156,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 21337295,
+              "duration": 27278180,
               "status": "passed"
             },
             "line": 21,
@@ -194,7 +194,7 @@
           },
           {
             "result": {
-              "duration": 9306925,
+              "duration": 6329565,
               "status": "passed"
             },
             "line": 24,
@@ -232,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 949198362,
+              "duration": 6863723,
               "status": "passed"
             },
             "line": 27,
@@ -274,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 47217829,
+              "duration": 32959349,
               "status": "passed"
             },
             "line": 30,
@@ -349,7 +349,7 @@
           },
           {
             "result": {
-              "duration": 6901208,
+              "duration": 7917312,
               "status": "passed"
             },
             "line": 37,
@@ -424,7 +424,7 @@
           },
           {
             "result": {
-              "duration": 747542965,
+              "duration": 873350672,
               "status": "passed"
             },
             "line": 44,
@@ -531,7 +531,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20690237,
+              "duration": 20008372,
               "status": "passed"
             },
             "line": 5,
@@ -628,7 +628,7 @@
           },
           {
             "result": {
-              "duration": 3518657,
+              "duration": 3638251,
               "status": "passed"
             },
             "line": 17,
@@ -675,7 +675,7 @@
           },
           {
             "result": {
-              "duration": 15657464,
+              "duration": 15545903,
               "status": "passed"
             },
             "line": 21,
@@ -713,7 +713,7 @@
           },
           {
             "result": {
-              "duration": 4964943,
+              "duration": 3048759,
               "status": "passed"
             },
             "line": 24,
@@ -751,7 +751,7 @@
           },
           {
             "result": {
-              "duration": 6047880506,
+              "duration": 5987679123,
               "status": "passed"
             },
             "line": 27,
@@ -793,7 +793,7 @@
           },
           {
             "result": {
-              "duration": 5112145858,
+              "duration": 5226619341,
               "status": "passed"
             },
             "line": 30,
@@ -868,7 +868,7 @@
           },
           {
             "result": {
-              "duration": 1789767291,
+              "duration": 1857112640,
               "status": "passed"
             },
             "line": 37,
@@ -943,7 +943,7 @@
           },
           {
             "result": {
-              "duration": 8000277119,
+              "duration": 8090355176,
               "status": "passed"
             },
             "line": 44,
@@ -1050,7 +1050,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14054546,
+              "duration": 15371420,
               "status": "passed"
             },
             "line": 5,
@@ -1147,7 +1147,7 @@
           },
           {
             "result": {
-              "duration": 3413789,
+              "duration": 3651192,
               "status": "passed"
             },
             "line": 17,
@@ -1194,7 +1194,7 @@
           },
           {
             "result": {
-              "duration": 12944730,
+              "duration": 11400716,
               "status": "passed"
             },
             "line": 21,
@@ -1232,7 +1232,7 @@
           },
           {
             "result": {
-              "duration": 3659671,
+              "duration": 3320076,
               "status": "passed"
             },
             "line": 24,
@@ -1270,7 +1270,7 @@
           },
           {
             "result": {
-              "duration": 694358815,
+              "duration": 665146155,
               "status": "passed"
             },
             "line": 27,
@@ -1312,7 +1312,7 @@
           },
           {
             "result": {
-              "duration": 4308486901,
+              "duration": 4527389295,
               "status": "passed"
             },
             "line": 30,
@@ -1387,7 +1387,7 @@
           },
           {
             "result": {
-              "duration": 1592963043,
+              "duration": 1669727325,
               "status": "passed"
             },
             "line": 37,
@@ -1462,7 +1462,7 @@
           },
           {
             "result": {
-              "duration": 8772937537,
+              "duration": 8697111265,
               "status": "passed"
             },
             "line": 44,
@@ -1569,7 +1569,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13207569,
+              "duration": 14179495,
               "status": "passed"
             },
             "line": 5,
@@ -1666,7 +1666,7 @@
           },
           {
             "result": {
-              "duration": 5097478,
+              "duration": 5077397,
               "status": "passed"
             },
             "line": 17,
@@ -1713,7 +1713,7 @@
           },
           {
             "result": {
-              "duration": 14007690,
+              "duration": 11817064,
               "status": "passed"
             },
             "line": 21,
@@ -1751,7 +1751,7 @@
           },
           {
             "result": {
-              "duration": 2810463,
+              "duration": 5649039,
               "status": "passed"
             },
             "line": 24,
@@ -1789,7 +1789,7 @@
           },
           {
             "result": {
-              "duration": 3220564,
+              "duration": 3726162,
               "status": "passed"
             },
             "line": 27,
@@ -1831,7 +1831,7 @@
           },
           {
             "result": {
-              "duration": 4317900926,
+              "duration": 4515987241,
               "status": "passed"
             },
             "line": 30,
@@ -1906,7 +1906,7 @@
           },
           {
             "result": {
-              "duration": 1615419080,
+              "duration": 1579010688,
               "status": "passed"
             },
             "line": 37,
@@ -1981,7 +1981,7 @@
           },
           {
             "result": {
-              "duration": 8925618676,
+              "duration": 9245622318,
               "status": "passed"
             },
             "line": 44,
@@ -2088,7 +2088,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11449802,
+              "duration": 20172144,
               "status": "passed"
             },
             "line": 5,
@@ -2185,7 +2185,7 @@
           },
           {
             "result": {
-              "duration": 3190219,
+              "duration": 4290218,
               "status": "passed"
             },
             "line": 17,
@@ -2232,7 +2232,7 @@
           },
           {
             "result": {
-              "duration": 9291306,
+              "duration": 12560957,
               "status": "passed"
             },
             "line": 21,
@@ -2270,7 +2270,7 @@
           },
           {
             "result": {
-              "duration": 2866690,
+              "duration": 687306775,
               "status": "passed"
             },
             "line": 24,
@@ -2308,7 +2308,7 @@
           },
           {
             "result": {
-              "duration": 2902389,
+              "duration": 2716751,
               "status": "passed"
             },
             "line": 27,
@@ -2350,7 +2350,7 @@
           },
           {
             "result": {
-              "duration": 5084548612,
+              "duration": 4625680081,
               "status": "passed"
             },
             "line": 30,
@@ -2425,7 +2425,7 @@
           },
           {
             "result": {
-              "duration": 1900982725,
+              "duration": 2043571546,
               "status": "passed"
             },
             "line": 37,
@@ -2500,7 +2500,7 @@
           },
           {
             "result": {
-              "duration": 2142320181,
+              "duration": 2232415195,
               "status": "passed"
             },
             "line": 44,
@@ -2607,7 +2607,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3769730806,
+              "duration": 2966946493,
               "status": "passed"
             },
             "line": 61,
@@ -2670,7 +2670,7 @@
         "steps": [
           {
             "result": {
-              "duration": 32105232,
+              "duration": 20335470,
               "status": "passed"
             },
             "line": 5,
@@ -2711,7 +2711,7 @@
           },
           {
             "result": {
-              "duration": 14036079061,
+              "duration": 15162020195,
               "status": "passed"
             },
             "line": 9,
@@ -2747,7 +2747,7 @@
           },
           {
             "result": {
-              "duration": 9210998914,
+              "duration": 9766753001,
               "status": "passed"
             },
             "line": 12,
@@ -2779,7 +2779,7 @@
           },
           {
             "result": {
-              "duration": 33180241,
+              "duration": 29824911,
               "status": "passed"
             },
             "line": 15,
@@ -3019,7 +3019,7 @@
           },
           {
             "result": {
-              "duration": 4843118,
+              "duration": 3650299,
               "status": "passed"
             },
             "line": 27,
@@ -3081,7 +3081,7 @@
           },
           {
             "result": {
-              "duration": 452337709,
+              "duration": 4624457,
               "status": "passed"
             },
             "line": 30,
@@ -3326,7 +3326,7 @@
           },
           {
             "result": {
-              "duration": 8819623,
+              "duration": 10351589,
               "status": "passed"
             },
             "line": 46,
@@ -3383,7 +3383,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12605582,
+              "duration": 12630572,
               "status": "passed"
             },
             "line": 5,
@@ -3424,7 +3424,7 @@
           },
           {
             "result": {
-              "duration": 3246446,
+              "duration": 3325432,
               "status": "passed"
             },
             "line": 9,
@@ -3460,7 +3460,7 @@
           },
           {
             "result": {
-              "duration": 4387053,
+              "duration": 4435248,
               "status": "passed"
             },
             "line": 12,
@@ -3492,7 +3492,7 @@
           },
           {
             "result": {
-              "duration": 4433836313,
+              "duration": 4590618462,
               "status": "passed"
             },
             "line": 15,
@@ -3732,7 +3732,7 @@
           },
           {
             "result": {
-              "duration": 3607906,
+              "duration": 3268758,
               "status": "passed"
             },
             "line": 27,
@@ -3794,7 +3794,7 @@
           },
           {
             "result": {
-              "duration": 3247881220,
+              "duration": 3292390777,
               "status": "passed"
             },
             "line": 30,
@@ -4039,7 +4039,7 @@
           },
           {
             "result": {
-              "duration": 10896903,
+              "duration": 8709401,
               "status": "passed"
             },
             "line": 46,
@@ -4096,7 +4096,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9581366,
+              "duration": 11760837,
               "status": "passed"
             },
             "line": 5,
@@ -4137,7 +4137,7 @@
           },
           {
             "result": {
-              "duration": 2703363,
+              "duration": 2957278,
               "status": "passed"
             },
             "line": 9,
@@ -4173,7 +4173,7 @@
           },
           {
             "result": {
-              "duration": 2760929,
+              "duration": 3058576,
               "status": "passed"
             },
             "line": 12,
@@ -4205,7 +4205,7 @@
           },
           {
             "result": {
-              "duration": 8315712085,
+              "duration": 8364615835,
               "status": "passed"
             },
             "line": 15,
@@ -4445,7 +4445,7 @@
           },
           {
             "result": {
-              "duration": 4617317,
+              "duration": 3023769,
               "status": "passed"
             },
             "line": 27,
@@ -4507,7 +4507,7 @@
           },
           {
             "result": {
-              "duration": 3197774388,
+              "duration": 3268771822,
               "status": "passed"
             },
             "line": 30,
@@ -4752,7 +4752,7 @@
           },
           {
             "result": {
-              "duration": 9882138,
+              "duration": 12913939,
               "status": "passed"
             },
             "line": 46,
@@ -4809,7 +4809,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9559947,
+              "duration": 19486709,
               "status": "passed"
             },
             "line": 5,
@@ -4850,7 +4850,7 @@
           },
           {
             "result": {
-              "duration": 2908637,
+              "duration": 4727093,
               "status": "passed"
             },
             "line": 9,
@@ -4886,7 +4886,7 @@
           },
           {
             "result": {
-              "duration": 2824297,
+              "duration": 3675736,
               "status": "passed"
             },
             "line": 12,
@@ -4918,7 +4918,7 @@
           },
           {
             "result": {
-              "duration": 7967340975,
+              "duration": 8698864123,
               "status": "passed"
             },
             "line": 15,
@@ -5158,7 +5158,7 @@
           },
           {
             "result": {
-              "duration": 2562350,
+              "duration": 3275898,
               "status": "passed"
             },
             "line": 27,
@@ -5220,7 +5220,7 @@
           },
           {
             "result": {
-              "duration": 3058598017,
+              "duration": 3106647650,
               "status": "passed"
             },
             "line": 30,
@@ -5465,7 +5465,7 @@
           },
           {
             "result": {
-              "duration": 7404128,
+              "duration": 7881612,
               "status": "passed"
             },
             "line": 46,
@@ -5522,7 +5522,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10692968,
+              "duration": 11804569,
               "status": "passed"
             },
             "line": 5,
@@ -5563,7 +5563,7 @@
           },
           {
             "result": {
-              "duration": 3205391,
+              "duration": 2913992,
               "status": "passed"
             },
             "line": 9,
@@ -5599,7 +5599,7 @@
           },
           {
             "result": {
-              "duration": 2570382,
+              "duration": 2648922,
               "status": "passed"
             },
             "line": 12,
@@ -5631,7 +5631,7 @@
           },
           {
             "result": {
-              "duration": 16237955797,
+              "duration": 16618835099,
               "status": "passed"
             },
             "line": 15,
@@ -5871,7 +5871,7 @@
           },
           {
             "result": {
-              "duration": 2667218,
+              "duration": 2870706,
               "status": "passed"
             },
             "line": 27,
@@ -5933,7 +5933,7 @@
           },
           {
             "result": {
-              "duration": 3019004762,
+              "duration": 3125908112,
               "status": "passed"
             },
             "line": 30,
@@ -6178,7 +6178,7 @@
           },
           {
             "result": {
-              "duration": 18459449,
+              "duration": 8160071,
               "status": "passed"
             },
             "line": 46,
@@ -6235,7 +6235,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18415271,
+              "duration": 13394547,
               "status": "passed"
             },
             "line": 5,
@@ -6276,7 +6276,7 @@
           },
           {
             "result": {
-              "duration": 2897481,
+              "duration": 2682390,
               "status": "passed"
             },
             "line": 9,
@@ -6312,7 +6312,7 @@
           },
           {
             "result": {
-              "duration": 2693993,
+              "duration": 4043889,
               "status": "passed"
             },
             "line": 12,
@@ -6344,7 +6344,7 @@
           },
           {
             "result": {
-              "duration": 10219836388,
+              "duration": 9176111779,
               "status": "passed"
             },
             "line": 15,
@@ -6584,7 +6584,7 @@
           },
           {
             "result": {
-              "duration": 4981900,
+              "duration": 3278576,
               "status": "passed"
             },
             "line": 27,
@@ -6646,7 +6646,7 @@
           },
           {
             "result": {
-              "duration": 3469976064,
+              "duration": 3118987715,
               "status": "passed"
             },
             "line": 30,
@@ -6891,7 +6891,7 @@
           },
           {
             "result": {
-              "duration": 11552439,
+              "duration": 7303276,
               "status": "passed"
             },
             "line": 46,
@@ -6948,7 +6948,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14217872,
+              "duration": 10688059,
               "status": "passed"
             },
             "line": 5,
@@ -6989,7 +6989,7 @@
           },
           {
             "result": {
-              "duration": 2631964,
+              "duration": 3544092,
               "status": "passed"
             },
             "line": 9,
@@ -7025,7 +7025,7 @@
           },
           {
             "result": {
-              "duration": 2517279,
+              "duration": 2981821,
               "status": "passed"
             },
             "line": 12,
@@ -7057,7 +7057,7 @@
           },
           {
             "result": {
-              "duration": 11306893800,
+              "duration": 8665090820,
               "status": "passed"
             },
             "line": 15,
@@ -7297,7 +7297,7 @@
           },
           {
             "result": {
-              "duration": 2805554,
+              "duration": 4665065,
               "status": "passed"
             },
             "line": 27,
@@ -7359,9 +7359,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class\u003d\u0027o_dialog_warning modal-body\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:350)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:358)\r\n\tat hrm.common.pages.CommonPage.get_modal(CommonPage.java:54)\r\n\tat hrm.common.steps.CommonSteps.get_modal(CommonSteps.java:140)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023.CGLIB$get_modal$5(\u003cgenerated\u003e)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023$$FastClassByCGLIB$$624f1563.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023.get_modal(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:715)\r\n\tat ✽.Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"008\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:30)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027o_dialog_warning modal-body\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: dd1942998a1340d83e5dd2e0e50eeade\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027o_dialog_warning modal-body\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:350)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:358)\r\n\tat hrm.common.pages.CommonPage.get_modal(CommonPage.java:54)\r\n\tat hrm.common.steps.CommonSteps.get_modal(CommonSteps.java:140)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023.CGLIB$get_modal$5(\u003cgenerated\u003e)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023$$FastClassByCGLIB$$624f1563.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.common.steps.CommonSteps$$EnhancerByCGLIB$$b1a38023.get_modal(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:715)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)\r\n",
-              "duration": 10397246300,
-              "status": "failed"
+              "duration": 15478271793,
+              "status": "passed"
             },
             "line": 30,
             "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"008\"",
@@ -7605,7 +7604,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 10876822,
+              "status": "passed"
             },
             "line": 46,
             "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -7661,7 +7661,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14536046,
+              "duration": 11757267,
               "status": "passed"
             },
             "line": 5,
@@ -7702,7 +7702,7 @@
           },
           {
             "result": {
-              "duration": 5509811,
+              "duration": 3079549,
               "status": "passed"
             },
             "line": 9,
@@ -7738,7 +7738,7 @@
           },
           {
             "result": {
-              "duration": 5989972,
+              "duration": 2736832,
               "status": "passed"
             },
             "line": 12,
@@ -7770,9 +7770,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:350)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:358)\r\n\tat hrm.lib.MyPageObject.waitClearAndTypeThenTab(MyPageObject.java:547)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_tu_ngay(TaoMoiDangKyNghiPage.java:209)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_tu_ngay(TaoMoiDangKyNghiSteps.java:225)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_tu_ngay$3(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_tu_ngay(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:83)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"010\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: dd1942998a1340d83e5dd2e0e50eeade\n*** Element info: {Using\u003dxpath, value\u003d//div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:350)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:358)\r\n\tat hrm.lib.MyPageObject.waitClearAndTypeThenTab(MyPageObject.java:547)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_tu_ngay(TaoMoiDangKyNghiPage.java:209)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_tu_ngay(TaoMoiDangKyNghiSteps.java:225)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_tu_ngay$3(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_tu_ngay(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:83)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)\r\n",
-              "duration": 7115282528,
-              "status": "failed"
+              "duration": 12599952163,
+              "status": "passed"
             },
             "line": 15,
             "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"010\"",
@@ -8011,7 +8010,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2486041,
+              "status": "passed"
             },
             "line": 27,
             "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
@@ -8072,7 +8072,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 8780999879,
+              "status": "passed"
             },
             "line": 30,
             "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"010\"",
@@ -8316,7 +8317,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 9629562,
+              "status": "passed"
             },
             "line": 46,
             "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -8372,7 +8374,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9387250,
+              "duration": 10574713,
               "status": "passed"
             },
             "line": 5,
@@ -8413,7 +8415,7 @@
           },
           {
             "result": {
-              "duration": 2484702,
+              "duration": 3109448,
               "status": "passed"
             },
             "line": 9,
@@ -8449,7 +8451,7 @@
           },
           {
             "result": {
-              "duration": 3078657,
+              "duration": 4725309,
               "status": "passed"
             },
             "line": 12,
@@ -8481,7 +8483,7 @@
           },
           {
             "result": {
-              "duration": 9323436,
+              "duration": 14440103,
               "status": "passed"
             },
             "line": 15,
@@ -8721,7 +8723,7 @@
           },
           {
             "result": {
-              "duration": 3434762,
+              "duration": 489479730,
               "status": "passed"
             },
             "line": 27,
@@ -8783,7 +8785,7 @@
           },
           {
             "result": {
-              "duration": 3589165482,
+              "duration": 3389523105,
               "status": "passed"
             },
             "line": 30,
@@ -9028,7 +9030,7 @@
           },
           {
             "result": {
-              "duration": 10909843,
+              "duration": 9047656,
               "status": "passed"
             },
             "line": 46,
@@ -9085,7 +9087,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16634745,
+              "duration": 14829230,
               "status": "passed"
             },
             "line": 5,
@@ -9126,7 +9128,7 @@
           },
           {
             "result": {
-              "duration": 4493706,
+              "duration": 2996102,
               "status": "passed"
             },
             "line": 9,
@@ -9162,7 +9164,7 @@
           },
           {
             "result": {
-              "duration": 3781496,
+              "duration": 6043521,
               "status": "passed"
             },
             "line": 12,
@@ -9194,7 +9196,7 @@
           },
           {
             "result": {
-              "duration": 33528019396,
+              "duration": 34118450434,
               "status": "passed"
             },
             "line": 15,
@@ -9434,7 +9436,7 @@
           },
           {
             "result": {
-              "duration": 3654315,
+              "duration": 2708719,
               "status": "passed"
             },
             "line": 27,
@@ -9496,7 +9498,7 @@
           },
           {
             "result": {
-              "duration": 15485038235,
+              "duration": 15750101298,
               "status": "passed"
             },
             "line": 30,
@@ -9741,7 +9743,7 @@
           },
           {
             "result": {
-              "duration": 12022784,
+              "duration": 12514994,
               "status": "passed"
             },
             "line": 46,
@@ -9798,7 +9800,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9862949,
+              "duration": 9647411,
               "status": "passed"
             },
             "line": 5,
@@ -9839,7 +9841,7 @@
           },
           {
             "result": {
-              "duration": 2769408,
+              "duration": 2890341,
               "status": "passed"
             },
             "line": 9,
@@ -9875,7 +9877,7 @@
           },
           {
             "result": {
-              "duration": 2348597,
+              "duration": 12411911,
               "status": "passed"
             },
             "line": 12,
@@ -9907,7 +9909,7 @@
           },
           {
             "result": {
-              "duration": 28612383262,
+              "duration": 29138268705,
               "status": "passed"
             },
             "line": 15,
@@ -10147,7 +10149,7 @@
           },
           {
             "result": {
-              "duration": 4275045,
+              "duration": 2664540,
               "status": "passed"
             },
             "line": 27,
@@ -10209,7 +10211,7 @@
           },
           {
             "result": {
-              "duration": 8845455779,
+              "duration": 9026998829,
               "status": "passed"
             },
             "line": 30,
@@ -10454,7 +10456,7 @@
           },
           {
             "result": {
-              "duration": 8107860,
+              "duration": 7171187,
               "status": "passed"
             },
             "line": 46,
@@ -10511,7 +10513,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8283235,
+              "duration": 13367325,
               "status": "passed"
             },
             "line": 5,
@@ -10552,7 +10554,7 @@
           },
           {
             "result": {
-              "duration": 2683282,
+              "duration": 2619915,
               "status": "passed"
             },
             "line": 9,
@@ -10588,7 +10590,7 @@
           },
           {
             "result": {
-              "duration": 2302634,
+              "duration": 2778780,
               "status": "passed"
             },
             "line": 12,
@@ -10620,7 +10622,7 @@
           },
           {
             "result": {
-              "duration": 7138612,
+              "duration": 8976256,
               "status": "passed"
             },
             "line": 15,
@@ -10860,7 +10862,7 @@
           },
           {
             "result": {
-              "duration": 2972897,
+              "duration": 4315653,
               "status": "passed"
             },
             "line": 27,
@@ -10922,7 +10924,7 @@
           },
           {
             "result": {
-              "duration": 3634354673,
+              "duration": 4006059140,
               "status": "passed"
             },
             "line": 30,
@@ -11167,7 +11169,7 @@
           },
           {
             "result": {
-              "duration": 8878528,
+              "duration": 6841858,
               "status": "passed"
             },
             "line": 46,
@@ -11224,7 +11226,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9443030,
+              "duration": 9655444,
               "status": "passed"
             },
             "line": 5,
@@ -11265,7 +11267,7 @@
           },
           {
             "result": {
-              "duration": 2438293,
+              "duration": 2458374,
               "status": "passed"
             },
             "line": 9,
@@ -11301,7 +11303,7 @@
           },
           {
             "result": {
-              "duration": 2404824,
+              "duration": 2932735,
               "status": "passed"
             },
             "line": 12,
@@ -11333,7 +11335,7 @@
           },
           {
             "result": {
-              "duration": 9425180,
+              "duration": 7149768,
               "status": "passed"
             },
             "line": 15,
@@ -11573,7 +11575,7 @@
           },
           {
             "result": {
-              "duration": 2453020,
+              "duration": 2668110,
               "status": "passed"
             },
             "line": 27,
@@ -11635,7 +11637,7 @@
           },
           {
             "result": {
-              "duration": 3458811859,
+              "duration": 3406047181,
               "status": "passed"
             },
             "line": 30,
@@ -11880,7 +11882,7 @@
           },
           {
             "result": {
-              "duration": 7732120,
+              "duration": 6591067,
               "status": "passed"
             },
             "line": 46,
@@ -11937,7 +11939,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9127980,
+              "duration": 9350211,
               "status": "passed"
             },
             "line": 5,
@@ -11978,7 +11980,7 @@
           },
           {
             "result": {
-              "duration": 2695331,
+              "duration": 3652084,
               "status": "passed"
             },
             "line": 9,
@@ -12014,7 +12016,7 @@
           },
           {
             "result": {
-              "duration": 2484702,
+              "duration": 3331680,
               "status": "passed"
             },
             "line": 12,
@@ -12046,7 +12048,7 @@
           },
           {
             "result": {
-              "duration": 33345586083,
+              "duration": 33459095226,
               "status": "passed"
             },
             "line": 15,
@@ -12286,7 +12288,7 @@
           },
           {
             "result": {
-              "duration": 2516386,
+              "duration": 3299995,
               "status": "passed"
             },
             "line": 27,
@@ -12348,7 +12350,7 @@
           },
           {
             "result": {
-              "duration": 15936665072,
+              "duration": 16164447778,
               "status": "passed"
             },
             "line": 30,
@@ -12593,7 +12595,7 @@
           },
           {
             "result": {
-              "duration": 6288958,
+              "duration": 8374715,
               "status": "passed"
             },
             "line": 46,
@@ -12650,7 +12652,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8515729,
+              "duration": 8617474,
               "status": "passed"
             },
             "line": 5,
@@ -12691,7 +12693,7 @@
           },
           {
             "result": {
-              "duration": 2461052,
+              "duration": 2361092,
               "status": "passed"
             },
             "line": 9,
@@ -12727,7 +12729,7 @@
           },
           {
             "result": {
-              "duration": 2328962,
+              "duration": 2261133,
               "status": "passed"
             },
             "line": 12,
@@ -12759,7 +12761,7 @@
           },
           {
             "result": {
-              "duration": 32854811345,
+              "duration": 33380365226,
               "status": "passed"
             },
             "line": 15,
@@ -12999,7 +13001,7 @@
           },
           {
             "result": {
-              "duration": 2496751,
+              "duration": 2525311,
               "status": "passed"
             },
             "line": 27,
@@ -13061,7 +13063,7 @@
           },
           {
             "result": {
-              "duration": 7498617081,
+              "duration": 7556395789,
               "status": "passed"
             },
             "line": 30,
@@ -13306,7 +13308,7 @@
           },
           {
             "result": {
-              "duration": 6782953,
+              "duration": 6927090,
               "status": "passed"
             },
             "line": 46,
@@ -13363,7 +13365,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11639457,
+              "duration": 8592484,
               "status": "passed"
             },
             "line": 5,
@@ -13404,7 +13406,7 @@
           },
           {
             "result": {
-              "duration": 2546285,
+              "duration": 2198212,
               "status": "passed"
             },
             "line": 9,
@@ -13440,7 +13442,7 @@
           },
           {
             "result": {
-              "duration": 4277276,
+              "duration": 2759145,
               "status": "passed"
             },
             "line": 12,
@@ -13472,7 +13474,7 @@
           },
           {
             "result": {
-              "duration": 8951712,
+              "duration": 8645587,
               "status": "passed"
             },
             "line": 15,
@@ -13712,7 +13714,7 @@
           },
           {
             "result": {
-              "duration": 2780564,
+              "duration": 2766731,
               "status": "passed"
             },
             "line": 27,
@@ -13774,7 +13776,7 @@
           },
           {
             "result": {
-              "duration": 515462008,
+              "duration": 2777887,
               "status": "passed"
             },
             "line": 30,
@@ -14019,7 +14021,7 @@
           },
           {
             "result": {
-              "duration": 6469845759,
+              "duration": 6408476549,
               "status": "passed"
             },
             "line": 46,
@@ -14075,6 +14077,860 @@
     "tags": [
       {
         "name": "@DangKyNghi_CTR",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 65,
+        "name": "Sample of DuyetDangKyNghi_CTR",
+        "description": "",
+        "id": "sample-of-duyetdangkynghi-ctr;sample-of-duyetdangkynghi-ctr;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11569397,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Thiet lap du lieu nhu \"LOGIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LOGIN",
+                  "offset": 23
+                }
+              ],
+              "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Session Data KEY",
+                  "Session Data Value"
+                ]
+              },
+              {
+                "cells": [
+                  "LOGIN",
+                  "EMAIL",
+                  "acoount_test@vnpt.vn"
+                ]
+              },
+              {
+                "cells": [
+                  "LOGIN",
+                  "PASSWORD",
+                  "Vnpt#123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16019505005,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Nguoi dung dang nhap vao he thong nhu \"LOGIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LOGIN",
+                  "offset": 39
+                }
+              ],
+              "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Email",
+                  "Password",
+                  "Mat Khau",
+                  "Hien Thi Thong Bao"
+                ]
+              },
+              {
+                "cells": [
+                  "LOGIN",
+                  "account_test@vnpt.vn",
+                  "Vnpt#123",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13325480875,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Nguoi dung vao menu nhu \"MENU\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MENU",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "MENU"
+                ]
+              },
+              {
+                "cells": [
+                  "MENU",
+                  "Quản lý ngày nghỉ\u003ePhê duyệt ngày nghỉ"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9034488637,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Nhap DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TimKiem-01",
+                  "offset": 29
+                }
+              ],
+              "location": "DuyetDangKyNghiDefs.Nhap_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Tìm kiếm",
+                  "Các bộ lọc",
+                  "Nhóm theo",
+                  "Yêu thích",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "TimKiem-01",
+                  "Trần Thị Lương Huyền, Nhân sự",
+                  "Chờ phê duyệt",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3891273,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Nhap LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 72
+                }
+              ],
+              "location": "DuyetDangKyNghiDefs.Nhap_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Page",
+                  "Page Size",
+                  "Row",
+                  "Total Record",
+                  "Nhân sự",
+                  "Đơn vị / Phong ban",
+                  "Ngày bắt đầu",
+                  "Ngày kết thúc",
+                  "Lý do nghỉ",
+                  "Số ngày nghỉ",
+                  "Người duyệt",
+                  "Trạng thái",
+                  "Lý do từ chối",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "NA",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33493396438,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TimKiem-01",
+                  "offset": 76
+                }
+              ],
+              "location": "DuyetDangKyNghiDefs.Kiem_tra_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Page",
+                  "Page Size",
+                  "Row",
+                  "Total Record",
+                  "Nhân sự",
+                  "Đơn vị / Phong ban",
+                  "Ngày bắt đầu",
+                  "Ngày kết thúc",
+                  "Lý do nghỉ",
+                  "Số ngày nghỉ",
+                  "Người duyệt",
+                  "Trạng thái",
+                  "Lý do từ chối",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "TimKiem-01",
+                  "",
+                  "",
+                  "1",
+                  "1",
+                  "0114 - Trần Thị Lương Huyền",
+                  "VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT",
+                  "02/12/2019",
+                  "05/12/2019",
+                  "Đi du lịch",
+                  "4,0",
+                  "0002 - Account Test",
+                  "Chờ phê duyệt",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3569975,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Thuc hien LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 77
+                }
+              ],
+              "location": "DuyetDangKyNghiDefs.Thuc_hien_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Page",
+                  "Page Size",
+                  "Row",
+                  "Total Record",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "NA",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3930096,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Kiem tra DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 33
+                }
+              ],
+              "location": "DuyetDangKyNghiDefs.Kiem_tra_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Tìm kiếm",
+                  "Các bộ lọc",
+                  "Nhóm theo",
+                  "Yêu thích",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "NA",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2544435480,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Thuc hien DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TimKiem-01",
+                  "offset": 34
+                }
+              ],
+              "location": "DuyetDangKyNghiDefs.Thuc_hien_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Xem chi tiết",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "TimKiem-01",
+                  "Y",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20445694,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Nhap XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 36
+                }
+              ],
+              "location": "XemChiTietDangKyNghiDefs.Nhap_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "NA",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16421363713,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Kiem tra XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"XemChiTiet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "XemChiTiet",
+                  "offset": 40
+                }
+              ],
+              "location": "XemChiTietDangKyNghiDefs.Kiem_tra_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Nhân sự",
+                  "Lý do",
+                  "Loại nghỉ",
+                  "Từ ngày",
+                  "Đến ngày",
+                  "Số ngày nghỉ",
+                  "Ngày tạo",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "XemChiTiet",
+                  "0114 - Trần Thị Lương Huyền",
+                  "Đi du lịch",
+                  "PHép",
+                  "02/12/2019",
+                  "05/12/2019",
+                  "4,0",
+                  "30/11/2019",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2433666739,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Thuc hien XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"Pheduyet-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pheduyet-01",
+                  "offset": 41
+                }
+              ],
+              "location": "XemChiTietDangKyNghiDefs.Thuc_hien_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Phê duyệt",
+                  "Từ chối",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "Pheduyet-01",
+                  "Y",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "Tuchoi-01",
+                  "",
+                  "Y",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3519818270,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Nhap PHÊ DUYỆT nhu \"Pheduyet-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pheduyet-01",
+                  "offset": 20
+                }
+              ],
+              "location": "PheDuyetDefs.Nhap_PHE_DUYET_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Người phê duyệt lần 2",
+                  "Duyệt lần 2",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "Pheduyet-01",
+                  "",
+                  "NN",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2414196,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Kiem tra PHÊ DUYỆT nhu \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 24
+                }
+              ],
+              "location": "PheDuyetDefs.Kiem_tra_PHE_DUYET_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Nhân sự",
+                  "Người phê duyệt lần 2",
+                  "Duyệt lần 2",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "NA",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17465191850,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Thuc hien PHÊ DUYỆT nhu \"Pheduyet-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pheduyet-01",
+                  "offset": 25
+                }
+              ],
+              "location": "PheDuyetDefs.Thuc_hien_PHE_DUYET_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Phê duyệt",
+                  "Hủy bỏ",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "Pheduyet-01",
+                  "Y",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13821605,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Nhap TỪ CHỐI nhu \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 18
+                }
+              ],
+              "location": "TuChoiDefs.Nhap_TU_CHOI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Lý do từ chối",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "Tuchoi-01",
+                  "Có lịch công tác khác",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: Column [KEY] not found in Data Table [TU_CHOI_KIEM_TRA]. Re check data !\r\n\tat hrm.lib.SessionData.getDataTbRowsByValEqualInCol(SessionData.java:1584)\r\n\tat hrm.steps.defs.TuChoiDefs.Kiem_tra_TU_CHOI_nhu(TuChoiDefs.java:77)\r\n\tat ✽.Kiem tra TỪ CHỐI nhu \"\"(src/test/resources/features/3_DuyetDangKyNghi_CTR_DATA.feature:55)\r\n",
+              "duration": 5372812,
+              "status": "failed"
+            },
+            "line": 55,
+            "name": "Kiem tra TỪ CHỐI nhu \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 22
+                }
+              ],
+              "location": "TuChoiDefs.Kiem_tra_TU_CHOI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "NA",
+                  "Nhân sự",
+                  "Lý do từ chối",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "Thuc hien TỪ CHỐI nhu \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 23
+                }
+              ],
+              "location": "TuChoiDefs.Thuc_hien_TU_CHOI_nhu(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Từ chối",
+                  "Hủy bỏ",
+                  "MESSAGE",
+                  "MESSAGE_ACTION",
+                  "ALERT",
+                  "ALERT_ACTION"
+                ]
+              },
+              {
+                "cells": [
+                  "Tuchoi-01",
+                  "Y",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 60,
+            "name": "Nguoi dung lay du lieu tu DB nhu \"\u003cDATA DB\u003e\"",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "KEY",
+                  "Session Data KEY",
+                  "SQL Statement"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DuyetDangKyNghi_CTR"
+          }
+        ]
+      }
+    ],
+    "name": "Sample of DuyetDangKyNghi_CTR",
+    "description": "",
+    "id": "sample-of-duyetdangkynghi-ctr",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/3_DuyetDangKyNghi_CTR_DATA.feature",
+    "tags": [
+      {
+        "name": "@DuyetDangKyNghi_CTR",
         "type": "Tag",
         "location": {
           "line": 1,
