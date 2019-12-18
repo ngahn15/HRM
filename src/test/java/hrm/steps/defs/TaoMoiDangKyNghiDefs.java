@@ -48,9 +48,6 @@ public class TaoMoiDangKyNghiDefs {
 			String sTuNgay = SessionData.getDataTbVal(DATA_TABLE, row, "Từ ngày");
 			String sDenNgay = SessionData.getDataTbVal(DATA_TABLE, row, "Đến ngày");
 			String sSoNgayNghi = SessionData.getDataTbVal(DATA_TABLE, row, "Số ngày nghỉ");
-			String sMessage = SessionData.getDataTbVal(DATA_TABLE, row, "MESSAGE");
-			String sModal = SessionData.getDataTbVal(DATA_TABLE, row, "MODAL");
-			String sModalAction = SessionData.getDataTbVal(DATA_TABLE, row, "MODAL_ACTION");
 
 			if (!sKinhGui.isEmpty()) {
 				TMDKN.enter_kinh_gui(sKinhGui);
@@ -91,31 +88,12 @@ public class TaoMoiDangKyNghiDefs {
 			if (!sSoNgayNghi.isEmpty()) {
 				TMDKN.enter_so_ngay_nghi(sSoNgayNghi);
 			}
-			if (!sMessage.isEmpty()) {
-				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage, Common.get_message(""));
-			}
-
-			if (!sModal.isEmpty()) {
-				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Alert.", sModal, Common.get_text_alert());
-			}
-			if (!sModalAction.isEmpty()) {
-				Common.close_modal();
-			}
-//			if (!sModalAction.isEmpty()) {
-//				if (SessionData.isYes(sModalAction)) {
-//					Common.cl();
-//				} else {
-//					Common.alert_dismiss();
-//				}
-//			}
 		}
 		Common.assertion_result(SessionData.generateSoftAssertion(DATA_TABLE));
 		try {
 			SessionData.generateExcelReport();
 		} catch (Exception e) {
 		}
-		// Common.assertion_result_then_assert(DATA_TABLE,
-		// SessionData.generateSoftAssertion(DATA_TABLE));
 		Common.clear_assertion(DATA_TABLE);
 	}
 
@@ -132,374 +110,30 @@ public class TaoMoiDangKyNghiDefs {
 		}
 		for (int row : data.keySet()) {
 			String sKey = SessionData.getDataTbVal(DATA_TABLE, row, "KEY");
-			String sKinhGui = SessionData.getDataTbVal(DATA_TABLE, row, "Kính gửi");
-			String sNguoiDuyet = SessionData.getDataTbVal(DATA_TABLE, row, "Người duyệt");
-			String sLyDo = SessionData.getDataTbVal(DATA_TABLE, row, "Lý do");
-			String sNguoiLienQuan = SessionData.getDataTbVal(DATA_TABLE, row, "Người liên quan");
-			String sDiaDiemNghiPhep = SessionData.getDataTbVal(DATA_TABLE, row, "Địa điểm nghỉ phép");
-			String sNhanSuDuocUyQuyen = SessionData.getDataTbVal(DATA_TABLE, row, "Nhân sự được ủy quyền");
-			String sNghiDiNuocNgoai = SessionData.getDataTbVal(DATA_TABLE, row, "Nghỉ đi nước ngoài");
-			String sLoaiNghi = SessionData.getDataTbVal(DATA_TABLE, row, "Loại nghỉ");
-			String sTuNgay = SessionData.getDataTbVal(DATA_TABLE, row, "Từ ngày");
-			String sDenNgay = SessionData.getDataTbVal(DATA_TABLE, row, "Đến ngày");
-			String sSoNgayNghi = SessionData.getDataTbVal(DATA_TABLE, row, "Số ngày nghỉ");
 			String sMessage = SessionData.getDataTbVal(DATA_TABLE, row, "MESSAGE");
 			String sMessageAction = SessionData.getDataTbVal(DATA_TABLE, row, "MESSAGE_ACTION");
-			String sAlert = SessionData.getDataTbVal(DATA_TABLE, row, "ALERT");
-			String sAlertAction = SessionData.getDataTbVal(DATA_TABLE, row, "ALERT_ACTION");
+			String sModal = SessionData.getDataTbVal(DATA_TABLE, row, "MODAL");
+			String sModalAction = SessionData.getDataTbVal(DATA_TABLE, row, "MODAL_ACTION");
 
-			if (!sKinhGui.isEmpty()) {
-				if (sKinhGui.startsWith("@MARK")) {
-					if (sKinhGui.contains("@MARK DISABLED@@") || sKinhGui.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Kính gửi", false,
-								TMDKN.enabled_kinh_gui());
-					} else if (sKinhGui.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Kính gửi", true,
-								TMDKN.enabled_kinh_gui());
-					} else if (sKinhGui.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Kính gửi", true,
-								TMDKN.focus_kinh_gui());
-					} else if (sKinhGui.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Kính gửi", false,
-								TMDKN.focus_kinh_gui());
-					} else if (sKinhGui.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Kính gửi", true,
-								TMDKN.exist_kinh_gui());
-					} else if (sKinhGui.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Kính gửi", false,
-								TMDKN.exist_kinh_gui());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Kính gửi", sKinhGui, TMDKN.kinh_gui());
-				}
-			}
-			if (!sNguoiDuyet.isEmpty()) {
-				if (sNguoiDuyet.startsWith("@MARK")) {
-					if (sNguoiDuyet.contains("@MARK DISABLED@@") || sNguoiDuyet.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Người duyệt", false,
-								TMDKN.enabled_nguoi_duyet());
-					} else if (sNguoiDuyet.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Người duyệt", true,
-								TMDKN.enabled_nguoi_duyet());
-					} else if (sNguoiDuyet.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Người duyệt", true,
-								TMDKN.focus_nguoi_duyet());
-					} else if (sNguoiDuyet.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Người duyệt", false,
-								TMDKN.focus_nguoi_duyet());
-					} else if (sNguoiDuyet.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Người duyệt", true,
-								TMDKN.exist_nguoi_duyet());
-					} else if (sNguoiDuyet.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Người duyệt", false,
-								TMDKN.exist_nguoi_duyet());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Người duyệt", sNguoiDuyet, TMDKN.nguoi_duyet());
-				}
-			}
-			if (!sLyDo.isEmpty()) {
-				if (sLyDo.startsWith("@MARK")) {
-					if (sLyDo.contains("@MARK DISABLED@@") || sLyDo.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Lý do", false,
-								TMDKN.enabled_ly_do());
-					} else if (sLyDo.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Lý do", true,
-								TMDKN.enabled_ly_do());
-					} else if (sLyDo.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Lý do", true,
-								TMDKN.focus_ly_do());
-					} else if (sLyDo.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Lý do", false,
-								TMDKN.focus_ly_do());
-					} else if (sLyDo.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Lý do", true,
-								TMDKN.exist_ly_do());
-					} else if (sLyDo.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Lý do", false,
-								TMDKN.exist_ly_do());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Lý do", sLyDo, TMDKN.ly_do());
-				}
-			}
-			if (!sNguoiLienQuan.isEmpty()) {
-				if (sNguoiLienQuan.startsWith("@MARK")) {
-					if (sNguoiLienQuan.contains("@MARK DISABLED@@") || sNguoiLienQuan.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Người liên quan", false,
-								TMDKN.enabled_nguoi_lien_quan());
-					} else if (sNguoiLienQuan.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Người liên quan", true,
-								TMDKN.enabled_nguoi_lien_quan());
-					} else if (sNguoiLienQuan.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Người liên quan", true,
-								TMDKN.focus_nguoi_lien_quan());
-					} else if (sNguoiLienQuan.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Người liên quan", false,
-								TMDKN.focus_nguoi_lien_quan());
-					} else if (sNguoiLienQuan.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Người liên quan", true,
-								TMDKN.exist_nguoi_lien_quan());
-					} else if (sNguoiLienQuan.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Người liên quan", false,
-								TMDKN.exist_nguoi_lien_quan());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Người liên quan", sNguoiLienQuan,
-							TMDKN.nguoi_lien_quan());
-				}
-			}
-			if (!sDiaDiemNghiPhep.isEmpty()) {
-				if (sDiaDiemNghiPhep.startsWith("@MARK")) {
-					if (sDiaDiemNghiPhep.contains("@MARK DISABLED@@")
-							|| sDiaDiemNghiPhep.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Địa điểm nghỉ phép", false,
-								TMDKN.enabled_dia_diem_nghi_phep());
-					} else if (sDiaDiemNghiPhep.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Địa điểm nghỉ phép", true,
-								TMDKN.enabled_dia_diem_nghi_phep());
-					} else if (sDiaDiemNghiPhep.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Địa điểm nghỉ phép", true,
-								TMDKN.focus_dia_diem_nghi_phep());
-					} else if (sDiaDiemNghiPhep.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Địa điểm nghỉ phép", false,
-								TMDKN.focus_dia_diem_nghi_phep());
-					} else if (sDiaDiemNghiPhep.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Địa điểm nghỉ phép", true,
-								TMDKN.exist_dia_diem_nghi_phep());
-					} else if (sDiaDiemNghiPhep.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Địa điểm nghỉ phép", false,
-								TMDKN.exist_dia_diem_nghi_phep());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Địa điểm nghỉ phép", sDiaDiemNghiPhep,
-							TMDKN.dia_diem_nghi_phep());
-				}
-			}
-			if (!sNhanSuDuocUyQuyen.isEmpty()) {
-				if (sNhanSuDuocUyQuyen.startsWith("@MARK")) {
-					if (sNhanSuDuocUyQuyen.contains("@MARK DISABLED@@")
-							|| sNhanSuDuocUyQuyen.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Nhân sự được ủy quyền", false,
-								TMDKN.enabled_nhan_su_duoc_uy_quyen());
-					} else if (sNhanSuDuocUyQuyen.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Nhân sự được ủy quyền", true,
-								TMDKN.enabled_nhan_su_duoc_uy_quyen());
-					} else if (sNhanSuDuocUyQuyen.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Nhân sự được ủy quyền", true,
-								TMDKN.focus_nhan_su_duoc_uy_quyen());
-					} else if (sNhanSuDuocUyQuyen.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Nhân sự được ủy quyền",
-								false, TMDKN.focus_nhan_su_duoc_uy_quyen());
-					} else if (sNhanSuDuocUyQuyen.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Nhân sự được ủy quyền", true,
-								TMDKN.exist_nhan_su_duoc_uy_quyen());
-					} else if (sNhanSuDuocUyQuyen.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Nhân sự được ủy quyền",
-								false, TMDKN.exist_nhan_su_duoc_uy_quyen());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Nhân sự được ủy quyền", sNhanSuDuocUyQuyen,
-							TMDKN.nhan_su_duoc_uy_quyen());
-				}
-			}
-			if (!sNghiDiNuocNgoai.isEmpty()) {
-				if (sNghiDiNuocNgoai.startsWith("@MARK")) {
-					if (sNghiDiNuocNgoai.contains("@MARK DISABLED@@")
-							|| sNghiDiNuocNgoai.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Nghỉ đi nước ngoài", false,
-								TMDKN.enabled_nghi_di_nuoc_ngoai());
-					} else if (sNghiDiNuocNgoai.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Nghỉ đi nước ngoài", true,
-								TMDKN.enabled_nghi_di_nuoc_ngoai());
-					} else if (sNghiDiNuocNgoai.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Nghỉ đi nước ngoài", true,
-								TMDKN.focus_nghi_di_nuoc_ngoai());
-					} else if (sNghiDiNuocNgoai.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Nghỉ đi nước ngoài", false,
-								TMDKN.focus_nghi_di_nuoc_ngoai());
-					} else if (sNghiDiNuocNgoai.contains("@MARK SELECT@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "SELECT/DESESLECT: Nghỉ đi nước ngoài", true,
-								TMDKN.nghi_di_nuoc_ngoai());
-					} else if (sNghiDiNuocNgoai.contains("@MARK DESELECT@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "SELECT/DESESLECT: Nghỉ đi nước ngoài", false,
-								TMDKN.nghi_di_nuoc_ngoai());
-					} else if (sNghiDiNuocNgoai.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Nghỉ đi nước ngoài", true,
-								TMDKN.exist_nghi_di_nuoc_ngoai());
-					} else if (sNghiDiNuocNgoai.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Nghỉ đi nước ngoài", false,
-								TMDKN.exist_nghi_di_nuoc_ngoai());
-					}
-				} else {
-					Fail.fail("Recheck input data for ChkBox :Nghỉ đi nước ngoài");
-				}
-			}
-			if (!sLoaiNghi.isEmpty()) {
-				if (sLoaiNghi.startsWith("@MARK")) {
-					if (sLoaiNghi.contains("@MARK DISABLED@@") || sLoaiNghi.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Loại nghỉ", false,
-								TMDKN.enabled_loai_nghi());
-					} else if (sLoaiNghi.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Loại nghỉ", true,
-								TMDKN.enabled_loai_nghi());
-					} else if (sLoaiNghi.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Loại nghỉ", true,
-								TMDKN.focus_loai_nghi());
-					} else if (sLoaiNghi.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Loại nghỉ", false,
-								TMDKN.focus_loai_nghi());
-					} else if (sLoaiNghi.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Loại nghỉ", true,
-								TMDKN.exist_loai_nghi());
-					} else if (sLoaiNghi.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Loại nghỉ", false,
-								TMDKN.exist_loai_nghi());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Loại nghỉ", sLoaiNghi, TMDKN.loai_nghi());
-				}
-			}
-			if (sTuNgay.contains("Calendar>")) {
-				sTuNgay = sTuNgay.replace("Calendar>", "");
-				if (sTuNgay.startsWith("@MARK")) {
-					if (sTuNgay.contains("@MARK DISABLED@@") || sTuNgay.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Từ ngày", false,
-								TMDKN.enabled_calendar_tu_ngay());
-					} else if (sTuNgay.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Từ ngày", true,
-								TMDKN.enabled_calendar_tu_ngay());
-					} else if (sTuNgay.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Từ ngày", true,
-								TMDKN.focus_calendar_tu_ngay());
-					} else if (sTuNgay.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Từ ngày", false,
-								TMDKN.focus_calendar_tu_ngay());
-					} else if (sTuNgay.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Từ ngày", true,
-								TMDKN.exist_tu_ngay());
-					} else if (sTuNgay.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Từ ngày", false,
-								TMDKN.exist_tu_ngay());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Từ ngày", sTuNgay, TMDKN.calendar_tu_ngay());
-				}
-			} else if (!sTuNgay.isEmpty()) {
-				if (sTuNgay.startsWith("@MARK")) {
-					if (sTuNgay.contains("@MARK DISABLED@@") || sTuNgay.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Từ ngày", false,
-								TMDKN.enabled_tu_ngay());
-					} else if (sTuNgay.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Từ ngày", true,
-								TMDKN.enabled_tu_ngay());
-					} else if (sTuNgay.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Từ ngày", true,
-								TMDKN.focus_tu_ngay());
-					} else if (sTuNgay.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Từ ngày", false,
-								TMDKN.focus_tu_ngay());
-					} else if (sTuNgay.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Từ ngày", true,
-								TMDKN.exist_tu_ngay());
-					} else if (sTuNgay.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Từ ngày", false,
-								TMDKN.exist_tu_ngay());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Từ ngày", sTuNgay, TMDKN.tu_ngay());
-				}
-			}
-			if (sDenNgay.contains("Calendar>")) {
-				sDenNgay = sDenNgay.replace("Calendar>", "");
-				if (sDenNgay.startsWith("@MARK")) {
-					if (sDenNgay.contains("@MARK DISABLED@@") || sDenNgay.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Đến ngày", false,
-								TMDKN.enabled_calendar_den_ngay());
-					} else if (sDenNgay.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Đến ngày", true,
-								TMDKN.enabled_calendar_den_ngay());
-					} else if (sDenNgay.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Đến ngày", true,
-								TMDKN.focus_calendar_den_ngay());
-					} else if (sDenNgay.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Đến ngày", false,
-								TMDKN.focus_calendar_den_ngay());
-					} else if (sDenNgay.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Đến ngày", true,
-								TMDKN.exist_den_ngay());
-					} else if (sDenNgay.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Đến ngày", false,
-								TMDKN.exist_den_ngay());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Đến ngày", sDenNgay, TMDKN.calendar_den_ngay());
-				}
-			} else if (!sDenNgay.isEmpty()) {
-				if (sDenNgay.startsWith("@MARK")) {
-					if (sDenNgay.contains("@MARK DISABLED@@") || sDenNgay.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Đến ngày", false,
-								TMDKN.enabled_den_ngay());
-					} else if (sDenNgay.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Đến ngày", true,
-								TMDKN.enabled_den_ngay());
-					} else if (sDenNgay.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Đến ngày", true,
-								TMDKN.focus_den_ngay());
-					} else if (sDenNgay.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Đến ngày", false,
-								TMDKN.focus_den_ngay());
-					} else if (sDenNgay.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Đến ngày", true,
-								TMDKN.exist_den_ngay());
-					} else if (sDenNgay.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Đến ngày", false,
-								TMDKN.exist_den_ngay());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Đến ngày", sDenNgay, TMDKN.den_ngay());
-				}
-			}
-			if (!sSoNgayNghi.isEmpty()) {
-				if (sSoNgayNghi.startsWith("@MARK")) {
-					if (sSoNgayNghi.contains("@MARK DISABLED@@") || sSoNgayNghi.contains("@MARK READONLY@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Số ngày nghỉ", false,
-								TMDKN.enabled_so_ngay_nghi());
-					} else if (sSoNgayNghi.contains("@MARK ENABLED@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "ENABLED/DISABLED: Số ngày nghỉ", true,
-								TMDKN.enabled_so_ngay_nghi());
-					} else if (sSoNgayNghi.contains("@MARK HASFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Số ngày nghỉ", true,
-								TMDKN.focus_so_ngay_nghi());
-					} else if (sSoNgayNghi.contains("@MARK NOTFOCUS@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "HASFOCUS/NOTFOCUS: Số ngày nghỉ", false,
-								TMDKN.focus_so_ngay_nghi());
-					} else if (sSoNgayNghi.contains("@MARK VISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Số ngày nghỉ", true,
-								TMDKN.exist_so_ngay_nghi());
-					} else if (sSoNgayNghi.contains("@MARK INVISIBLE@@")) {
-						SessionData.addSoftAssertion(DATA_TABLE, sKey, "VISIBLE/INVISIBLE: Số ngày nghỉ", false,
-								TMDKN.exist_so_ngay_nghi());
-					}
-				} else {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Số ngày nghỉ", sSoNgayNghi, TMDKN.so_ngay_nghi());
-				}
-			}
 			if (!sMessage.isEmpty()) {
-				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage, Common.get_message(""));
+				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage,
+						Common.get_message(sMessage));
+			} else {
+				String actualMessage = "Success";
+				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage, actualMessage);
 			}
 			if (!sMessageAction.isEmpty()) {
 				Common.close_message(sMessageAction);
 			}
-			if (!sAlert.isEmpty()) {
-				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Alert.", sAlert, Common.get_text_alert());
-			}
-			if (!sAlertAction.isEmpty()) {
-				if (SessionData.isYes(sAlertAction)) {
-					Common.alert_accept();
-				} else {
-					Common.alert_dismiss();
+			if (!sModal.isEmpty()) {
+				String actualMassage = Common.get_modal();
+				System.out.println("actualMassage: " + actualMassage);
+				if (actualMassage.contains(sModal)) {
+					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Alert.", sModal, Common.get_modal());
 				}
+			}
+			if (!sModalAction.isEmpty()) {
+				Common.close_modal();
 			}
 		}
 		Common.assertion_result(SessionData.generateSoftAssertion(DATA_TABLE));
@@ -507,8 +141,6 @@ public class TaoMoiDangKyNghiDefs {
 			SessionData.generateExcelReport();
 		} catch (Exception e) {
 		}
-		// Common.assertion_result_then_assert(DATA_TABLE,
-		// SessionData.generateSoftAssertion(DATA_TABLE));
 		Common.clear_assertion(DATA_TABLE);
 	}
 
@@ -531,11 +163,6 @@ public class TaoMoiDangKyNghiDefs {
 			String sSua = SessionData.getDataTbVal(DATA_TABLE, row, "Sửa");
 			String sTao = SessionData.getDataTbVal(DATA_TABLE, row, "Tạo");
 			String sSoanThao = SessionData.getDataTbVal(DATA_TABLE, row, "Soạn thảo");
-			String sMessage = SessionData.getDataTbVal(DATA_TABLE, row, "MESSAGE");
-			String sMessageAction = SessionData.getDataTbVal(DATA_TABLE, row, "MESSAGE_ACTION");
-			String sModal = SessionData.getDataTbVal(DATA_TABLE, row, "MODAL");
-			String sModalAction = SessionData.getDataTbVal(DATA_TABLE, row, "MODAL_ACTION");
-
 			if (!sLuu.isEmpty()) {
 				if (sLuu.startsWith("@MARK")) {
 					if (sLuu.contains("@MARK DISABLED@@") || sLuu.contains("@MARK READONLY@@")) {
@@ -701,83 +328,13 @@ public class TaoMoiDangKyNghiDefs {
 					Fail.fail("Recheck input data for Button [Soạn thảo] : " + sSoanThao);
 				}
 			}
-			if (!sMessage.isEmpty()) {
-				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage,
-						Common.get_message(sMessage));
-			} else {
-				String actualMessage = "Success";
-				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage, actualMessage);
-			}
-			if (!sMessageAction.isEmpty()) {
-				Common.close_message(sMessageAction);
-			}
-			if (!sModal.isEmpty()) {
-				String actualMassage = Common.get_modal();
-				System.out.println("actualMassage: " + actualMassage);
-				if (actualMassage.contains(sModal)) {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Alert.", sModal, Common.get_modal());
-				}
-			}
-			if (!sModalAction.isEmpty()) {
-				Common.close_modal();
-			}
-		}
-		Common.assertion_result(SessionData.generateSoftAssertion(DATA_TABLE));
-		try {
-			SessionData.generateExcelReport();
-		} catch (Exception e) {
-		}
-		// Common.assertion_result_then_assert(DATA_TABLE,
-		// SessionData.generateSoftAssertion(DATA_TABLE));
-		Common.clear_assertion(DATA_TABLE);
-	}
 
-	@Then("^Kiem tra cac Control hien thi day du tren TẠO MỚI ĐĂNG KÝ NGHỈ$")
-	public void Kiem_tra_cac_Control_hien_thi_day_du_tren_TAO_MOI_DANG_KY_NGHI() throws Exception {
-		String DATA_TABLE = "TAO_MOI_DANG_KY_NGHI_VERIFY_CONTROL_VISIBLE";
-		SessionData.declareSoftAssertion(DATA_TABLE, "Kiem tra cac Control hien thi day du tren Tạo mới Đăng ký nghỉ");
-		SessionData.addSoftAssertion(DATA_TABLE, "A1_V", "VISIBLE/INVISIBLE: Kính gửi", true, TMDKN.exist_kinh_gui());
-		SessionData.addSoftAssertion(DATA_TABLE, "A2_V", "VISIBLE/INVISIBLE: Người duyệt", true,
-				TMDKN.exist_nguoi_duyet());
-		SessionData.addSoftAssertion(DATA_TABLE, "A3_V", "VISIBLE/INVISIBLE: Lý do", true, TMDKN.exist_ly_do());
-		SessionData.addSoftAssertion(DATA_TABLE, "A4_V", "VISIBLE/INVISIBLE: Người liên quan", true,
-				TMDKN.exist_nguoi_lien_quan());
-		SessionData.addSoftAssertion(DATA_TABLE, "A5_V", "VISIBLE/INVISIBLE: Địa điểm nghỉ phép", true,
-				TMDKN.exist_dia_diem_nghi_phep());
-		SessionData.addSoftAssertion(DATA_TABLE, "A6_V", "VISIBLE/INVISIBLE: Nhân sự được ủy quyền", true,
-				TMDKN.exist_nhan_su_duoc_uy_quyen());
-		SessionData.addSoftAssertion(DATA_TABLE, "A7_V", "VISIBLE/INVISIBLE: Nghỉ đi nước ngoài", true,
-				TMDKN.exist_nghi_di_nuoc_ngoai());
-		SessionData.addSoftAssertion(DATA_TABLE, "A8_V", "VISIBLE/INVISIBLE: Loại nghỉ", true, TMDKN.exist_loai_nghi());
-		SessionData.addSoftAssertion(DATA_TABLE, "A9_V", "VISIBLE/INVISIBLE: Từ ngày", true, TMDKN.exist_tu_ngay());
-		SessionData.addSoftAssertion(DATA_TABLE, "A10_V", "VISIBLE/INVISIBLE: Đến ngày", true, TMDKN.exist_den_ngay());
-		SessionData.addSoftAssertion(DATA_TABLE, "A11_V", "VISIBLE/INVISIBLE: Số ngày nghỉ", true,
-				TMDKN.exist_so_ngay_nghi());
-		SessionData.addSoftAssertion(DATA_TABLE, "A12_V", "VISIBLE/INVISIBLE: Lưu", true, TMDKN.exist_luu());
-		SessionData.addSoftAssertion(DATA_TABLE, "A13_V", "VISIBLE/INVISIBLE: Hủy bỏ", true, TMDKN.exist_huy_bo());
-		SessionData.addSoftAssertion(DATA_TABLE, "A14_V", "VISIBLE/INVISIBLE: Gửi xác nhận", true,
-				TMDKN.exist_gui_phe_duyet());
+		}
 		Common.assertion_result(SessionData.generateSoftAssertion(DATA_TABLE));
 		try {
 			SessionData.generateExcelReport();
 		} catch (Exception e) {
 		}
-		// Common.assertion_result_then_assert(DATA_TABLE,
-		// SessionData.generateSoftAssertion(DATA_TABLE));
-		Common.clear_assertion(DATA_TABLE);
-	}
-
-	@Then("^Kiem tra Tab Index cac Control tren TẠO MỚI ĐĂNG KÝ NGHỈ$")
-	public void Kiem_tra_Tab_Index_cac_Control_tren_TAO_MOI_DANG_KY_NGHI() throws Exception {
-		String DATA_TABLE = "TAO_MOI_DANG_KY_NGHI_VERIFY_CONTROL_TAB";
-		SessionData.declareSoftAssertion(DATA_TABLE, "Kiem tra Tab Index cua Control tren Tạo mới Đăng ký nghỉ");
-		Common.assertion_result(SessionData.generateSoftAssertion(DATA_TABLE));
-		try {
-			SessionData.generateExcelReport();
-		} catch (Exception e) {
-		}
-		// Common.assertion_result_then_assert(DATA_TABLE,
-		// SessionData.generateSoftAssertion(DATA_TABLE));
 		Common.clear_assertion(DATA_TABLE);
 	}
 }

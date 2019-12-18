@@ -1,0 +1,1284 @@
+<html><head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+                <title>Trần ngọc Anh - HRM</title>
+            <link rel="shortcut icon" href="/vnpt_customize_odoo/static/src/img/favicon.ico" type="image/x-icon">
+            <script type="text/javascript">
+                    var odoo = {
+                        csrf_token: "03128a15d24a0c62ffc662f24ee234f3e68c2134o",
+                    };
+                </script>
+
+                
+                <script type="text/javascript">
+                    odoo.session_info = {"session_id": "9f065b1869973da218a38914d01d961e61cd3009", "uid": 42, "is_system": false, "is_admin": false, "user_context": {"lang": "vi_VN", "tz": false, "uid": 42}, "db": "hrm_v12", "server_version": "12.0", "server_version_info": [12, 0, 0, "final", 0, ""], "name": "Tr\u1ea7n ng\u1ecdc Anh", "username": "tranngocanh@vnpt.vn", "partner_display_name": "Tr\u1ea7n ng\u1ecdc Anh", "company_id": 1, "partner_id": 43, "user_companies": false, "currencies": {"1": {"symbol": "\u20ac", "position": "after", "digits": [69, 2]}, "2": {"symbol": "$", "position": "before", "digits": [69, 2]}, "23": {"symbol": "\u20ab", "position": "after", "digits": [69, 0]}}, "web.base.url": "http://hrm12.v12.vn", "show_effect": "True", "max_time_between_keys_in_ms": 55, "odoobot_initialized": true};
+                </script>
+
+                <link type="text/css" rel="stylesheet" href="/web/content/3580-cc86fe4/web.assets_common.0.css">
+                <link type="text/css" rel="stylesheet" href="/web/content/3770-3bbc8df/web.assets_backend.0.css">
+                <link type="text/css" rel="stylesheet" href="/web/content/3771-3bbc8df/web.assets_backend.1.css">
+        <link type="text/css" rel="stylesheet" href="/web/content/1822-7cbab39/web_editor.summernote.0.css">
+        <link type="text/css" rel="stylesheet" href="/web/content/3172-af7eff6/web_editor.assets_editor.0.css">
+    
+                <script type="text/javascript" src="/web/content/3583-cc86fe4/web.assets_common.js"></script>
+                <script type="text/javascript" src="/web/content/3772-3bbc8df/web.assets_backend.js"></script>
+        <script type="text/javascript" src="/web/content/1823-7cbab39/web_editor.summernote.js"></script>
+        <script type="text/javascript" src="/web/content/3175-af7eff6/web_editor.assets_editor.js"></script>
+    
+
+                
+                    <!--[if lt IE 10]>
+ <body class="ie9">
+ <![endif]-->
+                
+
+                <script type="text/javascript">
+                    odoo.define('web.web_client', function (require) {
+                        var WebClient = require('web.WebClient');
+                        var web_client = new WebClient();
+                        $(function() {
+                            web_client.setElement($(document.body));
+                            web_client.start();
+                        });
+                        return web_client;
+                    });
+                </script>
+            
+            <script type="text/javascript" src="http://hrm12.v12.vn/web/webclient/locale/vi_VN"></script></head>
+            <body class="o_web_client mk_sidebar_type_large"><header>
+    <nav class="o_main_navbar">
+        
+            
+            
+				<button class="o_menu_apps btn-sidebar show-sidebar">
+					<i class="fa fa-bars"></i>
+				</button>
+			
+        
+        <a class="o_menu_brand" role="button"></a>
+        <ul class="o_menu_sections" role="menu"><li>
+                    <a class="o_app none-collapsible active" role="menuitem" data-action-id="296" data-menu-id="115" data-menu-xmlid="vnpt_hr.menu_hr_root" href="#menu_id=115&amp;action=296">
+                        <span class="apps_name">
+                            Quản lý hồ sơ
+                        </span>
+                     </a>
+                </li>
+            
+                <li>
+                    <a class="o_app none-collapsible" role="menuitem" data-action-id="290" data-menu-id="252" data-menu-xmlid="vnpt_hr_leave.menu_hr_leave_root" href="#menu_id=252&amp;action=290">
+                        <span class="apps_name">
+                            Quản lý ngày nghỉ
+                        </span>
+                     </a>
+                </li>
+            
+                <li>
+                    <a class="o_app none-collapsible" role="menuitem" data-action-id="222" data-menu-id="193" data-menu-xmlid="vnpt_hr_salary.menu_vnpt_hr_salary_root" href="#menu_id=193&amp;action=222">
+                        <span class="apps_name">
+                            Quản lý lương
+                        </span>
+                     </a>
+                </li></ul>
+        <ul class="o_menu_systray" role="menu" style="position: absolute;right: 0;"><li class="o_mail_systray_item o_no_notification">
+            <a aria-expanded="false" class="dropdown-toggle o-no-caret" data-display="static" data-toggle="dropdown" href="#" role="button" title="Các hoạt động">
+                <i aria-label="Activities" class="fa fa-clock-o" role="img"></i> <span class="o_notification_counter badge badge-pill">0</span>
+            </a>
+            <div class="o_mail_systray_dropdown dropdown-menu dropdown-menu-right" role="menu">
+                <div class="o_mail_systray_dropdown_items">
+        
+            <div class="dropdown-item-text text-center o_no_activity">
+                <span>Không có kế hoạch hoạt động.</span>
+            </div>
+        
+        
+    </div>
+            </div>
+        </li><li class="o_mail_systray_item o_no_notification">
+            <a aria-expanded="false" class="dropdown-toggle o-no-caret" data-display="static" data-toggle="dropdown" href="#" role="button" title="Hội thoại">
+                <i aria-label="Messages" class="fa fa-comments" role="img"></i> <span class="o_notification_counter badge badge-pill">0</span>
+            </a>
+            <div class="o_mail_systray_dropdown dropdown-menu dropdown-menu-right" role="menu">
+                
+                <div class="o_mail_systray_dropdown_top">
+                    <div>
+                        <button class="btn btn-link o_filter_button active" role="tab" type="button"> Tất cả </button>
+                        <button class="btn btn-link o_filter_button" data-filter="chat" role="tab" type="button"> Nhắn tin </button>
+                        <button class="btn btn-link o_filter_button" data-filter="channels" role="tab" type="button"> Các Kênh </button>
+                    </div>
+                    <button class="btn btn-link o_new_message" type="button"> Gửi tin </button>
+                </div>
+                <div class="o_mail_systray_dropdown_items"></div>
+                
+            </div>
+        </li><li class="o_user_menu">
+        <a aria-expanded="false" class="dropdown-toggle" data-display="static" data-toggle="dropdown" href="#" role="button">
+            <img alt="Ảnh đại diện" class="rounded-circle oe_topbar_avatar" src="http://hrm12.v12.vn/web/image?model=res.users&amp;field=image_small&amp;id=42">
+            <span class="oe_topbar_name">Trần ngọc Anh</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" role="menu">
+            
+    
+            <a role="menuitem" href="#" class="dropdown-item" data-lang-menu="lang" data-lang-id="en_US" style="display: none;"><img class="flag" src="app_odoo_customize/static/src/img/flags/en_US.png">English</a><a role="menuitem" href="#" class="dropdown-item" data-lang-menu="lang" data-lang-id="vi_VN" style="display: none;"><img class="flag" src="app_odoo_customize/static/src/img/flags/vi_VN.png">Vietnamese / Tiếng Việt<i class="fa fa-check"></i></a><div role="separator" class="dropdown-divider" style="display: none;"></div>
+            <a class="dropdown-item" data-menu="debug" href="#" role="menuitem" style="display: none;">Kích hoạt chế độ phát triển</a>
+            <a class="dropdown-item" data-menu="debugassets" href="#" role="menuitem" style="display: none;">Kích hoạt chế độ phát triển (có assets)</a>
+            <a class="dropdown-item" data-menu="quitdebug" href="#" role="menuitem" style="display: none;">Vô hiệu chế độ phát triển</a>
+            <div class="dropdown-divider" role="separator" style="display: none;"></div>
+            <a class="dropdown-item" data-menu="documentation_dev" href="#" role="menuitem" style="display: none;">Developer Manual</a>
+        <a class="dropdown-item" data-menu="documentation" href="#" role="menuitem" style="display: none;">Tài liệu</a>
+    <a class="dropdown-item" data-menu="support" href="#" role="menuitem" style="display: none;">Hỗ trợ</a>
+    
+        <a class="dropdown-item d-none d-md-inline-block" data-menu="shortcuts" href="#" role="menuitem" style="display: none !important;">Phím tắt</a>
+    <div class="dropdown-divider" role="separator" style="display: none;"></div>
+    <a class="dropdown-item" data-menu="settings" href="#" role="menuitem">Tùy chỉnh cá nhân</a>
+    <a class="dropdown-item" data-menu="account" href="#" role="menuitem" style="display: none;">My Online Account</a>
+    <a class="dropdown-item" data-menu="logout" href="#" role="menuitem">Đăng xuất</a>
+
+        </div>
+    </li></ul>
+            
+            
+				<div class="mk_apps_sidebar_panel" style="width: 220px;">
+					<div class="company-logo">
+						<img src="vnpt_theme/static/src/img/company_logo.png">
+					</div>
+					<div class="drag-sidebar"></div>
+				<li>
+                
+                <a role="menuitem" data-action-id="296" data-action-model="ir.actions.server" data-menu="263" data-menu-xmlid="vnpt_hr_profile.vnpt_menu_hr_employee_edit" class="dropdown-item link-item o_menu_entry_lvl_1 active" href="#menu_id=263&amp;action=296" style="padding:2px 15px">
+                    <span>Hồ sơ nhân sự tự khai</span>
+                </a>
+            
+            </li><li>
+                
+                <a role="menuitem" data-action-id="360" data-action-model="ir.actions.server" data-menu="328" data-menu-xmlid="vnpt_hr_profile.vnpt_menu_hr_employee_edition_2c_bnv" class="dropdown-item link-item o_menu_entry_lvl_1" href="#menu_id=328&amp;action=360" style="padding:2px 15px">
+                    <span>Hồ sơ CBCCVC - Mẫu 2c/BNV</span>
+                </a>
+            
+            </li></div>
+			
+		
+            <button class="mk_menu_sections_toggle d-md-none" data-target=".o_main_navbar > .o_menu_sections" data-toggle="collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+        
+    </nav>
+</header>
+                
+            
+            
+            
+            
+        
+            <div class="o_main mk_chatter_position_sided" style="padding-left: 220px;">
+                <main class="o_main_content"><div class="o_control_panel o_breadcrumb_full">
+        <ol class="breadcrumb" role="navigation"><li class="breadcrumb-item active">Trần ngọc Anh</li></ol>
+        <div class="o_cp_searchview" role="search" style="display: none;"><div aria-autocomplete="list" class="o_searchview o_hidden" role="search">
+    <span aria-label="Advanced Search..." class="o_searchview_more fa fa-search-minus" role="img" title="Tìm kiếm nâng cao..."></span>
+    <div class="o_searchview_input_container"><div class="dropdown-menu o_searchview_autocomplete" role="menu"></div><input accesskey="Q" aria-haspopup="true" class="o_searchview_input" placeholder="Tìm..." role="searchbox" type="text"></div>
+</div></div>
+        <div class="o_cp_left">
+            <div aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"><div>
+    <div aria-label="Main actions" class="o_form_buttons_view" role="toolbar">
+        <button accesskey="a" class="btn btn-primary o_form_button_edit" type="button">
+            Sửa
+        </button>
+        
+    </div>
+    <div aria-label="Main actions" class="o_form_buttons_edit o_hidden" role="toolbar" data-original-title="" title="">
+        <button accesskey="s" class="btn btn-primary o_form_button_save" type="button">
+            Lưu
+        </button>
+        <button accesskey="j" class="btn btn-secondary o_form_button_cancel" type="button">
+            Huỷ bỏ
+        </button>
+    </div>
+</div></div>
+            <aside class="o_cp_sidebar"><div class="btn-group">
+    
+        <div class="btn-group o_dropdown" style="display: none;">
+            
+            <button aria-expanded="false" data-toggle="dropdown" class="o_dropdown_toggler_btn btn btn-secondary dropdown-toggle undefined">
+                
+                In
+	        </button>
+        
+            
+            <div class="dropdown-menu o_dropdown_menu" role="menu">
+                
+                
+            </div>
+        </div>
+    
+        <div class="btn-group o_dropdown" style="display: none;">
+            
+            <button aria-expanded="false" data-toggle="dropdown" class="o_dropdown_toggler_btn btn btn-secondary dropdown-toggle undefined">
+                
+                Hành động
+	        </button>
+        
+            
+            <div class="dropdown-menu o_dropdown_menu" role="menu">
+                
+                
+            </div>
+        </div>
+    
+</div></aside>
+        </div>
+        <div class="o_cp_right">
+            <div class="btn-group o_search_options" role="search"><div style="display: none;"><div class="btn-group o_dropdown">
+    <button aria-expanded="false" data-toggle="dropdown" class="o_dropdown_toggler_btn btn btn-secondary dropdown-toggle" tabindex="-1">
+        <span class="fa fa-filter"></span> Các bộ lọc 
+    </button>
+    <div class="dropdown-menu o_dropdown_menu o_filters_menu" role="menu">
+        
+    
+        
+        
+            <div class="dropdown-divider" data-removable="1" role="separator"></div>
+            <div class="o_menu_item" data-id="__filter__10">
+                <a href="#" role="menuitem" class="dropdown-item">
+                    Soạn thảo
+                    
+                    
+                </a>
+                
+            </div>
+            
+        
+            
+            <div class="o_menu_item" data-id="__filter__11">
+                <a href="#" role="menuitem" class="dropdown-item">
+                    Chờ xác nhận
+                    
+                    
+                </a>
+                
+            </div>
+            
+        
+            
+            <div class="o_menu_item" data-id="__filter__12">
+                <a href="#" role="menuitem" class="dropdown-item">
+                    Xác nhận
+                    
+                    
+                </a>
+                
+            </div>
+            
+        
+            
+            <div class="o_menu_item" data-id="__filter__13">
+                <a href="#" role="menuitem" class="dropdown-item">
+                    Đang làm việc
+                    
+                    
+                </a>
+                
+            </div>
+            
+        
+    
+
+    
+    <div class="dropdown-divider" role="separator"></div>
+    <button aria-expanded="false" class="dropdown-item o_add_custom_filter o_closed_menu" type="button">Thêm bộ lọc tùy chỉnh</button>
+    <div class="dropdown-item-text o_add_filter_menu">
+        <button class="btn btn-primary o_apply_filter" type="button">Áp dụng</button>
+        <button class="btn btn-secondary o_add_condition" type="button">
+            <span class="fa fa-plus-circle"></span>
+            Thêm điều kiện
+        </button>
+    </div>
+</div>
+</div><div class="btn-group o_dropdown">
+    <button aria-expanded="false" data-toggle="dropdown" class="o_dropdown_toggler_btn btn btn-secondary dropdown-toggle" tabindex="-1">
+        <span class="fa fa-bars"></span> Nhóm theo 
+    </button>
+    <div class="dropdown-menu o_dropdown_menu o_group_by_menu" role="menu">
+        
+    
+        
+        
+            <div class="dropdown-divider" data-removable="1" role="separator"></div>
+            <div class="o_menu_item" data-id="__groupby__7">
+                <a href="#" role="menuitem" class="dropdown-item">
+                    Đơn vị/Phòng ban
+                    
+                    
+                </a>
+                
+            </div>
+            
+        
+            
+            <div class="o_menu_item" data-id="__groupby__8">
+                <a href="#" role="menuitem" class="dropdown-item">
+                    Trạng thái
+                    
+                    
+                </a>
+                
+            </div>
+            
+        
+    
+
+    
+    <div class="dropdown-divider o_generator_menu" role="separator"></div>
+    <button aria-expanded="false" class="dropdown-item o_generator_menu o_add_custom_group" type="button">Thêm nhóm tùy chỉnh</button>
+    
+    
+</div>
+</div><div class="btn-group o_dropdown o_hidden">
+    <button aria-expanded="false" data-toggle="dropdown" class="o_dropdown_toggler_btn btn btn-secondary dropdown-toggle o_time_range_menu_button" tabindex="-1">
+        <span class="fa fa-calendar"></span> Phạm vi thời gian <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu o_dropdown_menu o_time_range_menu" role="menu">
+        <div class="dropdown-item-text">
+            <label for="date_field_selector">Dựa trên</label>
+            <select class="o_input o_date_field_selector" id="date_field_selector">
+                
+                    
+                        <option value="vnpt_ngay_cap_can_cuoc">
+                            Ngày cấp căn cước
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_vao_don_vi">
+                            Ngày vào đơn vị
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_vao_don_vi_ct">
+                            Ngày vào đơn vị chính thức
+                        </option>
+                    
+                
+                    
+                        <option value="birthday">
+                            Ngày sinh
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_cap_cmnd">
+                            Ngày cấp
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_cap_ho_chieu">
+                            Ngày cấp hộ chiếu
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_het_han_ho_chieu">
+                            Vnpt Ngay Het Han Ho Chieu
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_tot_nghiep">
+                            Ngày tốt nghiệp
+                        </option>
+                    
+                
+                    
+                        <option value="namphongtang">
+                            Năm phong tặng
+                        </option>
+                    
+                
+                    
+                        <option value="ngay_tham_gia_cm">
+                            Ngày tham gia CM
+                        </option>
+                    
+                
+                    
+                        <option value="ngaynhapngu">
+                            Ngày nhập ngũ
+                        </option>
+                    
+                
+                    
+                        <option value="ngayxuatngu">
+                            Ngày xuất ngũ
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_vao_dang">
+                            Ngày vào đảng
+                        </option>
+                    
+                
+                    
+                        <option value="ngaychinhthucvaodang">
+                            Ngày chính thức vào đảng
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_vao_doan">
+                            Ngày vào đoàn
+                        </option>
+                    
+                
+                    
+                        <option value="namduocphong">
+                            Năm phong tặng
+                        </option>
+                    
+                
+                    
+                        <option value="ngaytuyendung">
+                            Ngày tuyển dụng lần đầu
+                        </option>
+                    
+                
+                    
+                        <option value="ngay_huong_bac">
+                            Ngày hưởng bậc
+                        </option>
+                    
+                
+                    
+                        <option value="ngaythamgiatcct">
+                            Ngày tham gia các tổ  chức chính trị - xã hội
+                        </option>
+                    
+                
+                    
+                        <option value="vnpt_ngay_vao_cong_doan">
+                            Ngày vào Công đoàn
+                        </option>
+                    
+                
+                    
+                        <option value="create_date">
+                            Created on
+                        </option>
+                    
+                
+                    
+                        <option value="write_date">
+                            Last Updated on
+                        </option>
+                    
+                
+            </select>
+        </div>
+        <div class="dropdown-item-text">
+            <label for="time_range_selector">Phạm vi</label>
+            <select class="o_input o_time_range_selector" id="time_range_selector">
+                
+                    
+                        
+                            
+                                
+                                    <option value="last_7_days">
+                                        7 ngày trước
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="last_30_days">
+                                        30 ngày qua
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="last_365_days">
+                                        365 ngày qua
+                                    </option>
+                                
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                
+                    <optgroup></optgroup>
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                
+                                    <option value="today">
+                                        Hôm nay
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="this_week">
+                                        Tuần này
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="this_month">
+                                        Tháng này
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="this_quarter">
+                                        Quý này
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="this_year">
+                                        Năm nay
+                                    </option>
+                                
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                
+                    <optgroup></optgroup>
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                
+                                    <option value="yesterday">
+                                        Hôm qua
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="last_week">
+                                        Tuần Trước
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="last_month">
+                                        Tháng gần nhất
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="last_quarter">
+                                        Quý trước
+                                    </option>
+                                
+                            
+                        
+                            
+                                
+                                    <option value="last_year">
+                                        Năm ngoái
+                                    </option>
+                                
+                            
+                        
+                
+            </select>
+        </div>
+        <div class="dropdown-item-text">
+            
+            <div class="custom-control custom-checkbox">
+                <input class="custom-control-input o_comparison_checkbox" id="comparison_checkbox" type="checkbox">
+                <label class="custom-control-label" for="comparison_checkbox">So sánh với</label>
+            </div>
+            <select class="o_input o_comparison_time_range_selector o_hidden">
+                
+                    
+                        <option value="previous_period">
+                            Kì trước
+                        </option>
+                    
+                
+                    
+                        <option value="previous_year">
+                            Năm trước
+                        </option>
+                    
+                
+            </select>
+        </div>
+        <div class="dropdown-item-text">
+            <button class="btn btn-primary o_apply_range" type="button">Áp dụng</button>
+        </div>
+    </div>
+</div><div class="btn-group o_dropdown">
+    <button aria-expanded="false" aria-label="Favorites" data-toggle="dropdown" class="o_dropdown_toggler_btn btn btn-secondary dropdown-toggle" tabindex="-1" title="Yêu thích">
+        <span class="fa fa-star"></span> Yêu thích 
+    </button>
+    <div class="dropdown-menu o_favorites_menu" role="menu">
+        <div class="dropdown-divider user_filter" role="separator"></div>
+        <div class="dropdown-divider shared_filter" role="separator"></div>
+        <a aria-expanded="false" class="dropdown-item o_save_search o_closed_menu" href="#" role="button">Lưu bộ lọc hiện tại</a>
+        <div class="dropdown-item-text o_save_name" role="menuitem">
+            <input class="o_input" type="text">
+        </div>
+        
+        <div class="dropdown-item-text o_save_name" role="menuitem">
+            <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" id="o_fav_menu_use_by_default_checkbox_5" type="checkbox">
+                <label class="custom-control-label" for="o_fav_menu_use_by_default_checkbox_5">Sử dụng mặc định</label>
+            </div>
+        </div>
+        <div class="dropdown-item-text o_save_name" role="menuitem">
+            <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" id="o_fav_menu_share_all_users_checkbox_5" type="checkbox">
+                <label class="custom-control-label" for="o_fav_menu_share_all_users_checkbox_5">Chia sẻ với tất cả người dùng <span aria-label="Users" class="fa fa-users" role="img" title="Người dùng"></span></label>
+            </div>
+        </div>
+        <div class="dropdown-item-text o_save_name">
+            <button class="btn btn-primary" type="button">Lưu</button>
+        </div>
+    </div>
+</div></div></div>
+            <nav aria-label="Pager" class="o_cp_pager" role="search"><div>
+    <span class="o_pager_counter">
+        <span class="o_pager_value">1</span> / <span class="o_pager_limit">1</span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+            
+            
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" accesskey="p" tabindex="-1" title="Trước đó" type="button" disabled=""></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" accesskey="n" tabindex="-1" title="Kế tiếp" type="button" disabled=""></button>
+    </span>
+</div></nav>
+            <nav aria-label="View switcher" class="btn-group o_cp_switch_buttons" role="toolbar"></nav>
+        </div>
+    </div><div class="o_content"><div class="o_cannot_create o_view_controller"><div class="o_form_view employee_infor min_width_form o_form_readonly"><div class="o_form_sheet_bg"><div class="o_form_statusbar"><div class="o_statusbar_buttons"><button type="button" name="action_confirmed" confirm="Hệ thống sẽ cập nhật email nhân sự vào email tài khoản đăng nhập. Vui lòng kiểm tra kĩ thông tin trước khi xác nhận." class="btn btn-primary o_invisible_modifier"><span>Xác nhận</span></button><button type="button" name="action_confirmed" class="btn btn-primary o_invisible_modifier"><span>Xác nhận</span></button><button type="button" name="action_send_approve" class="btn btn-primary gui_xacnhan o_invisible_modifier"><span>Gửi xác nhận</span></button><button type="button" name="action_reject" class="btn btn-primary o_invisible_modifier"><span>Từ chối</span></button><button type="button" name="action_rollback" class="btn btn-primary"><span>Về dữ liệu cũ</span></button></div><div class="o_statusbar_status o_field_widget" name="status_edition">
+    
+    
+        
+    
+    
+    <button aria-pressed="false" disabled="disabled" data-value="wait" class="btn o_arrow_button btn-secondary disabled " title="Không kích hoạt trạng thái" type="button">
+        Chờ xác nhận
+    </button>
+    
+
+    
+        
+    
+    <button aria-current="step" aria-pressed="true" disabled="disabled" data-value="draft" class="btn o_arrow_button btn-primary disabled " title="Giai đoạn hiện tại" type="button">
+        Đang cập nhật
+    </button>
+    
+    
+
+    
+</div></div><div class="clearfix o_form_sheet"><div class="col-100 content-scroll" id="contentscroll"><div class="col-100" style="height: 30px; background-color: #fff;"></div><div class="col-100 top-head"><div class="div_avar_top"><pre class="bg_green" style="background-color: unset !important;"></pre><div class="img_avatar_top"><div aria-atomic="true" class="o_field_image o_field_widget oe_left oe_avatar" name="image_medium" style="max-width: none !important;max-height: none !important;" data-original-title="" title=""><img alt="Tập tin nhị phân" class="img img-fluid" border="1" name="image_medium" src="http://hrm12.v12.vn/web/image?model=vnpt.hr.employee.edition&amp;id=17&amp;field=image_medium&amp;unique=08122019161135">
+        
+    </div></div></div><div class="div_head_top"><div class="col-40" style="padding-right: 5px;"><div><h1 style="font-size: 1.5em !important;"><span class="o_field_char o_field_widget o_readonly_modifier oe_inline manhanvien" name="vnpt_ma_nhan_vien">0121</span><span class="span_g"> - </span><span class="o_field_char o_field_widget o_required_modifier emp_name" name="name">Trần ngọc Anh</span></h1></div><span name="job_id" class="o_field_widget o_invisible_modifier o_readonly_modifier" id="o_field_input_56">CV - Chuyên viên</span><span name="vitri_congviec" class="o_field_widget o_invisible_modifier o_readonly_modifier o_field_empty vitri_congviec" id="o_field_input_57"></span></div><div class="col-60" style="text-align: left;"><span><b>Đơn vị / Phòng ban:</b></span><span name="department_id" class="o_field_widget o_readonly_modifier o_required_modifier depart_top" id="o_field_input_58">VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT / Trung tâm ERP / Phòng phát triển phần mềm số 1</span><div class="o_field_boolean o_field_widget custom-control custom-checkbox o_invisible_modifier o_readonly_modifier" name="state_email_update"><input type="checkbox" id="checkbox-59" class="custom-control-input" disabled=""><label for="o_field_input_60" class="custom-control-label">​</label></div><span name="status" class="o_field_widget o_invisible_modifier o_readonly_modifier" data-original-title="" title="">Xác nhận</span><span class="o_field_char o_field_widget o_invisible_modifier o_readonly_modifier o_field_empty" name="fields_change"></span><a class="o_form_uri o_field_widget o_invisible_modifier o_readonly_modifier" href="#id=1832&amp;model=hr.employee" name="employee_id" id="o_field_input_63">0121 - Trần ngọc Anh</a><a class="o_form_uri o_field_widget o_readonly_modifier" href="#id=42&amp;model=res.users" name="user_id" id="o_field_input_64" style="display: none;">Trần ngọc Anh</a></div></div></div><table class="col-100" style="padding-top: 5px;height: 100% !important;float: left;"><tbody><tr><td class="col-30 bg_gray" id="td1" style="padding-top: 60px;padding-bottom: 30px;border-radius: 5px 0px 0px 0px;"><div class="col-100 title_group"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin liên hệ
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Tên khác:
+                                                        <i class="fa fa-address-card icon-custom"></i></h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget col-100" name="vnpt_tengoikhac">Anh NH</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Email:
+                                                        <i class="fa fa-envelope icon-custom"></i></h4></td><td class="col-50 style-fields"><a class="o_field_email o_field_widget o_form_uri o_text_overflow col-100" name="work_email" href="mailto:tranngocanh@vnpt.vn" id="o_field_input_66">tranngocanh@vnpt.vn</a></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Giới tính:
+                                                        <i class="fa fa-venus-mars icon-custom"></i></h4></td><td class="col-50 style-fields"><span name="gioi_tinh" class="o_field_widget o_required_modifier col-100">Nam</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Di động:
+                                                        <i class="fa fa-mobile icon-custom" style="font-size: 2.0rem;"></i></h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget col-100" name="mobile_phone">0984599855</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Điện thoại cố định:
+                                                        <i class="fa fa-phone icon-custom"></i></h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="vnpt_dien_thoai_co_dinh"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày sinh:
+                                                        <i class="fa fa-birthday-cake icon-custom"></i></h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_required_modifier col-100" name="birthday">10/10/1996</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Tình trạng hôn nhân:</h4></td><td class="col-50 style-fields"><span name="marital" class="o_field_widget col-100">Độc thân</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Số con:</h4></td><td class="col-50 style-fields"><span class="o_field_integer o_field_number o_field_widget col-100" name="children">0</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Liên hệ khẩn cấp:</h4></td><td class="col-50 style-fields"><span class="o_field_text o_field_widget o_field_empty col-100" name="vnpt_lien_he_khan_cap"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin công việc
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngạch/Chức danh</h4></td><td class="col-50"><span name="job_id" class="o_field_widget o_readonly_modifier" id="o_field_input_56">CV - Chuyên viên</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Chức vụ</h4></td><td class="col-50"><span name="vitri_congviec" class="o_field_widget o_readonly_modifier o_field_empty vitri_congviec" id="o_field_input_57"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Loại cán bộ</h4></td><td class="col-50 style-fields"><span name="loaicanbo_id" class="o_field_widget col-100" id="o_field_input_74">Viên chức</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Có phải CBQL</h4></td><td class="col-50"><div class="o_field_boolean o_field_widget custom-control custom-checkbox" name="manager"><input type="checkbox" id="checkbox-75" class="custom-control-input" disabled=""><label for="o_field_input_76" class="custom-control-label">​</label></div></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Người quản lý:</h4></td><td class="col-50 style-fields"><span name="parent_id" class="o_field_widget o_field_empty col-100" id="o_field_input_77"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Người hướng dẫn:</h4></td><td class="col-50 style-fields"><span name="coach_id" class="o_field_widget o_field_empty col-100" id="o_field_input_78"></span></td></tr><tr class="col-100 o_invisible_modifier" invisible="1"><td class="col-50"><h4 class="o_form_label_custom">Chức danh kiêm nhiệm:</h4></td><td class="col-50 style-fields"><a class="o_form_uri o_field_widget o_readonly_modifier o_field_empty col-100" href="#" name="chucdanh_kiemnhiem_id" id="o_field_input_79"></a></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Mô tả công việc:</h4></td><td class="col-50 style-fields"><span class="o_field_text o_field_widget o_field_empty col-100" name="congviecchinh_duocgiao"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Công việc chính:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="main_job"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin chung
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Số CMND/CCCD:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_required_modifier col-100" name="identification_id">151584412</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày cấp CMND/CCCD:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="vnpt_ngay_cap_cmnd"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nơi cấp CMND/CCCD:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="vnpt_noicap_cmnd"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Số hộ chiếu:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="passport_id"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày cấp hộ chiếu:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="vnpt_ngay_cap_ho_chieu"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nơi cấp hộ chiếu:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="vnpt_noicap_hochieu"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày hết hạn hộ chiếu:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="vnpt_ngay_het_han_ho_chieu"></span><span class="o_field_char o_field_widget o_invisible_modifier o_field_empty" name="socancuoc"></span><span class="o_field_date o_field_widget o_invisible_modifier o_field_empty" name="vnpt_ngay_cap_can_cuoc"></span><span class="o_field_char o_field_widget o_invisible_modifier o_field_empty" name="vnpt_noi_cap_can_cuoc"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nơi sinh:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="place_of_birth"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Quê quán:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="vnpt_nguyen_quan"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Quốc tịch:</h4></td><td class="col-50 style-fields"><span name="country_id" class="o_field_widget o_required_modifier col-100" id="o_field_input_94">Việt Nam</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Dân tộc:</h4></td><td class="col-50 style-fields"><span name="vnpt_dan_toc" class="o_field_widget o_required_modifier col-100" id="o_field_input_95">Dân tộc kinh</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Tôn giáo:</h4></td><td class="col-50 style-fields"><span name="vnpt_ton_giao" class="o_field_widget o_field_empty col-100" id="o_field_input_96"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Thường trú:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="hokhauthuongtru_tinh_thanhpho"></span></td></tr><tr class="col-100"><td class="col-50"><pre class="bg_gray"></pre></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="hokhauthuongtru_quan_huyen"></span></td></tr><tr class="col-100"><td class="col-50"><pre class="bg_gray"></pre></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="hokhauthuongtru_xa_phuong"></span></td></tr><tr class="col-100"><td class="col-50"><pre class="bg_gray"></pre></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="hokhauthuongtru_thon_xom"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Địa chỉ khác:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="address_home"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nơi ở:</h4></td><td class="col-50 style-fields"><span name="noiohiennay_tinh_thanhpho_id" class="o_field_widget o_field_empty col-100" id="o_field_input_102"></span></td></tr><tr class="col-100"><td class="col-50"><pre class="bg_gray"></pre></td><td class="col-50 style-fields"><span name="noiohiennay_quan_huyen_id" class="o_field_widget o_field_empty col-100" id="o_field_input_103"></span></td></tr><tr class="col-100"><td class="col-50"><pre class="bg_gray"></pre></td><td class="col-50 style-fields"><span name="noiohiennay_xa_phuong_id" class="o_field_widget o_field_empty col-100" id="o_field_input_104"></span></td></tr><tr class="col-100"><td class="col-50"><pre class="bg_gray"></pre></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="noiohiennay_thon_xom"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Thành phần gia đình:</h4></td><td class="col-50 style-fields"><span name="vnpt_thanh_phan_gia_dinh" class="o_field_widget o_field_empty col-100" id="o_field_input_106"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Thành phần bản thân:</h4></td><td class="col-50 style-fields"><span name="vnpt_thanh_phan_ban_than" class="o_field_widget o_field_empty col-100" id="o_field_input_107"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin tuyển dụng
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nghề nghiệp trước TD:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="nghenghieptruoctuyendung"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nghề nghiệp TD:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="nghenghieptuyendung"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Đơn vị tuyển dụng:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="coquantuyendung"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Hình thức tuyển dụng:</h4></td><td class="col-50 style-fields"><span name="hinhthuctd" class="o_field_widget col-100">Thi tuyển</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày tuyển dụng:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_required_modifier col-100" name="vnpt_ngay_vao_don_vi">30/09/2019</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày tuyển dụng CT:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="vnpt_ngay_vao_don_vi_ct"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày vào đơn vị hiện tại:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="ngaytuyendung"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Trình độ
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Trình độ văn hóa:</h4></td><td class="col-50 style-fields"><span name="datotnghieplop_id" class="o_field_widget o_field_empty col-100" id="o_field_input_115"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Thuộc hệ:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="hetotnghiep"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Học hàm:</h4></td><td class="col-50 style-fields"><span name="hoc_ham_id" class="o_field_widget o_field_empty col-100" id="o_field_input_117"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Trình độ đào tạo:</h4></td><td class="col-50 style-fields"><span name="vnpt_trinhdodaotao_id" class="o_field_widget o_readonly_modifier o_field_empty col-100" id="o_field_input_118"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Cơ sở đào tạo:</h4></td><td class="col-50 style-fields"><span name="vnpt_noi_dao_tao" class="o_field_widget o_readonly_modifier o_field_empty col-100" id="o_field_input_119"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Hình thức dào tạo:</h4></td><td class="col-50 style-fields"><span name="hinhthuc_daotao" class="o_field_widget o_readonly_modifier o_field_empty col-100" id="o_field_input_120"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Chuyên ngành đào tạo:</h4></td><td class="col-50 style-fields"><span name="vnpt_chuyen_nganh_dao_tao" class="o_field_widget o_readonly_modifier o_field_empty col-100" id="o_field_input_121"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày tốt nghiệp:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_readonly_modifier o_field_empty col-100" name="vnpt_ngay_tot_nghiep"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Lý luận chính trị:</h4></td><td class="col-50 style-fields"><span name="lyluanchinhtri" class="o_field_widget o_field_empty col-100" id="o_field_input_123"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Quản lý nhà nước:</h4></td><td class="col-50 style-fields"><span name="quanlynhanuoc" class="o_field_widget o_field_empty col-100" id="o_field_input_124"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Kỹ năng mềm:</h4></td><td class="col-50 style-fields"><div class="o_field_many2manytags o_field_widget o_field_empty col-100" name="kynang_mem" style="overflow: unset;">
+    
+</div></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Học hàm được phong
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Học hàm:</h4></td><td class="col-50 style-fields"><span name="hoc_ham_id" class="o_field_widget o_field_empty col-100" id="o_field_input_117"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Năm phong tặng:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="namduocphong"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Danh hiệu phong tặng
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Danh hiệu phong tặng:</h4></td><td class="col-50 style-fields"><span name="danhhieuphongtang" class="o_field_widget o_field_empty col-100" id="o_field_input_127"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Năm phong tặng:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="namphongtang"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin sức khỏe
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Tình trạng:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="vnpt_trang_thai_suc_khoe"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Chiều cao(cm)</h4></td><td class="col-50 style-fields"><span class="o_field_float o_field_number o_field_widget col-100" name="vnpt_chieu_cao">0,00</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Cân nặng(kg):</h4></td><td class="col-50 style-fields"><span class="o_field_float o_field_number o_field_widget col-100" name="vnpt_can_nang">0,00</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nhóm máu:</h4></td><td class="col-50 style-fields"><span name="vnpt_nhommau" class="o_field_widget o_field_empty col-100" id="o_field_input_132"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap; overflow: hidden;">
+                                                Thông tin thuế
+                                            </span></div><table class="col-100" style="margin-top: 10px;" id="bank_information"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Người phụ thuộc:</h4></td><td class="col-50 style-fields"><span class="o_field_integer o_field_number o_field_widget col-100" name="vnpt_so_nguoi_phu_thuoc">0</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Mã số thuế:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="vnpt_ma_so_thue_ca_nhan"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin Đảng
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Là Đảng viên:</h4></td><td class="col-50"><div class="o_field_boolean o_field_widget custom-control custom-checkbox" name="vnpt_la_dang_vien_ok"><input type="checkbox" id="checkbox-135" class="custom-control-input" disabled=""><label for="o_field_input_136" class="custom-control-label">​</label></div></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày vào Đảng:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_required_modifier col-100" name="vnpt_ngay_vao_dang">20/12/2019</span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày vào Đảng chính thức:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="ngaychinhthucvaodang"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Đảng bộ:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_field_empty col-100" name="dangboketnapdang"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Chức vụ Đảng:</h4></td><td class="col-50 style-fields"><span name="chucvudang" class="o_field_widget o_field_empty col-100" id="o_field_input_140"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin Đoàn
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Là Đoàn viên:</h4></td><td class="col-50"><div class="o_field_boolean o_field_widget custom-control custom-checkbox" name="vnpt_la_doan_vien_ok"><input type="checkbox" id="checkbox-141" class="custom-control-input" disabled=""><label for="o_field_input_142" class="custom-control-label">​</label></div></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày vào Đoàn:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_readonly_modifier o_field_empty col-100" name="vnpt_ngay_vao_doan"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nơi kết nạp đoàn:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_readonly_modifier o_field_empty col-100" name="vnpt_noi_ket_nap_doan"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Chức vụ Đoàn:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_readonly_modifier o_field_empty col-100" name="chucvudoan"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin gia đình chính sách
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Là thương binh:</h4></td><td class="col-50"><div class="o_field_boolean o_field_widget custom-control custom-checkbox" name="lathuongbinh"><input type="checkbox" id="checkbox-146" class="custom-control-input" disabled=""><label for="o_field_input_147" class="custom-control-label">​</label></div></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Hạng thương binh:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_readonly_modifier o_field_empty col-100" name="hangthuongbinh"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Năm thương binh:</h4></td><td class="col-50 style-fields"><span class="o_field_char o_field_widget o_readonly_modifier o_field_empty col-100" name="namthuongbinh"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Gia đình liệt sỹ:</h4></td><td class="col-50"><div class="o_field_boolean o_field_widget custom-control custom-checkbox o_readonly_modifier" name="giadinhchinhsach_ok"><input type="checkbox" id="checkbox-150" class="custom-control-input" disabled=""><label for="o_field_input_151" class="custom-control-label">​</label></div></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nội dung chính sách:</h4></td><td class="col-50 style-fields"><span class="o_field_text o_field_widget o_readonly_modifier o_field_empty col-100" name="ghichuchinhsach"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Gia đình có công với CM:</h4></td><td class="col-50"><div class="o_field_boolean o_field_widget custom-control custom-checkbox o_readonly_modifier" name="cocongcachmang_ok"><input type="checkbox" id="checkbox-153" class="custom-control-input" disabled=""><label for="o_field_input_154" class="custom-control-label">​</label></div></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Nội dung:</h4></td><td class="col-50 style-fields"><span class="o_field_text o_field_widget o_readonly_modifier o_field_empty col-100" name="noidungcongcachmang"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin quân đội
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Là quân nhân:</h4></td><td class="col-50"><div class="o_field_boolean o_field_widget custom-control custom-checkbox" name="vnpt_la_quan_nhan_ok"><input type="checkbox" id="checkbox-156" class="custom-control-input" disabled=""><label for="o_field_input_157" class="custom-control-label">​</label></div></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày tham gia CM:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_field_empty col-100" name="ngay_tham_gia_cm"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày nhập ngũ:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_readonly_modifier o_field_empty col-100" name="ngaynhapngu"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Ngày xuất ngũ:</h4></td><td class="col-50 style-fields"><span class="o_field_date o_field_widget o_readonly_modifier o_field_empty col-100" name="ngayxuatngu"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Quân hàm cao nhất:</h4></td><td class="col-50"><span name="quanhamcaonhat" class="o_field_widget o_readonly_modifier o_field_empty" id="o_field_input_161"></span></td></tr><tr class="col-100"><td class="col-50"><h4 class="o_form_label_custom">Lý do nhập ngũ:</h4></td><td class="col-50 style-fields"><span class="o_field_text o_field_widget o_readonly_modifier o_field_empty col-100" name="vnpt_lydonhapngu"></span></td></tr></tbody></table></td><td class="col-70" id="td2" style="border-radius: 0px 5px 0px 0px; background-color: #fff;"><div class="col-100 title_group" style="margin: 10px 0;"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                            Diễn biến lương
+                        </span></div><div><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="salary_fluctuations_history_ids" id="o_field_input_163" style="padding-left:10px"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Ngày hiệu lực</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Loại cán bộ</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Hình thức trả lương</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chức danh</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Bậc lương</th><th class="o_column_sortable" style="text-align: left; background: rgb(154, 174, 192); z-index: 2;">Hệ số</th><th class="o_column_sortable" style="text-align: left; background: rgb(154, 174, 192); z-index: 2;">Lương thỏa thuận</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Ghi chú</th></tr></thead><tbody><tr class="o_data_row"><td class="o_data_cell o_required_modifier">01/11/2019</td><td class="o_data_cell o_required_modifier">Viên chức</td><td class="o_data_cell">Lương khoán</td><td class="o_data_cell o_required_modifier">CV - Chuyên viên</td><td class="o_data_cell o_readonly_modifier"></td><td class="o_data_cell o_list_number o_readonly_modifier">0,00</td><td class="o_data_cell o_list_number o_required_modifier">50.000.000,00</td><td class="o_data_cell o_list_text"></td></tr><tr><td colspan="8">&nbsp;</td></tr><tr><td colspan="8">&nbsp;</td></tr><tr><td colspan="8">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                            Phụ cấp cá nhân
+                        </span></div><div style="padding-left:10px"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="allowance_history_ids" id="o_field_input_164"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Tên phụ cấp</th><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Từ ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đến ngày</th><th style="background: rgb(154, 174, 192); z-index: 2;">Loại phụ cấp</th><th style="background: rgb(154, 174, 192); z-index: 2;">Phụ cấp tính BHXH</th><th class="o_column_sortable" style="text-align: left; background: rgb(154, 174, 192); z-index: 2;">Mức hưởng</th></tr></thead><tbody><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="quanhe-thannhan"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Quan hệ thân nhân
+                                            </span></div><div id="thongtingiadinh"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_thongtingiadinh_ids" id="o_field_input_165" style="padding-left:10px"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Mối Quan hệ</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Họ tên thân nhân</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Năm sinh</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Địa chỉ nơi ở</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đơn vị công tác</th></tr></thead><tbody class="ui-sortable"><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Trình độ học vấn
+                                            </span></div><div style="padding-left:10px"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_daotao_chungchi_ids" id="o_field_input_166"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Loại đào tạo</th><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Từ ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đến ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Cơ sở đào tạo</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Ngành đào tạo</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chuyên ngành đào tạo</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Trình độ đào tạo</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Hình thức đào tạo</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Xếp loại tốt nghiệp</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Danh hiệu đào tạo</th></tr></thead><tbody><tr><td colspan="10">&nbsp;</td></tr><tr><td colspan="10">&nbsp;</td></tr><tr><td colspan="10">&nbsp;</td></tr><tr><td colspan="10">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Văn bằng chứng chỉ
+                                            </span></div><div style="padding-left:10px" id="vanbang_chungchi"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_vanbang_chungchi_ids" id="o_field_input_167"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Tên văn bằng/chứng chỉ</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Loại chứng chỉ</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Lĩnh vực chứng chỉ</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Ngày cấp chứng chỉ</th></tr></thead><tbody><tr><td colspan="4">&nbsp;</td></tr><tr><td colspan="4">&nbsp;</td></tr><tr><td colspan="4">&nbsp;</td></tr><tr><td colspan="4">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="chung_chi_hanh_nghe_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Chứng chỉ hành nghề
+                                            </span></div><div style="padding-left:10px" id="chung_chi_hanh_nghe"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_chung_chi_hanh_nghe_ids" id="o_field_input_168"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Từ ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đến ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Số chứng chỉ hành nghề</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chứng chỉ</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chuyên ngành đào tạo</th></tr></thead><tbody><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="evaluation_staff_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                            Đánh giá nhân sự
+                        </span></div><div style="padding-left:10px" id="evaluation_staff_result"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list o_readonly_modifier" name="vnpt_evaluation_staff_result_ids" id="o_field_input_169"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Năm</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Kết quả đánh giá</th></tr></thead><tbody><tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="quatrinhcongtac_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Quá trình công tác
+                                            </span></div><div style="padding-left:10px" id="quatrinhcongtac"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_quatrinhcongtac_ids" id="o_field_input_170"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Từ ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đến ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chức danh/ Ngạch</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đơn vị công tác</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Lý do nghỉ việc</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Mức thu nhập</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Trong ngành</th></tr></thead><tbody><tr><td colspan="7">&nbsp;</td></tr><tr><td colspan="7">&nbsp;</td></tr><tr><td colspan="7">&nbsp;</td></tr><tr><td colspan="7">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="quatrinh_khenthuong_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Quá trình khen thưởng
+                                            </span></div><div style="padding-left:10px" id="quatrinh_khenthuong"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_khenthuong_ids" id="o_field_input_171"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Ngày quyết định</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Số quyết định</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Hình thức khen thưởng</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Nội dung khen thưởng</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Người kí quyết định</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Nơi quyết định</th></tr></thead><tbody><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="quatrinh_kyluat_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Quá trình kỷ luật
+                                            </span></div><div style="padding-left:10px" id="quatrinh_kyluat"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_kyluat_ids" id="o_field_input_172"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Ngày quyết định</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Số quyết định</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Hình thức kỉ luật</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Nội dung kỉ luật</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Người kí quyết định</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Nơi quyết định</th></tr></thead><tbody><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="quatrinhdinuocngoai_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Quá trình đi nước ngoài
+                                            </span></div><div style="padding-left:10px" id="quatrinhdinuocngoai"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_congtacnuocngoai_ids" id="o_field_input_173"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Từ ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đến ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Mục đích</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đơn vị cử đi</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đi nước</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Ghi chú</th></tr></thead><tbody><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr><tr><td colspan="6">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="quatrinhsinhhoatdang_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Quá trình sinh hoạt Đảng
+                                            </span></div><div style="padding-left:10px" id="quatrinhsinhhoatdang"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_quatrinhsinhhoatdang_ids" id="o_field_input_174"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Từ ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đến ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chi bộ sinh hoạt Đảng</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chức vụ Đảng</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Ghi chú</th></tr></thead><tbody><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="quatrinhsinhhoatdoan_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Quá trình sinh hoạt Đoàn
+                                            </span></div><div style="padding-left:10px" id="quatrinhsinhhoatdoan"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_quatrinhsinhhoatdoan_ids" id="o_field_input_175"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Từ ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đến ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chi bộ sinh hoạt Đoàn</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chức vụ Đoàn</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Ghi chú</th></tr></thead><tbody><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="thamgia_tochuc_xahoi_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Tham gia tổ chức xã hội
+                                            </span></div><div style="padding-left:10px" id="thamgiatochucxahoi"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_thamgia_tochuc_xahoi_ids" id="o_field_input_176"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Ngày tham gia</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Tổ chức</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chức vụ</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Mô tả</th></tr></thead><tbody><tr><td colspan="4">&nbsp;</td></tr><tr><td colspan="4">&nbsp;</td></tr><tr><td colspan="4">&nbsp;</td></tr><tr><td colspan="4">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="thongtintrungcu_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin trúng cử
+                                            </span></div><div style="padding-left:10px" id="thongtintrungcu"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_thongtintrungcu_ids" id="o_field_input_177"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Ngày trúng cử</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Chức vụ trúng cử</th></tr></thead><tbody><tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="daibieuquochoi_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Đại biểu quốc hội
+                                            </span></div><div style="padding-left:10px" id="daibieuquochoi"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_daibieuquochoi_ids" id="o_field_input_178"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Từ ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đến ngày</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Loại hình đại biểu</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Nhiệm kỳ</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Thông tin chi tiết</th></tr></thead><tbody><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="nghiencuukhoahoc_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Tham gia nghiên cứu khoa học
+                                            </span></div><div style="padding-left:10px" id="nghiencuukhoahoc"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_nghiencuukhoahoc_ids" id="o_field_input_179"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Ngày tham gia</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Đề tài</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Cấp đề tài</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Tư cách tham gia</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Kết quả đánh giá</th></tr></thead><tbody><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="thongtin_suckhoe_label"><span class="tgroupw" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin khám sức khỏe
+                                            </span></div><div style="padding-left:10px" id="thongtin_suckhoe"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list" name="vnpt_hr_thongtin_suckhoe_ids" id="o_field_input_180"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o-sort-down o_column_sortable" aria-sort="descending" style="background: rgb(154, 174, 192); z-index: 2;">Năm</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Tình trạng sức khỏe</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Phân loại sức khỏe</th></tr></thead><tbody><tr><td colspan="3">&nbsp;</td></tr><tr><td colspan="3">&nbsp;</td></tr><tr><td colspan="3">&nbsp;</td></tr><tr><td colspan="3">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td></tr></tfoot></table></div></div></div><div class="col-100 title_group" style="margin: 10px 0;" id="history_hoso_label"><span class="tgroupw" style="white-space: nowrap; overflow: hidden;">
+                                                Lịch sử cập nhật hồ sơ cá nhân
+                                            </span></div><div style="padding-left:10px" id="history_hoso"><div class="o_field_one2many o_field_widget o_field_x2many o_field_x2many_list o_readonly_modifier" name="history_ids" id="o_field_input_181"><div class="o_x2m_control_panel">
+        <nav aria-label="Control panel toolbar" class="o_cp_buttons" role="toolbar"></nav>
+        <nav aria-label="Pager" class="o_cp_pager" role="toolbar"><div class="o_hidden">
+    <span class="o_pager_counter">
+        <span class="o_pager_value"></span> / <span class="o_pager_limit"></span>
+    </span>
+    <span aria-atomic="true" class="btn-group">
+        
+        
+        <button aria-label="Previous" class="fa fa-chevron-left btn btn-secondary o_pager_previous" tabindex="-1" title="Trước đó" type="button"></button>
+        <button aria-label="Next" class="fa fa-chevron-right btn btn-secondary o_pager_next" tabindex="-1" title="Kế tiếp" type="button"></button>
+    </span>
+</div></nav>
+    </div><div class="table-responsive" style="max-height: 300px; overflow-y: auto;"><table class="o_list_view table table-sm table-hover table-striped o_list_view_ungrouped" style="border-collapse: separate;"><thead style="background: none;"><tr><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Ngày hiệu lực</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Các thông tin thay đổi</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Người thực hiện</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Trạng thái thông tin</th><th class="o_column_sortable" style="background: rgb(154, 174, 192); z-index: 2;">Ghi chú</th></tr></thead><tbody><tr class="o_data_row"><td class="o_data_cell">08/12/2019</td><td class="o_data_cell o_list_text"></td><td class="o_data_cell">Account Test</td><td class="o_data_cell">Xác nhận</td><td class="o_data_cell o_list_text"></td></tr><tr class="o_data_row"><td class="o_data_cell">08/12/2019</td><td class="o_data_cell o_list_text"></td><td class="o_data_cell">Account Test</td><td class="o_data_cell">Xác nhận</td><td class="o_data_cell o_list_text"></td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td colspan="5">&nbsp;</td></tr></tbody><tfoot><tr><td></td><td></td><td></td><td></td><td></td></tr></tfoot></table></div></div></div></td></tr><tr class="bg_gray"><td><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Thông tin mục tiêu - Sở thích
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Mục tiêu cá nhân:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="vnpt_muc_tieu_ca_nhan"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Sở thích:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="vnpt_so_thich"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Điểm mạnh - Điểm yếu
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Điểm mạnh:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="vnpt_diem_manh"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Điểm yếu:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="vnpt_diem_yeu"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Sở trường công tác:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="sotruong_congtac"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Đặc điểm lịch sử bản thân
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Đặc điểm lịch sử bản thân:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="bibattu"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom"></h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="dacdiemlichsubanthan"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Quan hệ với tổ chức nước ngoài:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="quanhenuocngoai"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Thân nhân nước ngoài:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="thannhannuocngoai"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Kinh tế bản thân:</h4></td><td style="width: calc(100% - 270px);" class="padding-right-16"><span class="o_field_text o_field_widget o_field_empty" name="kinhte_banthan"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Những vấn đề khác bổ sung:</h4></td><td style="width: calc(100% - 270px);" class="padding-right-16"><span class="o_field_text o_field_widget o_field_empty" name="vandekhac"></span></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Hoàn cảnh kinh tế gia đình
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr><td class="col-50"><table class="col-100" style="margin-top: 10px;"><tbody><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Lương:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="nguonthunhapchinh_luong"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Các nguồn thu nhập khác:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="nguonthunhapchinh_khac"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Nhà được cấp, được thuê, loại nhà:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="duoccap_duocthue_loainha"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Tổng diện tích sử dụng:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="duoccap_duocthue_loainha_dientich"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Nhà tự mua, tự xây, loại nhà:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="nhatumua_tuxay_loainha"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Tổng diện tích sử dụng:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="nhatumua_tuxay_loainha_dientich"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Đất được cấp:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="datduoccap"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Đất tự mua:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="dattumua"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Đất sản xuất, kinh doanh:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="dat_sanxuat_kinhdoanh"></span></td></tr></tbody></table></td><td class="col-50"><table class="col-100" style="margin-top: 10px;"><tbody><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Tiền Việt Nam, ngoại tệ:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="tienngoaite"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Ô tô, mô tô, xe gắn máy...những động sản khác:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="otoxemay"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Kim loại quý, đá quý, cổ phiếu...:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="kimloaidaquy"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Các loại tài sản khác:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="taikhoankhac"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Tài sản, tài khoản ở nước ngoài:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="taisannuocngoai"></span></td></tr><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Các khoản nợ:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_char o_field_widget o_field_empty" name="cackhoanno"></span></td></tr></tbody></table></td></tr></tbody></table><div class="col-100 title_group" style="margin-top: 10px;"><span class="tgroup" style="white-space: nowrap;overflow: hidden;">
+                                                Nhận xét
+                                            </span></div><table class="col-100" style="margin-top: 10px;"><tbody><tr><td style="width: 270px;"><h4 class="o_form_label_custom">Nhận xét của đơn vị quản lý:</h4></td><td style="width: calc(100% - 270px);" class="style-fields"><span class="o_field_text o_field_widget o_field_empty" name="nhanxetdonviquanly"></span></td></tr></tbody></table></td></tr></tbody></table></div></div></div><aside class="o_chatter oe_chatter">
+            <div class="o_chatter_topbar">
+        <button class="btn btn-link o_chatter_button_new_message" title="Gửi tin nhắn" type="button">
+            Gửi tin
+        </button>
+        <button class="btn btn-link o_chatter_button_log_note" title="Ghi chú. Người theo dõi sẽ không được thông báo.">
+            Ghi chú
+        </button>
+        
+
+    
+                <div class="o_topbar_right_area">
+        <div class="o_followers o_field_widget" name="message_follower_ids">
+            <div class="o_followers_title_box">
+                <button aria-expanded="false" class="btn btn-link dropdown-toggle" data-toggle="dropdown" title="Một người theo dõi">
+                    <i aria-label="Dropdown menu - Followers" class="fa fa-user" role="img"></i>
+                    <span class="o_followers_count">1</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right o_followers_list" role="menu"><a class="dropdown-item o_add_follower" href="#" role="menuitem">Thêm Người theo dõi</a>
+            <a class="dropdown-item o_add_follower_channel" href="#" role="menuitem">Thêm Kênh theo dõi</a>
+            <div class="dropdown-divider" role="separator"></div><div class="o_partner" role="menuitem">
+            <a class="dropdown-item o_mail_redirect" href="#" data-oe-id="43" data-oe-model="res.partner" title="Trần ngọc Anh">Trần ngọc Anh</a>
+            <img alt="Ảnh đại diện" src="/web/image/res.partner/43/image_small">
+            
+            <i aria-label="Remove this follower" class="fa fa-remove o_remove_follower" role="img" title="Gỡ người theo dõi này"></i>
+        </div></div>
+            </div>
+            <div class="o_followers_actions" style="display: block;">
+                <div class="btn-group o_subtypes_list">
+                    <button class="btn btn-link o_followers_follow_button o_followers_following">
+                        <span class="o_follow">Theo dõi</span>
+                        <span class="fa fa-times o_followers_unfollow"></span>
+                        <span class="o_followers_unfollow"> Ngừng theo dõi</span>
+                        <span class="fa fa-check o_followers_following"></span>
+                        <span class="o_followers_following"> Theo dõi</span>
+                    </button><button aria-expanded="false" class="btn btn-link dropdown-toggle o_followers_following" data-toggle="dropdown">
+                        <span aria-label="Alarm menu" class="fa fa-bell" role="img" title="Menu cảnh báo"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" role="menu">
+        <div class="o_subtype dropdown-item" role="menuitem">
+            <div class="custom-control custom-checkbox">
+                <input class="custom-control-input o_subtype_checkbox" checked="true" data-id="1" name="Thảo luận" id="input_mail_followers_subtype_1" type="checkbox">
+                <label class="custom-control-label" for="input_mail_followers_subtype_1">
+                    Thảo luận
+                </label>
+            </div>
+            
+        </div>
+    
+        <div class="o_subtype dropdown-item" role="menuitem">
+            <div class="custom-control custom-checkbox">
+                <input class="custom-control-input o_subtype_checkbox" data-id="3" name="Các hoạt động" id="input_mail_followers_subtype_3" type="checkbox">
+                <label class="custom-control-label" for="input_mail_followers_subtype_3">
+                    Các hoạt động
+                </label>
+            </div>
+            
+        </div>
+    
+        <div class="o_subtype dropdown-item" role="menuitem">
+            <div class="custom-control custom-checkbox">
+                <input class="custom-control-input o_subtype_checkbox" data-id="2" name="Ghi chú" id="input_mail_followers_subtype_2" type="checkbox">
+                <label class="custom-control-label" for="input_mail_followers_subtype_2">
+                    Ghi chú
+                </label>
+            </div>
+            
+        </div>
+    </div>
+                </div>
+            </div>
+        </div><button class="btn btn-link o_chatter_button_attachment" title="Xem toàn bộ đính kèm của bản ghi hiện tại">
+            <span>
+                <i class="fa fa-paperclip"></i>
+                <span class="o_chatter_attachment_button_count">
+                    0
+                </span>
+            </span>
+        </button>
+    </div>
+            </div>
+        <div class="o_mail_thread">
+        
+            
+        
+        
+        <div class="o_mail_thread_content">
+            
+            
+            
+            
+        
+        
+            <div class="o_thread_date_separator">
+                <span class="o_thread_date">
+                    8 tháng 12 năm 2019
+                </span>
+                
+            </div>
+
+            
+        <div class="o_thread_message  o_mail_not_discussion" data-message-id="5494">
+            <div class="o_thread_message_sidebar">
+                
+                    <img alt="" data-oe-model="res.partner" data-oe-id="" src="/web/image/res.partner/43/image_small" class="o_thread_message_avatar rounded-circle ">
+                
+                
+                
+            </div>
+            <div class="o_thread_message_core">
+                <p class="o_mail_info text-muted">
+                    
+                    
+
+                    <strong data-oe-model="res.partner" data-oe-id="" class="o_thread_author ">
+                        Trần ngọc Anh
+                    </strong>
+
+                    - <small class="o_mail_timestamp" title="08/12/2019 15:58:51">3 ngày trước</small>
+                    
+                    
+                    
+                    <span class="o_thread_icons">
+                        <i aria-label="Mark as Todo" role="img" class="fa fa-lg o_thread_icon o_thread_message_star fa-star-o" data-message-id="5494" title="Xác nhận thực hiện"></i>
+                       
+                        
+
+                        
+                    </span>
+                </p>
+                <div class="o_thread_message_content">
+                    
+                    
+                        
+                        
+        <ul class="o_mail_thread_message_tracking">
+            
+                <li>
+                    Trạng thái nhân sự:
+                    
+                    <span>
+                        Xác nhận
+                    </span>
+                </li>
+            
+        </ul>
+    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    
+        
+            
+
+            
+        <div class="o_thread_message  o_mail_not_discussion" data-message-id="5493">
+            <div class="o_thread_message_sidebar">
+                
+                    <img alt="" data-oe-model="res.partner" data-oe-id="" src="/web/image/res.partner/43/image_small" class="o_thread_message_avatar rounded-circle ">
+                
+                
+                
+            </div>
+            <div class="o_thread_message_core">
+                <p class="o_mail_info text-muted">
+                    
+                    
+
+                    <strong data-oe-model="res.partner" data-oe-id="" class="o_thread_author ">
+                        Trần ngọc Anh
+                    </strong>
+
+                    - <small class="o_mail_timestamp" title="08/12/2019 15:58:51">3 ngày trước</small>
+                    
+                    
+                    
+                    <span class="o_thread_icons">
+                        <i aria-label="Mark as Todo" role="img" class="fa fa-lg o_thread_icon o_thread_message_star fa-star-o" data-message-id="5493" title="Xác nhận thực hiện"></i>
+                       
+                        
+
+                        
+                    </span>
+                </p>
+                <div class="o_thread_message_content">
+                    <p>Hồ sơ nhân sự được tạo</p>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    
+        
+    
+            
+        </div>
+    
+    
+        
+    </div></aside></div></div></div></main>
+            </div>
+        
+            
+        
+    
+    <div class="o_loading" style="display: none;">Đang nạp</div></body></html>

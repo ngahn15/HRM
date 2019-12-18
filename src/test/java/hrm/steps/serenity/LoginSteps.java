@@ -2,105 +2,134 @@ package hrm.steps.serenity;
 
 import hrm.pages.LoginPage;
 import net.thucydides.core.annotations.Step;
+import net.thucydides.core.steps.ScenarioSteps;
 
 /**
  * @author AUTO
  * @version 11/10/2019 3:12:05 AM
  */
-public class LoginSteps {
+public class LoginSteps extends ScenarioSteps {
+
+	private static final long serialVersionUID = 1L;
 	LoginPage LPage;
+
 	// BEGIN LOGIN
+	public void mo_trinh_duyet() {
+		LPage.open();
+		getDriver().manage().window().maximize();
+	}
+
 	// Email
 	@Step
-	public void enter_email(String sEmail){
+	public void enter_email(String sEmail) {
 		LPage.enter_email(sEmail);
 	}
+
 	@Step
-	public String email(){
+	public String email() {
 		return LPage.email();
 	}
+
 	@Step
-	public boolean exist_email(){
+	public boolean exist_email() {
 		return LPage.exist_email();
 	}
+
 	@Step
-	public boolean enabled_email(){
+	public boolean enabled_email() {
 		return LPage.enabled_email();
 	}
+
 	@Step
-	public boolean focus_email(){
+	public boolean focus_email() {
 		return LPage.focus_email();
 	}
+
 	// Mật khẩu
 	@Step
-	public void enter_mat_khau(String sMatKhau){
+	public void enter_mat_khau(String sMatKhau) {
 		LPage.enter_mat_khau(sMatKhau);
 	}
+
 	@Step
-	public String mat_khau(){
+	public String mat_khau() {
 		return LPage.mat_khau();
 	}
+
 	@Step
-	public boolean exist_mat_khau(){
+	public boolean exist_mat_khau() {
 		return LPage.exist_mat_khau();
 	}
+
 	@Step
-	public boolean enabled_mat_khau(){
+	public boolean enabled_mat_khau() {
 		return LPage.enabled_mat_khau();
 	}
+
 	@Step
-	public boolean focus_mat_khau(){
+	public boolean focus_mat_khau() {
 		return LPage.focus_mat_khau();
 	}
+
 	// Đăng nhập
 	@Step
-	public void click_dang_nhap(){
+	public void click_dang_nhap() {
 		LPage.click_dang_nhap();
 
 	}
+
 	@Step
-	public boolean exist_dang_nhap(){
+	public boolean exist_dang_nhap() {
 		return LPage.exist_dang_nhap();
 	}
+
 	@Step
-	public boolean enabled_dang_nhap(){
+	public boolean enabled_dang_nhap() {
 		return LPage.enabled_dang_nhap();
 	}
+
 	@Step
-	public boolean focus_dang_nhap(){
+	public boolean focus_dang_nhap() {
 		return LPage.focus_dang_nhap();
 	}
+
 	// Đặt lại mật khẩu
 	@Step
-	public void click_dat_lai_mat_khau(){
+	public void click_dat_lai_mat_khau() {
 		LPage.click_dat_lai_mat_khau();
 	}
+
 	@Step
-	public boolean exist_dat_lai_mat_khau(){
+	public boolean exist_dat_lai_mat_khau() {
 		return LPage.exist_dat_lai_mat_khau();
 	}
+
 	@Step
-	public boolean enabled_dat_lai_mat_khau(){
+	public boolean enabled_dat_lai_mat_khau() {
 		return LPage.enabled_dat_lai_mat_khau();
 	}
+
 	@Step
-	public boolean focus_dat_lai_mat_khau(){
+	public boolean focus_dat_lai_mat_khau() {
 		return LPage.focus_dat_lai_mat_khau();
 	}
+
 	// Message error login
 	@Step
-	public String message_error_login(){
+	public String message_error_login() {
 		return LPage.message_error_login();
 	}
+
 	@Step
-	public boolean exist_message_error_login(){
+	public boolean exist_message_error_login() {
 		return LPage.exist_message_error_login();
 	}
+
 	@Step
-	public boolean focus_message_error_login(){
+	public boolean focus_message_error_login() {
 		return LPage.focus_message_error_login();
 	}
-	
+
 //	Validation
 	public String validationMessageEmail() {
 		return LPage.validationMessageEmail();

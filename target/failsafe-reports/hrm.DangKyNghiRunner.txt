@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: hrm.DangKyNghiRunner
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 339.1 s - in hrm.DangKyNghiRunner

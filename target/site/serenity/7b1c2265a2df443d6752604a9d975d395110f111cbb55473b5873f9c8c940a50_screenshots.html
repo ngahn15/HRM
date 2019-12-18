@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="1ad74b63671796b34a1005617d84aa83a3580eff194a3dd940e101d30a48744c.html">Kịch Bản Kiểm Thử Chức Năng đăng K&yacute; Ng&agrave;y Nghỉ</a></span>
+                > <span class="truncate-60"><a
+                    href="7b1c2265a2df443d6752604a9d975d395110f111cbb55473b5873f9c8c940a50.html">Kịch bản kiểm thử chức năng Đăng k&yacute; ng&agrave;y nghỉ </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-12-2019 01:01</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Kịch Bản Kiểm Thử Chức Năng đăng Ký Ngày Nghỉ </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="d98d4e1309ef93cca176d4f91c27ee9357ed2c971af55b6e31a236151053361c.html">Dangkynghi CTR
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Kịch bản kiểm thử chức năng Đăng k&yacute; ng&agrave;y nghỉ
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Thiet lap du lieu nhu "&lt;DATA KEY&gt;"<br><table class='embedded'><thead><th>KEY</th><th>Session Data KEY</th><th>Session Data Value</th></thead><tbody><tr><td>001</td><td>EMAIL</td><td>tranngocanh@vnpt.vn</td></tr><tr><td>001</td><td>PASSWORD</td><td>Vnpt#123</td></tr></tbody></table><br>When Nguoi dung dang nhap vao he thong nhu "&lt;LOGIN&gt;"<br><table class='embedded'><thead><th>KEY</th><th>Email</th><th>Password</th><th>Hien Thi Thong Bao</th></thead><tbody><tr><td>001</td><td>tranngocanh@vnpt.vn</td><td>Vnpt#123</td><td></td></tr></tbody></table><br>When Nguoi dung vao menu nhu "&lt;MENU&gt;"<br><table class='embedded'><thead><th>KEY</th><th>MENU</th></thead><tbody><tr><td>001</td><td>Quản lý ngày nghỉ&gt;Đăng ký nghỉ&gt;Tạo mới</td></tr></tbody></table><br>Given Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu "&lt;NHAP TMDKN&gt;"<br><table class='embedded'><thead><th>KEY</th><th>Kính gửi</th><th>Người duyệt</th><th>Lý do</th><th>Địa điểm nghỉ phép</th><th>Loại nghỉ</th><th>Từ ngày</th><th>Đến ngày</th><th>Số ngày nghỉ</th></thead><tbody><tr><td>TC-003</td><td>@BLANK@</td><td>Trần Thị Lương Huyền</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-005</td><td>Ông/ bà trưởng phòng QLCL</td><td>Trần Thị Lương Huyền</td><td>@BLANK@</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-006</td><td></td><td></td><td>Nằm viện</td><td></td><td>@BLANK@</td><td></td><td></td><td></td></tr><tr><td>TC-007</td><td></td><td></td><td></td><td></td><td>nghỉ bù</td><td>@BLANK@</td><td>@DATEdd/MM/yyyy@@</td><td></td></tr><tr><td>TC-008</td><td></td><td></td><td></td><td></td><td></td><td>@DATEdd/MM/yyyy@@</td><td>@BLANK@</td><td></td></tr><tr><td>TC-009</td><td></td><td></td><td></td><td></td><td></td><td>01/12/2019</td><td>01/11/2019</td><td></td></tr><tr><td>TC-011</td><td>Ông/ Bà: Trưởng phòng QLCL</td><td></td><td>Đi du lịch</td><td>Đà Nẵng</td><td>phép</td><td>02/12/2019</td><td>5/12/2019</td><td>3,6</td></tr><tr><td>TC-012</td><td></td><td></td><td>Đi du lịch</td><td>Đà Nẵng</td><td>phép</td><td>02/12/2019</td><td>5/12/2019</td><td>4</td></tr><tr><td>TC-013</td><td>Ông/ Bà: Trưởng phòng QLCL</td><td></td><td>Con ốm</td><td></td><td>nghỉ bù</td><td>05/12/2019</td><td>07/12/2019</td><td>3</td></tr></tbody></table><br>When Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu "&lt;THUC HIEN TMDKN&gt;"<br><table class='embedded'><thead><th>KEY</th><th>Lưu</th><th>Hủy bỏ</th><th>Gửi phê duyệt</th><th>Sửa</th><th>Tạo</th><th>Soạn thảo</th></thead><tbody><tr><td>TAO</td><td></td><td></td><td></td><td></td><td>Y</td><td></td></tr><tr><td>SUA</td><td></td><td></td><td></td><td>Y</td><td></td><td></td></tr><tr><td>HUY</td><td></td><td>Y</td><td></td><td></td><td></td><td></td></tr><tr><td>GUI_PHE_DUYET</td><td></td><td></td><td>Y</td><td></td><td></td><td></td></tr><tr><td>TC-003</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-005</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-006</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-007</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-008</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-009</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-010</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-011</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-012</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TC-013</td><td>Y</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><br>Then Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu "&lt;KIEM TRA TMDKN&gt;"<br><table class='embedded'><thead><th>KEY</th><th>MESSAGE</th><th>MESSAGE_ACTION</th><th>MODAL</th><th>MODAL_ACTION</th></thead><tbody><tr><td>TC-003</td><td>Kính gửi</td><td></td><td></td><td></td></tr><tr><td>TC-005</td><td>Lý do</td><td></td><td></td><td></td></tr><tr><td>TC-006</td><td>Loại nghỉ</td><td></td><td></td><td></td></tr><tr><td>TC-007</td><td>Ngày bắt đầu</td><td></td><td></td><td></td></tr><tr><td>TC-008</td><td>Ngày kết thúc</td><td></td><td></td><td></td></tr><tr><td>TC-009</td><td></td><td></td><td>Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!</td><td>Y</td></tr><tr><td>TC-010</td><td>Số ngày nghỉ</td><td></td><td></td><td></td></tr><tr><td>TC-011</td><td></td><td></td><td>Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!</td><td>Y</td></tr><tr><td>TC-012</td><td>Success</td><td></td><td></td><td></td></tr><tr><td>TC-013</td><td></td><td></td><td>Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!</td><td>Y</td></tr></tbody></table><br>When Thuc hien MAIN PAGE nhu "&lt;THUC HIEN MP&gt;"<br><table class='embedded'><thead><th>KEY</th><th>User profile</th><th>Signout</th><th>MESSAGE</th><th>MESSAGE_ACTION</th><th>ALERT</th><th>ALERT_ACTION</th></thead><tbody><tr><td>LOGOUT</td><td>Y</td><td>Y</td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//input[@id='login']'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)<br />hrm.lib.MyPageObject.XH(MyPageObject.java:382)<br />hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)<br />hrm.pages.LoginPage.enter_email(LoginPage.java:18)<br />hrm.steps.serenity.LoginSteps.enter_email(LoginSteps.java:25)<br />hrm.common.step.defs.CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(CommonDefs.java:95)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource8576676972521714012.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="407d401d0b12a965196752d21be2e1d8ed91dc12502ec0b382af1d2a580c3f14.png" title=" Example: {LOGIN=001, DATA KEY=001, MENU=001, NHAP TMDKN=, KIEM TRA TMDKN=, THUC HIEN TMDKN=, THUC HIEN MP=}" width="1920"/>
+                <img src="18d26aa1dfc32cdaf7ba563b9489fdee5f67e698ac94ff59811823e911f68a3a.png" title=" Given Thiet lap du lieu nhu &quot;001&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="18d26aa1dfc32cdaf7ba563b9489fdee5f67e698ac94ff59811823e911f68a3a.png" title=" Given Thiet lap du lieu nhu &quot;001&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 | (completed)" width="1920"/>
+                <img src="18d26aa1dfc32cdaf7ba563b9489fdee5f67e698ac94ff59811823e911f68a3a.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;001&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="18d26aa1dfc32cdaf7ba563b9489fdee5f67e698ac94ff59811823e911f68a3a.png" title=" Exist signout" width="1920"/>
+                <img src="18d26aa1dfc32cdaf7ba563b9489fdee5f67e698ac94ff59811823e911f68a3a.png" title=" Exist signout (completed)" width="1920"/>
+                <img src="ed83eb66b5de562b38eadf5cbc31924bf832e41efd130c16f58535db39fc1db4.png" title=" Enter email: tranngocanh@vnpt.vn" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" Enter email: tranngocanh@vnpt.vn (completed)" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-003, KIEM TRA TMDKN=TC-003, THUC HIEN TMDKN=TC-003, THUC HIEN MP=}" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 | (completed)" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  | (completed)" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới | (completed)" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-003&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" Enter kinh gui: @BLANK@" width="1920"/>
+                <img src="1250a71fa2781546948b2abac7414bd9382049fe054f3bf2242755b32300e049.png" title=" Enter kinh gui: @BLANK@ (completed)" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-005, KIEM TRA TMDKN=TC-005, THUC HIEN TMDKN=TC-005, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 | (completed)" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  | (completed)" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới | (completed)" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-005&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Enter kinh gui: &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL" width="1920"/>
+                <img src="e2d6a0df24d5c631fda7ec095c431395611d5fc7ef24ea0089b9826921ef8a87.png" title=" Enter kinh gui: &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL (completed)" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-006, KIEM TRA TMDKN=TC-006, THUC HIEN TMDKN=TC-006, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-006&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Enter ly do: Nằm viện" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-007, KIEM TRA TMDKN=TC-007, THUC HIEN TMDKN=TC-007, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-007&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Select loai nghi: nghỉ b&ugrave;" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-008, KIEM TRA TMDKN=TC-008, THUC HIEN TMDKN=TC-008, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-008&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Enter tu ngay: 12/12/2019" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-009, KIEM TRA TMDKN=TC-009, THUC HIEN TMDKN=TC-009, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-009&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Enter tu ngay: 01/12/2019" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-011, KIEM TRA TMDKN=TC-011, THUC HIEN TMDKN=TC-011, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-011&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Enter kinh gui: &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-012, KIEM TRA TMDKN=TC-012, THUC HIEN TMDKN=TC-012, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-012&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Enter ly do: Đi du lịch" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=, KIEM TRA TMDKN=, THUC HIEN TMDKN=TAO, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Thuc hien TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TAO&quot;
+| KEY | Lưu | Hủy bỏ | Gửi ph&ecirc; duyệt | Sửa | Tạo | Soạn thảo |
+| TAO |  |  |  |  | Y |  |
+| SUA |  |  |  | Y |  |  |
+| HUY |  | Y |  |  |  |  |
+| GUI_PHE_DUYET |  |  | Y |  |  |  |
+| TC-003 | Y |  |  |  |  |  |
+| TC-005 | Y |  |  |  |  |  |
+| TC-006 | Y |  |  |  |  |  |
+| TC-007 | Y |  |  |  |  |  |
+| TC-008 | Y |  |  |  |  |  |
+| TC-009 | Y |  |  |  |  |  |
+| TC-010 | Y |  |  |  |  |  |
+| TC-011 | Y |  |  |  |  |  |
+| TC-012 | Y |  |  |  |  |  |
+| TC-013 | Y |  |  |  |  |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Click tao" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=TC-013, KIEM TRA TMDKN=TC-013, THUC HIEN TMDKN=TC-013, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;TC-013&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Enter kinh gui: &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Example: {LOGIN=, DATA KEY=, MENU=, NHAP TMDKN=, KIEM TRA TMDKN=, THUC HIEN TMDKN=HUY, THUC HIEN MP=}" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Thiet lap du lieu nhu &quot;&quot;
+| KEY | Session Data KEY | Session Data Value |
+| 001 | EMAIL | tranngocanh@vnpt.vn |
+| 001 | PASSWORD | Vnpt#123 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung dang nhap vao he thong nhu &quot;&quot;
+| KEY | Email | Password | Hien Thi Thong Bao |
+| 001 | tranngocanh@vnpt.vn | Vnpt#123 |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Nguoi dung vao menu nhu &quot;&quot;
+| KEY | MENU |
+| 001 | Quản l&yacute; ng&agrave;y nghỉ&gt;Đăng k&yacute; nghỉ&gt;Tạo mới |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Given Nhap TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;&quot;
+| KEY | K&iacute;nh gửi | Người duyệt | L&yacute; do | Địa điểm nghỉ ph&eacute;p | Loại nghỉ | Từ ng&agrave;y | Đến ng&agrave;y | Số ng&agrave;y nghỉ |
+| TC-003 | @BLANK@ | Trần Thị Lương Huyền |  |  |  |  |  |  |
+| TC-005 | &Ocirc;ng/ b&agrave; trưởng ph&ograve;ng QLCL | Trần Thị Lương Huyền | @BLANK@ |  |  |  |  |  |
+| TC-006 |  |  | Nằm viện |  | @BLANK@ |  |  |  |
+| TC-007 |  |  |  |  | nghỉ b&ugrave; | @BLANK@ | @DATEdd/MM/yyyy@@ |  |
+| TC-008 |  |  |  |  |  | @DATEdd/MM/yyyy@@ | @BLANK@ |  |
+| TC-009 |  |  |  |  |  | 01/12/2019 | 01/11/2019 |  |
+| TC-011 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 3,6 |
+| TC-012 |  |  | Đi du lịch | Đ&agrave; Nẵng | ph&eacute;p | 02/12/2019 | 5/12/2019 | 4 |
+| TC-013 | &Ocirc;ng/ B&agrave;: Trưởng ph&ograve;ng QLCL |  | Con ốm |  | nghỉ b&ugrave; | 05/12/2019 | 07/12/2019 | 3 |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" When Thuc hien TẠO MỚI ĐĂNG K&Yacute; NGHỈ nhu &quot;HUY&quot;
+| KEY | Lưu | Hủy bỏ | Gửi ph&ecirc; duyệt | Sửa | Tạo | Soạn thảo |
+| TAO |  |  |  |  | Y |  |
+| SUA |  |  |  | Y |  |  |
+| HUY |  | Y |  |  |  |  |
+| GUI_PHE_DUYET |  |  | Y |  |  |  |
+| TC-003 | Y |  |  |  |  |  |
+| TC-005 | Y |  |  |  |  |  |
+| TC-006 | Y |  |  |  |  |  |
+| TC-007 | Y |  |  |  |  |  |
+| TC-008 | Y |  |  |  |  |  |
+| TC-009 | Y |  |  |  |  |  |
+| TC-010 | Y |  |  |  |  |  |
+| TC-011 | Y |  |  |  |  |  |
+| TC-012 | Y |  |  |  |  |  |
+| TC-013 | Y |  |  |  |  |  |" width="1920"/>
+                <img src="3705741fce8056d7cf6f3849d1c56f7523c8fa07573cda65154ed1959a53635b.png" title=" Click huy bo: <span class='error-color'>ERROR</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.77</span>
+</div>
+</body>
+</html>

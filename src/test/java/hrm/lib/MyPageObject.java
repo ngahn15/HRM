@@ -1,22 +1,35 @@
 package hrm.lib;
 
-import com.google.common.base.Predicate;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
-import hrm.lib.LoadConfig;
-import net.serenitybdd.core.pages.PageObject;
-import net.serenitybdd.core.pages.WebElementFacade;
-import net.serenitybdd.screenplay.actions.ClickOnElement;
-
-import org.openqa.selenium.*;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.io.IOException;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
-import java.util.*;
-import java.util.concurrent.TimeUnit;
+
+import com.google.common.base.Predicate;
+
+import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.WebElementFacade;
 
 /**
  * @Description A base class representing a WebDriver page object. This class
@@ -306,6 +319,15 @@ public abstract class MyPageObject extends PageObject {
 	public void unHighlightElement(String _xPath) {
 		try {
 			((JavascriptExecutor) getDriver()).executeScript("arguments[0].style.border=''", findBy(_xPath));
+
+		} catch (Exception e) {
+			// Do nothing
+		}
+	}
+
+	public void getInputHidden(String _xPath) {
+		try {
+			((JavascriptExecutor) getDriver()).executeScript("arguments[0].style='display: block!important;'", findBy(_xPath));
 
 		} catch (Exception e) {
 			// Do nothing
@@ -1318,6 +1340,42 @@ public abstract class MyPageObject extends PageObject {
 
 	public void switchTabWithName(String _tabName) {
 		switchTabWithName("", _tabName, 1);
+	}
+	
+	public void switchActiveElement(String dir) {
+		getDriver().switchTo() .activeElement().sendKeys(dir);
+	}
+	
+	public void loadLogoFrom(String filename, String xPath) {
+        upload(filename).to(element(xPath));
+    }
+	
+	/**
+	 * This method will set any parameter string to the system's clipboard.
+	 */
+	private static void setClipboardData(String pathFile) {
+		// StringSelection is a class that can be used for copy and paste operations.
+		StringSelection stringSelection = new StringSelection(pathFile);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+	}
+
+	public static void uploadFile(String fileLocation) {
+		try {
+			// Setting clip board with file location
+			setClipboardData(fileLocation);
+			// native key strokes for CTRL, V and ENTER keys
+			Robot robot = new Robot();
+
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			Thread.sleep(3000);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+		} catch (Exception exp) {
+			exp.printStackTrace();
+		}
 	}
 
 	/**
@@ -2401,20 +2459,21 @@ public abstract class MyPageObject extends PageObject {
 	public void selectDDLWithLabel(String _labelName, String _value) {
 		selectDDLWithLabel("", _labelName, 1, 1, _value);
 	}
-	
+
 //	textbox Search have filter
-	
+
 	public void selectSearchFilter(String _xPath, String _keySearch) {
 		String[] strSearch = _keySearch.split(",");
 		String _value = strSearch[0].trim();
 		String _option = strSearch[1].trim();
-		
+
 		XH(_xPath).type(_value);
-		String _xPathListFillter = _xPath + "//preceding-sibling::div[@class='dropdown-menu o_searchview_autocomplete']";
-		if(element(_xPathListFillter).isVisible()) {
-			String _xPathOption = _xPathListFillter + "//li//em[contains(text(),'" + _option + "')]" ;
+		String _xPathListFillter = _xPath
+				+ "//preceding-sibling::div[@class='dropdown-menu o_searchview_autocomplete']";
+		if (element(_xPathListFillter).isVisible()) {
+			String _xPathOption = _xPathListFillter + "//li//em[contains(text(),'" + _option + "')]";
 			clickOnElement(_xPathOption);
-		}else {
+		} else {
 			return;
 		}
 	}
@@ -2611,11 +2670,11 @@ public abstract class MyPageObject extends PageObject {
 	 * @param _resOrder
 	 * @param _option
 	 */
-	public List<String> getText_listElement(String xPath){
+	public List<String> getText_listElement(String xPath) {
 		List<WebElementFacade> listElements = new ArrayList<>();
 		List<String> text = new ArrayList<>();
 //		System.out.println("XH(xPath).isVisible()" + XH(xPath).isVisible());
-		if(XH(xPath).isVisible()) {
+		if (XH(xPath).isVisible()) {
 			listElements = findAll(xPath);
 			for (WebElementFacade e : listElements) {
 				text.add(e.getText().toLowerCase());
@@ -2624,13 +2683,13 @@ public abstract class MyPageObject extends PageObject {
 		}
 		return null;
 	}
-	
+
 	public void selectSearchDDL(String _xPath, String _option) {
 		if (_option.equals("@BLANK@")) {
 			_option = "";
 			XH(_xPath).clear();
 			XH(_xPath).sendKeys(_option);
-			return ;
+			return;
 		}
 		XH(_xPath).clear();
 		XH(_xPath).sendKeys(_option);
@@ -2644,14 +2703,14 @@ public abstract class MyPageObject extends PageObject {
 //			System.out.println("text.contains(_option) " + _option);
 			int i = text.indexOf(_option) + 1;
 			clickOnElement(xPath + "[" + i + "]");
-		}else {
+		} else {
 			_option = _option.toLowerCase();
-			for(int i=0; i< text.size(); i++) {
+			for (int i = 0; i < text.size(); i++) {
 				String str = text.get(i);
 //				System.out.println("Str " + str);
 				if (str.contains(_option)) {
 //					System.out.println("str.contains(_option) " + _option);
-					int k = i+1;
+					int k = i + 1;
 					clickOnElement(xPath + "[" + k + "]");
 					return;
 				}
@@ -2708,7 +2767,7 @@ public abstract class MyPageObject extends PageObject {
 	public void selectSearchDDLWithLabel(String _label, String _option) {
 		selectSearchDDLWithLabel("", _label, 1, 1, _option);
 	}
-	
+
 	public void selectSearchFilterList(String _xpath, String _option) {
 		String xPath = _xpath;
 		if (!XH(xPath + "//button//span").getText().trim().equals(_option)) {

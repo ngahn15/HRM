@@ -1,2785 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/1_kichbanlogin.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/2_DangKyNghi_CTR_DATA.feature");
 formatter.feature({
-  "name": "Sample of VLogin_CTR",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@VLogin_CTR"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "name": "Sample of VLogin_CTR",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"\u003cDATA KEY\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "EMAIL",
-        "admin"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "PASSWORD",
-        "123"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "EMAIL",
-        "usertesst"
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "PASSWORD",
-        "1234567"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "EMAIL",
-        "ngocnga@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "PASSWORD",
-        "123456"
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\u003cLOGIN\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Về Trang Chủ",
-        "Email",
-        "Password",
-        "Hiển thị thông báo"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "admin",
-        "123",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nhap MAIN PAGE nhu \"\u003cNHAP MP\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Kiem tra MAIN PAGE nhu \"\u003cKIEM TRA MP\u003e\"",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\u003cTHUC HIEN MP\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nhap LOGIN nhu \"\u003cNHAP LOGIN\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "@BLANK@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "@BLANK@",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Testuser",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "ngocnga@gmail.com",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Thuc hien LOGIN nhu \"\u003cTHUC HIEN LOGIN\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Đăng nhập",
-        "Đặt lại mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Kiem tra LOGIN nhu \"\u003cKIEM TRA LOGIN\u003e\"",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tên đăng nhập",
-        "Mật khẩu",
-        "Message error login",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "Please fill out this field.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "",
-        "",
-        "Please fill out this fiel.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "",
-        "",
-        "Please fill out this field",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "",
-        "",
-        "Wrong login/password",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "LOGIN",
-        "DATA KEY",
-        "NHAP MP",
-        "KIEM TRA MP",
-        "THUC HIEN MP",
-        "NHAP LOGIN",
-        "KIEM TRA LOGIN",
-        "THUC HIEN LOGIN",
-        "VERIFY DB"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "TC-01",
-        "",
-        "",
-        "",
-        "",
-        "TC-01",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "TC-02",
-        "",
-        "",
-        "TC-02",
-        "TC-02",
-        "TC-02",
-        "TC-02",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "TC-03",
-        "",
-        "",
-        "",
-        "TC-03",
-        "TC-03",
-        "TC-03",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "TC-04",
-        "",
-        "",
-        "",
-        "TC-04",
-        "TC-04",
-        "TC-04",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "TC-05",
-        "",
-        "",
-        "",
-        "TC-05",
-        "TC-05",
-        "TC-05",
-        ""
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Sample of VLogin_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@VLogin_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"TC-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "EMAIL",
-        "admin"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "PASSWORD",
-        "123"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "EMAIL",
-        "usertesst"
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "PASSWORD",
-        "1234567"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "EMAIL",
-        "ngocnga@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "PASSWORD",
-        "123456"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"TC-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Về Trang Chủ",
-        "Email",
-        "Password",
-        "Hiển thị thông báo"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "admin",
-        "123",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "MainPageDefs.Nhap_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MainPageDefs.Kiem_tra_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap LOGIN nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "@BLANK@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "@BLANK@",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Testuser",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "ngocnga@gmail.com",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginDefs.Nhap_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien LOGIN nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Đăng nhập",
-        "Đặt lại mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginDefs.Thuc_hien_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra LOGIN nhu \"TC-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tên đăng nhập",
-        "Mật khẩu",
-        "Message error login",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "Please fill out this field.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "",
-        "",
-        "Please fill out this fiel.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "",
-        "",
-        "Please fill out this field",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "",
-        "",
-        "Wrong login/password",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginDefs.Kiem_tra_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Sample of VLogin_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@VLogin_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"TC-02\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "EMAIL",
-        "admin"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "PASSWORD",
-        "123"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "EMAIL",
-        "usertesst"
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "PASSWORD",
-        "1234567"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "EMAIL",
-        "ngocnga@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "PASSWORD",
-        "123456"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Về Trang Chủ",
-        "Email",
-        "Password",
-        "Hiển thị thông báo"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "admin",
-        "123",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "MainPageDefs.Nhap_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MainPageDefs.Kiem_tra_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"TC-02\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap LOGIN nhu \"TC-02\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "@BLANK@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "@BLANK@",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Testuser",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "ngocnga@gmail.com",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginDefs.Nhap_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien LOGIN nhu \"TC-02\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Đăng nhập",
-        "Đặt lại mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginDefs.Thuc_hien_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra LOGIN nhu \"TC-02\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tên đăng nhập",
-        "Mật khẩu",
-        "Message error login",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "Please fill out this field.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "",
-        "",
-        "Please fill out this fiel.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "",
-        "",
-        "Please fill out this field",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "",
-        "",
-        "Wrong login/password",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginDefs.Kiem_tra_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Sample of VLogin_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@VLogin_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"TC-03\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "EMAIL",
-        "admin"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "PASSWORD",
-        "123"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "EMAIL",
-        "usertesst"
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "PASSWORD",
-        "1234567"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "EMAIL",
-        "ngocnga@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "PASSWORD",
-        "123456"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Về Trang Chủ",
-        "Email",
-        "Password",
-        "Hiển thị thông báo"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "admin",
-        "123",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "MainPageDefs.Nhap_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MainPageDefs.Kiem_tra_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap LOGIN nhu \"TC-03\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "@BLANK@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "@BLANK@",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Testuser",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "ngocnga@gmail.com",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginDefs.Nhap_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien LOGIN nhu \"TC-03\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Đăng nhập",
-        "Đặt lại mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginDefs.Thuc_hien_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra LOGIN nhu \"TC-03\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tên đăng nhập",
-        "Mật khẩu",
-        "Message error login",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "Please fill out this field.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "",
-        "",
-        "Please fill out this fiel.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "",
-        "",
-        "Please fill out this field",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "",
-        "",
-        "Wrong login/password",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginDefs.Kiem_tra_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Sample of VLogin_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@VLogin_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"TC-04\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "EMAIL",
-        "admin"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "PASSWORD",
-        "123"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "EMAIL",
-        "usertesst"
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "PASSWORD",
-        "1234567"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "EMAIL",
-        "ngocnga@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "PASSWORD",
-        "123456"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Về Trang Chủ",
-        "Email",
-        "Password",
-        "Hiển thị thông báo"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "admin",
-        "123",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "MainPageDefs.Nhap_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MainPageDefs.Kiem_tra_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap LOGIN nhu \"TC-04\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "@BLANK@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "@BLANK@",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Testuser",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "ngocnga@gmail.com",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginDefs.Nhap_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien LOGIN nhu \"TC-04\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Đăng nhập",
-        "Đặt lại mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginDefs.Thuc_hien_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra LOGIN nhu \"TC-04\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tên đăng nhập",
-        "Mật khẩu",
-        "Message error login",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "Please fill out this field.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "",
-        "",
-        "Please fill out this fiel.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "",
-        "",
-        "Please fill out this field",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "",
-        "",
-        "Wrong login/password",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginDefs.Kiem_tra_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Sample of VLogin_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@VLogin_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"TC-05\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "EMAIL",
-        "admin"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "PASSWORD",
-        "123"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "EMAIL",
-        "usertesst"
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "PASSWORD",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "EMAIL",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "PASSWORD",
-        "1234567"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "EMAIL",
-        "ngocnga@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "PASSWORD",
-        "123456"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Về Trang Chủ",
-        "Email",
-        "Password",
-        "Hiển thị thông báo"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "admin",
-        "123",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "MainPageDefs.Nhap_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MainPageDefs.Kiem_tra_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap LOGIN nhu \"TC-05\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "@BLANK@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "@BLANK@",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Testuser",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "ngocnga@gmail.com",
-        "123456",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginDefs.Nhap_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien LOGIN nhu \"TC-05\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Đăng nhập",
-        "Đặt lại mật khẩu",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "LoginDefs.Thuc_hien_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra LOGIN nhu \"TC-05\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tên đăng nhập",
-        "Mật khẩu",
-        "Message error login",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TC-01",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-02",
-        "",
-        "",
-        "Please fill out this field.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-03",
-        "",
-        "",
-        "Please fill out this fiel.",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-04",
-        "",
-        "",
-        "Please fill out this field",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "TC-05",
-        "",
-        "",
-        "Wrong login/password",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginDefs.Kiem_tra_LOGIN_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Log to excel",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@VLogin_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Log to excel",
-  "rows": [
-    {
-      "cells": [
-        "TestCase",
-        "TestResult",
-        "Sheet"
-      ]
-    },
-    {
-      "cells": [
-        "TestCases/LOGIN_Testcase.xlsx",
-        "TestResults/LOGIN_Testcase.xlsx",
-        "LOGIN_TESTCASE"
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonDefs.log_to_excel(String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.uri("src/test/resources/features/2_DangKyNghi_CTR_DATA.feature");
-formatter.feature({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -2789,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -2808,7 +29,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -2835,7 +56,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -2870,32 +91,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -2906,17 +113,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -2926,19 +126,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -2946,10 +139,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -2957,19 +147,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -2977,19 +160,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -2997,139 +173,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\u003cKIEM TRA TMDKN\u003e\"",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ]
@@ -3146,11 +229,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -3161,10 +240,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -3176,10 +251,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -3188,10 +259,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -3206,6 +273,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -3215,13 +289,121 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Y",
         "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\u003cKIEM TRA TMDKN\u003e\"",
+  "keyword": "Then ",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
         "Kính gửi",
         "",
         "",
@@ -3230,13 +412,7 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-005",
         "Lý do",
         "",
         "",
@@ -3245,13 +421,7 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-006",
         "Loại nghỉ",
         "",
         "",
@@ -3260,13 +430,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-007",
         "Ngày bắt đầu",
         "",
         "",
@@ -3275,13 +439,7 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-008",
         "Ngày kết thúc",
         "",
         "",
@@ -3290,13 +448,7 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
@@ -3305,13 +457,7 @@ formatter.step({
     },
     {
       "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-010",
         "Số ngày nghỉ",
         "",
         "",
@@ -3320,13 +466,7 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-011",
         "",
         "",
         "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
@@ -3335,13 +475,7 @@ formatter.step({
     },
     {
       "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-012",
         "Success",
         "",
         "",
@@ -3350,13 +484,7 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "TC-013",
         "",
         "",
         "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
@@ -3425,9 +553,9 @@ formatter.examples({
         "",
         "",
         "",
-        "003",
-        "",
-        "003",
+        "TC-003",
+        "TC-003",
+        "TC-003",
         ""
       ]
     },
@@ -3436,9 +564,9 @@ formatter.examples({
         "",
         "",
         "",
-        "004",
-        "",
-        "004",
+        "TC-005",
+        "TC-005",
+        "TC-005",
         ""
       ]
     },
@@ -3447,9 +575,9 @@ formatter.examples({
         "",
         "",
         "",
-        "005",
-        "",
-        "005",
+        "TC-006",
+        "TC-006",
+        "TC-006",
         ""
       ]
     },
@@ -3458,9 +586,9 @@ formatter.examples({
         "",
         "",
         "",
-        "006",
-        "",
-        "006",
+        "TC-007",
+        "TC-007",
+        "TC-007",
         ""
       ]
     },
@@ -3469,9 +597,9 @@ formatter.examples({
         "",
         "",
         "",
-        "007",
-        "",
-        "007",
+        "TC-008",
+        "TC-008",
+        "TC-008",
         ""
       ]
     },
@@ -3480,9 +608,9 @@ formatter.examples({
         "",
         "",
         "",
-        "008",
-        "",
-        "008",
+        "TC-009",
+        "TC-009",
+        "TC-009",
         ""
       ]
     },
@@ -3491,9 +619,9 @@ formatter.examples({
         "",
         "",
         "",
-        "010",
-        "",
-        "010",
+        "TC-011",
+        "TC-011",
+        "TC-011",
         ""
       ]
     },
@@ -3502,42 +630,9 @@ formatter.examples({
         "",
         "",
         "",
-        "",
-        "",
-        "TAO",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "",
-        "",
-        "011",
-        "",
-        "011",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "",
-        "",
-        "012",
-        "",
-        "012",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "GUI_PHE_DUYET",
+        "TC-012",
+        "TC-012",
+        "TC-012",
         ""
       ]
     },
@@ -3557,9 +652,9 @@ formatter.examples({
         "",
         "",
         "",
-        "013",
-        "",
-        "013",
+        "TC-013",
+        "TC-013",
+        "TC-013",
         ""
       ]
     },
@@ -3568,27 +663,16 @@ formatter.examples({
         "",
         "",
         "",
-        "013",
+        "",
         "",
         "HUY",
         ""
-      ]
-    },
-    {
-      "cells": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "LOGOUT"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -3611,7 +695,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -3644,7 +728,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -3656,7 +740,8 @@ formatter.match({
   "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@id\u003d\u0027login\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.LoginPage.enter_email(LoginPage.java:18)\r\n\tat hrm.steps.serenity.LoginSteps.enter_email(LoginSteps.java:25)\r\n\tat hrm.steps.serenity.LoginSteps$$EnhancerByCGLIB$$41aded6b.CGLIB$enter_email$11(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.LoginSteps$$EnhancerByCGLIB$$41aded6b$$FastClassByCGLIB$$2dfddebc.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.LoginSteps$$EnhancerByCGLIB$$41aded6b.enter_email(\u003cgenerated\u003e)\r\n\tat hrm.common.step.defs.CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(CommonDefs.java:95)\r\n\tat ✽.Nguoi dung dang nhap vao he thong nhu \"001\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:9)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027login\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.LoginPage.enter_email(LoginPage.java:18)\r\n\tat hrm.steps.serenity.LoginSteps.enter_email(LoginSteps.java:25)\r\n\tat hrm.steps.serenity.LoginSteps$$EnhancerByCGLIB$$41aded6b.CGLIB$enter_email$11(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.LoginSteps$$EnhancerByCGLIB$$41aded6b$$FastClassByCGLIB$$2dfddebc.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.LoginSteps$$EnhancerByCGLIB$$41aded6b.enter_email(\u003cgenerated\u003e)\r\n\tat hrm.common.step.defs.CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(CommonDefs.java:95)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "Nguoi dung vao menu nhu \"001\"",
@@ -3680,7 +765,7 @@ formatter.match({
   "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
@@ -3691,32 +776,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -3727,17 +798,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -3747,19 +811,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -3767,10 +824,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -3778,19 +832,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -3798,19 +845,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -3818,91 +858,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -3912,61 +907,7 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
@@ -3979,11 +920,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -3994,10 +931,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -4009,10 +942,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -4021,10 +950,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -4039,6 +964,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -4048,14 +980,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -4063,14 +991,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -4078,14 +1002,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -4093,14 +1013,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -4108,14 +1024,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -4123,29 +1035,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -4153,29 +1046,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -4183,17 +1057,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -4203,7 +1084,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -4237,10 +1229,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -4263,7 +1255,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -4296,7 +1288,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -4335,7 +1327,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"003\"",
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-003\"",
   "rows": [
     {
       "cells": [
@@ -4343,32 +1335,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -4379,17 +1357,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -4399,19 +1370,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -4419,10 +1383,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -4430,19 +1391,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -4450,19 +1404,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -4470,91 +1417,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -4564,64 +1466,11 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name\u003d\u0027kinh_gui\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_kinh_gui(TaoMoiDangKyNghiPage.java:39)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_kinh_gui(TaoMoiDangKyNghiSteps.java:17)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_kinh_gui$63(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_kinh_gui(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:53)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-003\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027kinh_gui\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027kinh_gui\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_kinh_gui(TaoMoiDangKyNghiPage.java:39)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_kinh_gui(TaoMoiDangKyNghiSteps.java:17)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_kinh_gui$63(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_kinh_gui(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:53)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"003\"",
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-003\"",
   "rows": [
     {
       "cells": [
@@ -4631,11 +1480,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -4646,10 +1491,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -4661,10 +1502,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -4673,10 +1510,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -4691,6 +1524,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -4700,14 +1540,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -4715,14 +1551,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -4730,14 +1562,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -4745,14 +1573,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -4760,14 +1584,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -4775,29 +1595,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -4805,29 +1606,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -4835,17 +1617,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -4855,7 +1644,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-003\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -4889,10 +1789,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -4915,7 +1815,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -4948,7 +1848,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -4987,7 +1887,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"004\"",
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-005\"",
   "rows": [
     {
       "cells": [
@@ -4995,32 +1895,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -5031,17 +1917,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -5051,19 +1930,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -5071,10 +1943,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -5082,19 +1951,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -5102,19 +1964,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -5122,91 +1977,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -5216,64 +2026,11 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name\u003d\u0027kinh_gui\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_kinh_gui(TaoMoiDangKyNghiPage.java:39)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_kinh_gui(TaoMoiDangKyNghiSteps.java:17)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_kinh_gui$63(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_kinh_gui(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:53)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-005\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027kinh_gui\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027kinh_gui\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_kinh_gui(TaoMoiDangKyNghiPage.java:39)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_kinh_gui(TaoMoiDangKyNghiSteps.java:17)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_kinh_gui$63(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_kinh_gui(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:53)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"004\"",
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-005\"",
   "rows": [
     {
       "cells": [
@@ -5283,11 +2040,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -5298,10 +2051,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -5313,10 +2062,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -5325,10 +2070,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -5343,6 +2084,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -5352,14 +2100,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -5367,14 +2111,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -5382,14 +2122,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -5397,14 +2133,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -5412,14 +2144,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -5427,29 +2155,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -5457,29 +2166,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -5487,17 +2177,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -5507,7 +2204,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-005\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -5541,10 +2349,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5567,7 +2375,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -5600,7 +2408,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -5639,7 +2447,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"005\"",
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-006\"",
   "rows": [
     {
       "cells": [
@@ -5647,32 +2455,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -5683,17 +2477,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -5703,19 +2490,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -5723,10 +2503,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -5734,19 +2511,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -5754,19 +2524,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -5774,91 +2537,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -5868,64 +2586,11 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //textarea[@name\u003d\u0027lydo\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_ly_do(TaoMoiDangKyNghiPage.java:81)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_ly_do(TaoMoiDangKyNghiSteps.java:69)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_ly_do$62(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_ly_do(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:59)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-006\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//textarea[@name\u003d\u0027lydo\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//textarea[@name\u003d\u0027lydo\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_ly_do(TaoMoiDangKyNghiPage.java:81)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_ly_do(TaoMoiDangKyNghiSteps.java:69)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_ly_do$62(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_ly_do(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:59)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"005\"",
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-006\"",
   "rows": [
     {
       "cells": [
@@ -5935,11 +2600,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -5950,10 +2611,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -5965,10 +2622,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -5977,10 +2630,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -5995,6 +2644,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -6004,14 +2660,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -6019,14 +2671,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -6034,14 +2682,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -6049,14 +2693,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -6064,14 +2704,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -6079,29 +2715,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -6109,29 +2726,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -6139,17 +2737,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -6159,7 +2764,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-006\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -6193,10 +2909,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6219,7 +2935,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -6252,7 +2968,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -6291,7 +3007,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"006\"",
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-007\"",
   "rows": [
     {
       "cells": [
@@ -6299,32 +3015,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -6335,17 +3037,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -6355,19 +3050,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -6375,10 +3063,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -6386,19 +3071,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -6406,19 +3084,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -6426,91 +3097,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -6520,64 +3146,11 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@name\u003d\u0027holiday_status_id\u0027]//div[@class\u003d\u0027o_input_dropdown\u0027]//input (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.selectSearchDDL(MyPageObject.java:2694)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.select_loai_nghi(TaoMoiDangKyNghiPage.java:188)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.select_loai_nghi(TaoMoiDangKyNghiSteps.java:199)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$select_loai_nghi$65(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.select_loai_nghi(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:74)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-007\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@name\u003d\u0027holiday_status_id\u0027]//div[@class\u003d\u0027o_input_dropdown\u0027]//input\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//div[@name\u003d\u0027holiday_status_id\u0027]//div[@class\u003d\u0027o_input_dropdown\u0027]//input}\r\n\tat sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.selectSearchDDL(MyPageObject.java:2694)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.select_loai_nghi(TaoMoiDangKyNghiPage.java:188)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.select_loai_nghi(TaoMoiDangKyNghiSteps.java:199)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$select_loai_nghi$65(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.select_loai_nghi(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:74)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"006\"",
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-007\"",
   "rows": [
     {
       "cells": [
@@ -6587,11 +3160,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -6602,10 +3171,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -6617,10 +3182,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -6629,10 +3190,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -6647,6 +3204,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -6656,14 +3220,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -6671,14 +3231,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -6686,14 +3242,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -6701,14 +3253,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -6716,14 +3264,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -6731,29 +3275,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -6761,29 +3286,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -6791,17 +3297,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -6811,7 +3324,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-007\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -6845,10 +3469,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6871,7 +3495,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -6904,7 +3528,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -6943,7 +3567,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"007\"",
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-008\"",
   "rows": [
     {
       "cells": [
@@ -6951,32 +3575,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -6987,17 +3597,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -7007,19 +3610,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -7027,10 +3623,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -7038,19 +3631,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -7058,19 +3644,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -7078,91 +3657,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -7172,64 +3706,11 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndTypeThenTab(MyPageObject.java:571)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_tu_ngay(TaoMoiDangKyNghiPage.java:209)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_tu_ngay(TaoMoiDangKyNghiSteps.java:225)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_tu_ngay$79(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_tu_ngay(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:80)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-008\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndTypeThenTab(MyPageObject.java:571)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_tu_ngay(TaoMoiDangKyNghiPage.java:209)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_tu_ngay(TaoMoiDangKyNghiSteps.java:225)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_tu_ngay$79(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_tu_ngay(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:80)\r\n\tat sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"007\"",
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-008\"",
   "rows": [
     {
       "cells": [
@@ -7239,11 +3720,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -7254,10 +3731,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -7269,10 +3742,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -7281,10 +3750,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -7299,6 +3764,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -7308,14 +3780,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -7323,14 +3791,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -7338,14 +3802,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -7353,14 +3813,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -7368,14 +3824,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -7383,29 +3835,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -7413,29 +3846,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -7443,17 +3857,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -7463,7 +3884,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-008\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -7497,10 +4029,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7523,7 +4055,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -7556,7 +4088,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -7595,7 +4127,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"008\"",
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-009\"",
   "rows": [
     {
       "cells": [
@@ -7603,32 +4135,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -7639,17 +4157,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -7659,19 +4170,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -7679,10 +4183,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -7690,19 +4191,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -7710,19 +4204,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -7730,91 +4217,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -7824,64 +4266,11 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndTypeThenTab(MyPageObject.java:571)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_tu_ngay(TaoMoiDangKyNghiPage.java:209)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_tu_ngay(TaoMoiDangKyNghiSteps.java:225)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_tu_ngay$79(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_tu_ngay(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:80)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-009\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//div[@name\u003d\u0027date_from\u0027]//input[@name\u003d\u0027date_from\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndTypeThenTab(MyPageObject.java:571)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_tu_ngay(TaoMoiDangKyNghiPage.java:209)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_tu_ngay(TaoMoiDangKyNghiSteps.java:225)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_tu_ngay$79(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_tu_ngay(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:80)\r\n\tat sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"008\"",
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-009\"",
   "rows": [
     {
       "cells": [
@@ -7891,11 +4280,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -7906,10 +4291,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -7921,10 +4302,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -7933,10 +4310,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -7951,6 +4324,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -7960,14 +4340,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -7975,14 +4351,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -7990,14 +4362,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -8005,14 +4373,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -8020,14 +4384,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -8035,29 +4395,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -8065,29 +4406,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -8095,17 +4417,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -8115,7 +4444,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-009\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -8149,10 +4589,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -8175,7 +4615,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -8208,7 +4648,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -8247,7 +4687,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"010\"",
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-011\"",
   "rows": [
     {
       "cells": [
@@ -8255,32 +4695,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -8291,17 +4717,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -8311,19 +4730,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -8331,10 +4743,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -8342,19 +4751,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -8362,19 +4764,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -8382,91 +4777,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -8476,64 +4826,11 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name\u003d\u0027kinh_gui\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_kinh_gui(TaoMoiDangKyNghiPage.java:39)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_kinh_gui(TaoMoiDangKyNghiSteps.java:17)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_kinh_gui$63(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_kinh_gui(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:53)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-011\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027kinh_gui\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027kinh_gui\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_kinh_gui(TaoMoiDangKyNghiPage.java:39)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_kinh_gui(TaoMoiDangKyNghiSteps.java:17)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_kinh_gui$63(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_kinh_gui(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:53)\r\n\tat sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"010\"",
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-011\"",
   "rows": [
     {
       "cells": [
@@ -8543,11 +4840,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -8558,10 +4851,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -8573,10 +4862,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -8585,10 +4870,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -8603,6 +4884,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -8612,14 +4900,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -8627,14 +4911,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -8642,14 +4922,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -8657,14 +4933,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -8672,14 +4944,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -8687,29 +4955,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -8717,29 +4966,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -8747,17 +4977,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -8767,7 +5004,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-011\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -8801,10 +5149,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -8827,7 +5175,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -8860,7 +5208,567 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
+        "Vnpt#123",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nguoi dung vao menu nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MENU"
+      ]
+    },
+    {
+      "cells": [
+        "001",
+        "Quản lý ngày nghỉ\u003eĐăng ký nghỉ\u003eTạo mới"
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-012\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Kính gửi",
+        "Người duyệt",
+        "Lý do",
+        "Địa điểm nghỉ phép",
+        "Loại nghỉ",
+        "Từ ngày",
+        "Đến ngày",
+        "Số ngày nghỉ"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "@BLANK@",
+        "Trần Thị Lương Huyền",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
+        "@BLANK@",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "",
+        "",
+        "Nằm viện",
+        "",
+        "@BLANK@",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "",
+        "",
+        "",
+        "",
+        "nghỉ bù",
+        "@BLANK@",
+        "@DATEdd/MM/yyyy@@",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "@DATEdd/MM/yyyy@@",
+        "@BLANK@",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "01/12/2019",
+        "01/11/2019",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "Ông/ Bà: Trưởng phòng QLCL",
+        "",
+        "Đi du lịch",
+        "Đà Nẵng",
+        "phép",
+        "02/12/2019",
+        "5/12/2019",
+        "3,6"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "",
+        "",
+        "Đi du lịch",
+        "Đà Nẵng",
+        "phép",
+        "02/12/2019",
+        "5/12/2019",
+        "4"
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Ông/ Bà: Trưởng phòng QLCL",
+        "",
+        "Con ốm",
+        "",
+        "nghỉ bù",
+        "05/12/2019",
+        "07/12/2019",
+        "3"
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //textarea[@name\u003d\u0027lydo\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_ly_do(TaoMoiDangKyNghiPage.java:81)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_ly_do(TaoMoiDangKyNghiSteps.java:69)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_ly_do$62(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_ly_do(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:59)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-012\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//textarea[@name\u003d\u0027lydo\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//textarea[@name\u003d\u0027lydo\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_ly_do(TaoMoiDangKyNghiPage.java:81)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_ly_do(TaoMoiDangKyNghiSteps.java:69)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_ly_do$62(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_ly_do(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:59)\r\n\tat sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-012\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Lưu",
+        "Hủy bỏ",
+        "Gửi phê duyệt",
+        "Sửa",
+        "Tạo",
+        "Soạn thảo"
+      ]
+    },
+    {
+      "cells": [
+        "TAO",
+        "",
+        "",
+        "",
+        "",
+        "Y",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "SUA",
+        "",
+        "",
+        "",
+        "Y",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "HUY",
+        "",
+        "Y",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "GUI_PHE_DUYET",
+        "",
+        "",
+        "Y",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-012\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Thuc hien MAIN PAGE nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "User profile",
+        "Signout",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "ALERT",
+        "ALERT_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "LOGOUT",
+        "Y",
+        "Y",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "keyword": "When "
+});
+formatter.match({
+  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@DangKyNghi_CTR"
+    }
+  ]
+});
+formatter.step({
+  "name": "Thiet lap du lieu nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Session Data KEY",
+        "Session Data Value"
+      ]
+    },
+    {
+      "cells": [
+        "001",
+        "EMAIL",
+        "tranngocanh@vnpt.vn"
+      ]
+    },
+    {
+      "cells": [
+        "001",
+        "PASSWORD",
+        "Vnpt#123"
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "Email",
+        "Password",
+        "Hien Thi Thong Bao"
+      ]
+    },
+    {
+      "cells": [
+        "001",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -8907,32 +5815,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -8943,17 +5837,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -8963,19 +5850,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -8983,10 +5863,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -8994,19 +5871,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -9014,19 +5884,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -9034,91 +5897,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -9126,60 +5944,6 @@ formatter.step({
 });
 formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
   "status": "passed"
@@ -9195,11 +5959,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -9210,10 +5970,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -9225,10 +5981,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -9237,10 +5989,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -9255,6 +6003,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -9264,14 +6019,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -9279,14 +6030,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -9294,14 +6041,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -9309,14 +6052,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -9324,14 +6063,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -9339,29 +6074,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -9369,29 +6085,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -9399,17 +6096,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -9419,7 +6123,119 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@class\u003d\u0027btn btn-secondary o_form_button_create\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.clickOnElement(MyPageObject.java:450)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.click_tao(TaoMoiDangKyNghiPage.java:381)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.click_tao(TaoMoiDangKyNghiSteps.java:437)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$click_tao$45(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.click_tao(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:299)\r\n\tat ✽.Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TAO\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:27)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class\u003d\u0027btn btn-secondary o_form_button_create\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//button[@class\u003d\u0027btn btn-secondary o_form_button_create\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.clickOnElement(MyPageObject.java:450)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.click_tao(TaoMoiDangKyNghiPage.java:381)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.click_tao(TaoMoiDangKyNghiSteps.java:437)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$click_tao$45(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.click_tao(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:299)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -9453,10 +6269,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -9479,7 +6295,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -9512,7 +6328,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -9551,7 +6367,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"011\"",
+  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-013\"",
   "rows": [
     {
       "cells": [
@@ -9559,32 +6375,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -9595,17 +6397,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -9615,19 +6410,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -9635,10 +6423,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -9646,19 +6431,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -9666,19 +6444,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -9686,91 +6457,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -9780,64 +6506,11 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@name\u003d\u0027kinh_gui\u0027] (tried for 5 second(s) with 50 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_kinh_gui(TaoMoiDangKyNghiPage.java:39)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_kinh_gui(TaoMoiDangKyNghiSteps.java:17)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_kinh_gui$63(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_kinh_gui(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:53)\r\n\tat ✽.Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-013\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027kinh_gui\u0027]\"}\n  (Session info: chrome\u003d78.0.3904.108)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\\Users\\ngocn\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61663}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c08000c44b925ec0f40fc054a9e03b5\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027kinh_gui\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor45.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat net.serenitybdd.core.pages.RenderedPageObjectView.waitFor(RenderedPageObjectView.java:105)\r\n\tat net.serenitybdd.core.pages.PageObject.waitFor(PageObject.java:341)\r\n\tat hrm.lib.MyPageObject.waitElementToBePresentThenScrollIntoViewAndHighlight(MyPageObject.java:374)\r\n\tat hrm.lib.MyPageObject.XH(MyPageObject.java:382)\r\n\tat hrm.lib.MyPageObject.waitClearAndType(MyPageObject.java:557)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.enter_kinh_gui(TaoMoiDangKyNghiPage.java:39)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.enter_kinh_gui(TaoMoiDangKyNghiSteps.java:17)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$enter_kinh_gui$63(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.enter_kinh_gui(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:53)\r\n\tat sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"011\"",
+  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-013\"",
   "rows": [
     {
       "cells": [
@@ -9847,11 +6520,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -9862,10 +6531,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -9877,10 +6542,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -9889,10 +6550,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -9907,6 +6564,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -9916,14 +6580,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -9931,14 +6591,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -9946,14 +6602,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -9961,14 +6613,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -9976,14 +6624,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -9991,29 +6635,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -10021,29 +6646,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -10051,17 +6657,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -10071,7 +6684,118 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TC-013\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -10105,10 +6829,10 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -10131,7 +6855,7 @@ formatter.step({
       "cells": [
         "001",
         "EMAIL",
-        "huyenttl@vnpt.vn"
+        "tranngocanh@vnpt.vn"
       ]
     },
     {
@@ -10164,659 +6888,7 @@ formatter.step({
     {
       "cells": [
         "001",
-        "huyenttl@vnpt.vn",
-        "Vnpt#123",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung vao menu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MENU"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "Quản lý ngày nghỉ\u003eĐăng ký nghỉ\u003eTạo mới"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"012\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "",
-        "",
-        "Nằm viện",
-        "",
-        "",
-        "",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "nghỉ bù",
-        "@BLANK@",
-        "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "@DATEdd/MM/yyyy@@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/11/2019",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Con ốm",
-        "",
-        "Hà Nội",
-        "",
-        "",
-        "nghỉ bù",
-        "05/12/2019",
-        "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"012\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Lưu",
-        "Hủy bỏ",
-        "Gửi phê duyệt",
-        "Sửa",
-        "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TAO",
-        "",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "SUA",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "HUY",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "GUI_PHE_DUYET",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Kính gửi",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Lý do",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "LOGOUT",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@DangKyNghi_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "EMAIL",
-        "huyenttl@vnpt.vn"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "PASSWORD",
-        "Vnpt#123"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Password",
-        "Hien Thi Thong Bao"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "huyenttl@vnpt.vn",
+        "tranngocanh@vnpt.vn",
         "Vnpt#123",
         ""
       ]
@@ -10863,32 +6935,18 @@ formatter.step({
         "Kính gửi",
         "Người duyệt",
         "Lý do",
-        "Người liên quan",
         "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
         "Loại nghỉ",
         "Từ ngày",
         "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
+        "Số ngày nghỉ"
       ]
     },
     {
       "cells": [
-        "003",
+        "TC-003",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Trần Thị Lương Huyền",
         "",
         "",
         "",
@@ -10899,17 +6957,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
+        "TC-005",
+        "Ông/ bà trưởng phòng QLCL",
+        "Trần Thị Lương Huyền",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -10919,19 +6970,12 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-006",
         "",
         "",
         "Nằm viện",
         "",
-        "",
-        "",
-        "",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         ""
@@ -10939,10 +6983,7 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
-        "",
-        "",
-        "",
+        "TC-007",
         "",
         "",
         "",
@@ -10950,19 +6991,12 @@ formatter.step({
         "nghỉ bù",
         "@BLANK@",
         "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "007",
-        "",
-        "",
-        "",
+        "TC-008",
         "",
         "",
         "",
@@ -10970,19 +7004,12 @@ formatter.step({
         "",
         "@DATEdd/MM/yyyy@@",
         "@BLANK@",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "008",
-        "",
-        "",
-        "",
+        "TC-009",
         "",
         "",
         "",
@@ -10990,91 +7017,46 @@ formatter.step({
         "",
         "01/12/2019",
         "01/11/2019",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
     {
       "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
+        "TC-011",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
+        "3,6"
       ]
     },
     {
       "cells": [
-        "012",
+        "TC-012",
         "",
         "",
         "Đi du lịch",
-        "",
         "Đà Nẵng",
-        "",
-        "",
         "phép",
         "02/12/2019",
         "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
+        "4"
       ]
     },
     {
       "cells": [
-        "013",
+        "TC-013",
         "Ông/ Bà: Trưởng phòng QLCL",
         "",
         "Con ốm",
         "",
-        "Hà Nội",
-        "",
-        "",
         "nghỉ bù",
         "05/12/2019",
         "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
+        "3"
       ]
     }
   ],
@@ -11082,2016 +7064,6 @@ formatter.step({
 });
 formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"GUI_PHE_DUYET\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Lưu",
-        "Hủy bỏ",
-        "Gửi phê duyệt",
-        "Sửa",
-        "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TAO",
-        "",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "SUA",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "HUY",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "GUI_PHE_DUYET",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Kính gửi",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Lý do",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "LOGOUT",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@DangKyNghi_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "EMAIL",
-        "huyenttl@vnpt.vn"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "PASSWORD",
-        "Vnpt#123"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Password",
-        "Hien Thi Thong Bao"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "huyenttl@vnpt.vn",
-        "Vnpt#123",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung vao menu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MENU"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "Quản lý ngày nghỉ\u003eĐăng ký nghỉ\u003eTạo mới"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "",
-        "",
-        "Nằm viện",
-        "",
-        "",
-        "",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "nghỉ bù",
-        "@BLANK@",
-        "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "@DATEdd/MM/yyyy@@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/11/2019",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Con ốm",
-        "",
-        "Hà Nội",
-        "",
-        "",
-        "nghỉ bù",
-        "05/12/2019",
-        "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"TAO\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Lưu",
-        "Hủy bỏ",
-        "Gửi phê duyệt",
-        "Sửa",
-        "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TAO",
-        "",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "SUA",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "HUY",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "GUI_PHE_DUYET",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Kính gửi",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Lý do",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "LOGOUT",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@DangKyNghi_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "EMAIL",
-        "huyenttl@vnpt.vn"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "PASSWORD",
-        "Vnpt#123"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Password",
-        "Hien Thi Thong Bao"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "huyenttl@vnpt.vn",
-        "Vnpt#123",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung vao menu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MENU"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "Quản lý ngày nghỉ\u003eĐăng ký nghỉ\u003eTạo mới"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"013\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "",
-        "",
-        "Nằm viện",
-        "",
-        "",
-        "",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "nghỉ bù",
-        "@BLANK@",
-        "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "@DATEdd/MM/yyyy@@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/11/2019",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Con ốm",
-        "",
-        "Hà Nội",
-        "",
-        "",
-        "nghỉ bù",
-        "05/12/2019",
-        "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"013\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Lưu",
-        "Hủy bỏ",
-        "Gửi phê duyệt",
-        "Sửa",
-        "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TAO",
-        "",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "SUA",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "HUY",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "GUI_PHE_DUYET",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Kính gửi",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Lý do",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "LOGOUT",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@DangKyNghi_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "EMAIL",
-        "huyenttl@vnpt.vn"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "PASSWORD",
-        "Vnpt#123"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Password",
-        "Hien Thi Thong Bao"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "huyenttl@vnpt.vn",
-        "Vnpt#123",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung vao menu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MENU"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "Quản lý ngày nghỉ\u003eĐăng ký nghỉ\u003eTạo mới"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"013\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "",
-        "",
-        "Nằm viện",
-        "",
-        "",
-        "",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "nghỉ bù",
-        "@BLANK@",
-        "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "@DATEdd/MM/yyyy@@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/11/2019",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Con ốm",
-        "",
-        "Hà Nội",
-        "",
-        "",
-        "nghỉ bù",
-        "05/12/2019",
-        "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
   "status": "passed"
@@ -13107,11 +7079,7 @@ formatter.step({
         "Gửi phê duyệt",
         "Sửa",
         "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
+        "Soạn thảo"
       ]
     },
     {
@@ -13122,10 +7090,6 @@ formatter.step({
         "",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -13137,10 +7101,6 @@ formatter.step({
         "",
         "Y",
         "",
-        "",
-        "",
-        "",
-        "",
         ""
       ]
     },
@@ -13149,10 +7109,6 @@ formatter.step({
         "HUY",
         "",
         "Y",
-        "",
-        "",
-        "",
-        "",
         "",
         "",
         "",
@@ -13167,6 +7123,13 @@ formatter.step({
         "Y",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Y",
         "",
         "",
         "",
@@ -13176,14 +7139,10 @@ formatter.step({
     },
     {
       "cells": [
-        "003",
+        "TC-005",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Kính gửi",
         "",
         "",
         ""
@@ -13191,14 +7150,10 @@ formatter.step({
     },
     {
       "cells": [
-        "004",
+        "TC-006",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Lý do",
         "",
         "",
         ""
@@ -13206,14 +7161,10 @@ formatter.step({
     },
     {
       "cells": [
-        "005",
+        "TC-007",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
         "",
         "",
         ""
@@ -13221,14 +7172,10 @@ formatter.step({
     },
     {
       "cells": [
-        "006",
+        "TC-008",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
         "",
         "",
         ""
@@ -13236,14 +7183,10 @@ formatter.step({
     },
     {
       "cells": [
-        "007",
+        "TC-009",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
         "",
         "",
         ""
@@ -13251,29 +7194,10 @@ formatter.step({
     },
     {
       "cells": [
-        "008",
+        "TC-010",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
         "",
         "",
         ""
@@ -13281,29 +7205,10 @@ formatter.step({
     },
     {
       "cells": [
-        "011",
+        "TC-011",
         "Y",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
         "",
         "",
         ""
@@ -13311,17 +7216,24 @@ formatter.step({
     },
     {
       "cells": [
-        "013",
+        "TC-012",
         "Y",
         "",
         "",
         "",
         "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "Y",
         "",
         "",
         "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
+        "",
+        ""
       ]
     }
   ],
@@ -13331,7 +7243,119 @@ formatter.match({
   "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled\r\n\tat net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilClickable(WebElementFacadeImpl.java:1161)\r\n\tat hrm.lib.MyPageObject.clickOnElement(MyPageObject.java:450)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.click_huy_bo(TaoMoiDangKyNghiPage.java:330)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.click_huy_bo(TaoMoiDangKyNghiSteps.java:374)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$click_huy_bo$50(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.click_huy_bo(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:215)\r\n\tat ✽.Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"HUY\"(src/test/resources/features/2_DangKyNghi_CTR_DATA.feature:27)\r\nCaused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: //button[@class\u003d\u0027btn btn-secondary o_form_button_cancel\u0027] to be clickable (tried for 5 second(s) with 100 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BJ1JOQA\u0027, ip: \u0027192.168.1.12\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_111\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilClickable(WebElementFacadeImpl.java:1158)\r\n\tat hrm.lib.MyPageObject.clickOnElement(MyPageObject.java:450)\r\n\tat hrm.pages.DangKyNghi.TaoMoiDangKyNghiPage.click_huy_bo(TaoMoiDangKyNghiPage.java:330)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps.click_huy_bo(TaoMoiDangKyNghiSteps.java:374)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.CGLIB$click_huy_bo$50(\u003cgenerated\u003e)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d$$FastClassByCGLIB$$38947674.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)\r\n\tat hrm.steps.serenity.DangKyNghi.TaoMoiDangKyNghiSteps$$EnhancerByCGLIB$$4cd1d03d.click_huy_bo(\u003cgenerated\u003e)\r\n\tat hrm.steps.defs.TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(TaoMoiDangKyNghiDefs.java:215)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:31)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:25)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)\r\n\tat cucumber.api.TestStep.executeStep(TestStep.java:102)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
+  "rows": [
+    {
+      "cells": [
+        "KEY",
+        "MESSAGE",
+        "MESSAGE_ACTION",
+        "MODAL",
+        "MODAL_ACTION"
+      ]
+    },
+    {
+      "cells": [
+        "TC-003",
+        "Kính gửi",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-005",
+        "Lý do",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-006",
+        "Loại nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-007",
+        "Ngày bắt đầu",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-008",
+        "Ngày kết thúc",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-009",
+        "",
+        "",
+        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-010",
+        "Số ngày nghỉ",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-011",
+        "",
+        "",
+        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
+        "Y"
+      ]
+    },
+    {
+      "cells": [
+        "TC-012",
+        "Success",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "cells": [
+        "TC-013",
+        "",
+        "",
+        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
+        "Y"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
   "name": "Thuc hien MAIN PAGE nhu \"\"",
@@ -13365,12 +7389,12 @@ formatter.match({
   "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Sample of DangKyNghi_CTR",
+  "name": "Log to excel",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@DangKyNghi_CTR"
@@ -13378,1961 +7402,29 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "Thiet lap du lieu nhu \"\"",
+  "name": "Log to excel",
   "rows": [
     {
       "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
+        "TestCase",
+        "TestResult",
+        "Sheet"
       ]
     },
     {
       "cells": [
-        "001",
-        "EMAIL",
-        "huyenttl@vnpt.vn"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "PASSWORD",
-        "Vnpt#123"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Password",
-        "Hien Thi Thong Bao"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "huyenttl@vnpt.vn",
-        "Vnpt#123",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung vao menu nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MENU"
-      ]
-    },
-    {
-      "cells": [
-        "001",
-        "Quản lý ngày nghỉ\u003eĐăng ký nghỉ\u003eTạo mới"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Ông: Nguyễn Hồng Sơn",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "",
-        "",
-        "Nằm viện",
-        "",
-        "",
-        "",
-        "",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "nghỉ bù",
-        "@BLANK@",
-        "@DATEdd/MM/yyyy@@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "@DATEdd/MM/yyyy@@",
-        "@BLANK@",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/11/2019",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "01/12/2019",
-        "01/12/2019",
-        "-100",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "3,6",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "",
-        "",
-        "Đi du lịch",
-        "",
-        "Đà Nẵng",
-        "",
-        "",
-        "phép",
-        "02/12/2019",
-        "5/12/2019",
-        "4",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Ông/ Bà: Trưởng phòng QLCL",
-        "",
-        "Con ốm",
-        "",
-        "Hà Nội",
-        "",
-        "",
-        "nghỉ bù",
-        "05/12/2019",
-        "07/12/2019",
-        "3",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Nhap_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Kính gửi",
-        "Người duyệt",
-        "Lý do",
-        "Người liên quan",
-        "Địa điểm nghỉ phép",
-        "Nhân sự được ủy quyền",
-        "Nghỉ đi nước ngoài",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "TestCases/DangKyNghi_Testcase.xlsx",
+        "TestResults/DangKyNghi_Testcase.xlsx",
+        "DKNN_TESTCASE"
       ]
     }
   ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Kiem_tra_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
+  "location": "CommonDefs.log_to_excel(String\u003e\u003e)"
 });
 formatter.result({
   "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Lưu",
-        "Hủy bỏ",
-        "Gửi phê duyệt",
-        "Sửa",
-        "Tạo",
-        "Soạn thảo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "MODAL",
-        "MODAL_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TAO",
-        "",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "SUA",
-        "",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "HUY",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "GUI_PHE_DUYET",
-        "",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "003",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Kính gửi",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "004",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Lý do",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "005",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Loại nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "006",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày bắt đầu",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "007",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Ngày kết thúc",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "008",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "010",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày nghỉ",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "011",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!",
-        "Y"
-      ]
-    },
-    {
-      "cells": [
-        "012",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Success",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "013",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)!",
-        "Y"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "TaoMoiDangKyNghiDefs.Thuc_hien_TAO_MOI_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien MAIN PAGE nhu \"LOGOUT\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "User profile",
-        "Signout",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "LOGOUT",
-        "Y",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "MainPageDefs.Thuc_hien_MAIN_PAGE_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.uri("src/test/resources/features/3_DuyetDangKyNghi_CTR_DATA.feature");
-formatter.feature({
-  "name": "Sample of DuyetDangKyNghi_CTR",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@DuyetDangKyNghi_CTR"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "name": "Sample of DuyetDangKyNghi_CTR",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"\u003cDATA KEY\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "LOGIN",
-        "EMAIL",
-        "acoount_test@vnpt.vn"
-      ]
-    },
-    {
-      "cells": [
-        "LOGIN",
-        "PASSWORD",
-        "Vnpt#123"
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"\u003cLOGIN\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Password",
-        "Mat Khau",
-        "Hien Thi Thong Bao"
-      ]
-    },
-    {
-      "cells": [
-        "LOGIN",
-        "account_test@vnpt.vn",
-        "Vnpt#123",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nguoi dung vao menu nhu \"\u003cMENU\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MENU"
-      ]
-    },
-    {
-      "cells": [
-        "MENU",
-        "Quản lý ngày nghỉ\u003ePhê duyệt ngày nghỉ"
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nhap DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cNHAP DDKN\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tìm kiếm",
-        "Các bộ lọc",
-        "Nhóm theo",
-        "Yêu thích",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TimKiem-01",
-        "Trần Thị Lương Huyền, Nhân sự",
-        "Chờ phê duyệt",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nhap LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cNHAP LHTTTDKN\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Page",
-        "Page Size",
-        "Row",
-        "Total Record",
-        "Nhân sự",
-        "Đơn vị / Phong ban",
-        "Ngày bắt đầu",
-        "Ngày kết thúc",
-        "Lý do nghỉ",
-        "Số ngày nghỉ",
-        "Người duyệt",
-        "Trạng thái",
-        "Lý do từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cKIEM TRA LHTTTDKN\u003e\"",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Page",
-        "Page Size",
-        "Row",
-        "Total Record",
-        "Nhân sự",
-        "Đơn vị / Phong ban",
-        "Ngày bắt đầu",
-        "Ngày kết thúc",
-        "Lý do nghỉ",
-        "Số ngày nghỉ",
-        "Người duyệt",
-        "Trạng thái",
-        "Lý do từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TimKiem-01",
-        "",
-        "",
-        "1",
-        "1",
-        "0114 - Trần Thị Lương Huyền",
-        "VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT",
-        "02/12/2019",
-        "05/12/2019",
-        "Đi du lịch",
-        "4,0",
-        "0002 - Account Test",
-        "Chờ phê duyệt",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Thuc hien LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cTHUC HIEN LHTTTDKN\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Page",
-        "Page Size",
-        "Row",
-        "Total Record",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Kiem tra DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cKIEM TRA DDKN\u003e\"",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tìm kiếm",
-        "Các bộ lọc",
-        "Nhóm theo",
-        "Yêu thích",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Thuc hien DUYỆT ĐĂNG KÝ NGHỈ nhu \"\u003cTHUC HIEN DDKN\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Xem chi tiết",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TimKiem-01",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nhap XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\u003cNHAP XCTDKN\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Kiem tra XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\u003cKIEM TRA XCTDKN\u003e\"",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Nhân sự",
-        "Lý do",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "Ngày tạo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "XemChiTiet",
-        "0114 - Trần Thị Lương Huyền",
-        "Đi du lịch",
-        "PHép",
-        "02/12/2019",
-        "05/12/2019",
-        "4,0",
-        "30/11/2019",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Thuc hien XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\u003cTHUC HIEN XCTDKN\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Phê duyệt",
-        "Từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Pheduyet-01",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "Tuchoi-01",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nhap PHÊ DUYỆT nhu \"\u003cNHAP PD\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Người phê duyệt lần 2",
-        "Duyệt lần 2",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Pheduyet-01",
-        "",
-        "NN",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Kiem tra PHÊ DUYỆT nhu \"\u003cKIEM TRA PD\u003e\"",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Nhân sự",
-        "Người phê duyệt lần 2",
-        "Duyệt lần 2",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Thuc hien PHÊ DUYỆT nhu \"\u003cTHUC HIEN PD\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Phê duyệt",
-        "Hủy bỏ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Pheduyet-01",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nhap TỪ CHỐI nhu \"\u003cNHAP TC\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Lý do từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Tuchoi-01",
-        "Có lịch công tác khác",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Kiem tra TỪ CHỐI nhu \"\u003cKIEM TRA TC\u003e\"",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "NA",
-        "Nhân sự",
-        "Lý do từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Thuc hien TỪ CHỐI nhu \"\u003cTHUC HIEN TC\u003e\"",
-  "keyword": "When ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Từ chối",
-        "Hủy bỏ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Tuchoi-01",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.step({
-  "name": "Nguoi dung lay du lieu tu DB nhu \"\u003cDATA DB\u003e\"",
-  "keyword": "Given ",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "SQL Statement"
-      ]
-    }
-  ]
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "DATA KEY",
-        "LOGIN",
-        "MENU",
-        "NHAP DDKN",
-        "KIEM TRA DDKN",
-        "THUC HIEN DDKN",
-        "NHAP LHTTTDKN",
-        "KIEM TRA LHTTTDKN",
-        "THUC HIEN LHTTTDKN",
-        "NHAP XCTDKN",
-        "KIEM TRA XCTDKN",
-        "THUC HIEN XCTDKN",
-        "NHAP PD",
-        "KIEM TRA PD",
-        "THUC HIEN PD",
-        "NHAP TC",
-        "KIEM TRA TC",
-        "THUC HIEN TC",
-        "VERIFY DB"
-      ]
-    },
-    {
-      "cells": [
-        "LOGIN",
-        "LOGIN",
-        "MENU",
-        "TimKiem-01",
-        "",
-        "TimKiem-01",
-        "",
-        "TimKiem-01",
-        "",
-        "",
-        "XemChiTiet",
-        "Pheduyet-01",
-        "Pheduyet-01",
-        "",
-        "Pheduyet-01",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Sample of DuyetDangKyNghi_CTR",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@DuyetDangKyNghi_CTR"
-    }
-  ]
-});
-formatter.step({
-  "name": "Thiet lap du lieu nhu \"LOGIN\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "Session Data Value"
-      ]
-    },
-    {
-      "cells": [
-        "LOGIN",
-        "EMAIL",
-        "acoount_test@vnpt.vn"
-      ]
-    },
-    {
-      "cells": [
-        "LOGIN",
-        "PASSWORD",
-        "Vnpt#123"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_thiet_lap_du_lieu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung dang nhap vao he thong nhu \"LOGIN\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Email",
-        "Password",
-        "Mat Khau",
-        "Hien Thi Thong Bao"
-      ]
-    },
-    {
-      "cells": [
-        "LOGIN",
-        "account_test@vnpt.vn",
-        "Vnpt#123",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_dang_nhap_vao_he_thong_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nguoi dung vao menu nhu \"MENU\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MENU"
-      ]
-    },
-    {
-      "cells": [
-        "MENU",
-        "Quản lý ngày nghỉ\u003ePhê duyệt ngày nghỉ"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonDefs.nguoi_dung_vao_menu_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tìm kiếm",
-        "Các bộ lọc",
-        "Nhóm theo",
-        "Yêu thích",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TimKiem-01",
-        "Trần Thị Lương Huyền, Nhân sự",
-        "Chờ phê duyệt",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "DuyetDangKyNghiDefs.Nhap_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Page",
-        "Page Size",
-        "Row",
-        "Total Record",
-        "Nhân sự",
-        "Đơn vị / Phong ban",
-        "Ngày bắt đầu",
-        "Ngày kết thúc",
-        "Lý do nghỉ",
-        "Số ngày nghỉ",
-        "Người duyệt",
-        "Trạng thái",
-        "Lý do từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "DuyetDangKyNghiDefs.Nhap_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Page",
-        "Page Size",
-        "Row",
-        "Total Record",
-        "Nhân sự",
-        "Đơn vị / Phong ban",
-        "Ngày bắt đầu",
-        "Ngày kết thúc",
-        "Lý do nghỉ",
-        "Số ngày nghỉ",
-        "Người duyệt",
-        "Trạng thái",
-        "Lý do từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TimKiem-01",
-        "",
-        "",
-        "1",
-        "1",
-        "0114 - Trần Thị Lương Huyền",
-        "VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT",
-        "02/12/2019",
-        "05/12/2019",
-        "Đi du lịch",
-        "4,0",
-        "0002 - Account Test",
-        "Chờ phê duyệt",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "DuyetDangKyNghiDefs.Kiem_tra_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Page",
-        "Page Size",
-        "Row",
-        "Total Record",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "DuyetDangKyNghiDefs.Thuc_hien_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra DUYỆT ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Tìm kiếm",
-        "Các bộ lọc",
-        "Nhóm theo",
-        "Yêu thích",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "DuyetDangKyNghiDefs.Kiem_tra_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien DUYỆT ĐĂNG KÝ NGHỈ nhu \"TimKiem-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Xem chi tiết",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "TimKiem-01",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "DuyetDangKyNghiDefs.Thuc_hien_DUYET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "XemChiTietDangKyNghiDefs.Nhap_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"XemChiTiet\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Nhân sự",
-        "Lý do",
-        "Loại nghỉ",
-        "Từ ngày",
-        "Đến ngày",
-        "Số ngày nghỉ",
-        "Ngày tạo",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "XemChiTiet",
-        "0114 - Trần Thị Lương Huyền",
-        "Đi du lịch",
-        "PHép",
-        "02/12/2019",
-        "05/12/2019",
-        "4,0",
-        "30/11/2019",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "XemChiTietDangKyNghiDefs.Kiem_tra_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien XEM CHI TIẾT ĐĂNG KÝ NGHỈ nhu \"Pheduyet-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Phê duyệt",
-        "Từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Pheduyet-01",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "cells": [
-        "Tuchoi-01",
-        "",
-        "Y",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "XemChiTietDangKyNghiDefs.Thuc_hien_XEM_CHI_TIET_DANG_KY_NGHI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap PHÊ DUYỆT nhu \"Pheduyet-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Người phê duyệt lần 2",
-        "Duyệt lần 2",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Pheduyet-01",
-        "",
-        "NN",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "PheDuyetDefs.Nhap_PHE_DUYET_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra PHÊ DUYỆT nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Nhân sự",
-        "Người phê duyệt lần 2",
-        "Duyệt lần 2",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "NA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "PheDuyetDefs.Kiem_tra_PHE_DUYET_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Thuc hien PHÊ DUYỆT nhu \"Pheduyet-01\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Phê duyệt",
-        "Hủy bỏ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Pheduyet-01",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "PheDuyetDefs.Thuc_hien_PHE_DUYET_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Nhap TỪ CHỐI nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Lý do từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Tuchoi-01",
-        "Có lịch công tác khác",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TuChoiDefs.Nhap_TU_CHOI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Kiem tra TỪ CHỐI nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "NA",
-        "Nhân sự",
-        "Lý do từ chối",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TuChoiDefs.Kiem_tra_TU_CHOI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "error_message": "java.lang.IllegalArgumentException: Column [KEY] not found in Data Table [TU_CHOI_KIEM_TRA]. Re check data !\r\n\tat hrm.lib.SessionData.getDataTbRowsByValEqualInCol(SessionData.java:1584)\r\n\tat hrm.steps.defs.TuChoiDefs.Kiem_tra_TU_CHOI_nhu(TuChoiDefs.java:77)\r\n\tat ✽.Kiem tra TỪ CHỐI nhu \"\"(src/test/resources/features/3_DuyetDangKyNghi_CTR_DATA.feature:55)\r\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "Thuc hien TỪ CHỐI nhu \"\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Từ chối",
-        "Hủy bỏ",
-        "MESSAGE",
-        "MESSAGE_ACTION",
-        "ALERT",
-        "ALERT_ACTION"
-      ]
-    },
-    {
-      "cells": [
-        "Tuchoi-01",
-        "Y",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "TuChoiDefs.Thuc_hien_TU_CHOI_nhu(String,String\u003e\u003e)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "Nguoi dung lay du lieu tu DB nhu \"\u003cDATA DB\u003e\"",
-  "rows": [
-    {
-      "cells": [
-        "KEY",
-        "Session Data KEY",
-        "SQL Statement"
-      ]
-    }
-  ],
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
 });
 });

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: hrm.DefinitionTestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! - in hrm.DefinitionTestSuite
+initializationError(hrm.DefinitionTestSuite)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Not a file or directory: D:\Automation test\hrm\src\test\resources\features\consult_dictionary\LookupADefinition.feature
+

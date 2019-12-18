@@ -27,6 +27,11 @@ public class LoginDefs {
 
 	@Steps
 	CommonSteps commonSteps;
+	
+	@Given("^Người dùng truy cập vào hệ thống$")
+	public void nguoi_dung_truy_cap_vao_he_thong() {
+		loginSteps.mo_trinh_duyet();
+	}
 
 	@Given("^Nhap LOGIN nhu \"([^\"]*)\"$")
 	public void Nhap_LOGIN_nhu(String dataKey, List<List<String>> dataTable) throws Exception {
@@ -192,7 +197,6 @@ public class LoginDefs {
 					String actualMessage = "Success";
 					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage, actualMessage);
 				}
-
 			}
 			if (!sMessageAction.isEmpty()) {
 				if (SessionData.isYes(sMessageAction)) {
@@ -326,39 +330,4 @@ public class LoginDefs {
 		commonSteps.clear_assertion(DATA_TABLE);
 	}
 
-	@Then("^Kiem tra cac Control hien thi day du tren LOGIN$")
-	public void Kiem_tra_cac_Control_hien_thi_day_du_tren_LOGIN() throws Exception {
-		mainPageSteps.mo_trinh_duyet();
-		String DATA_TABLE = "LOGIN_VERIFY_CONTROL_VISIBLE";
-		SessionData.declareSoftAssertion(DATA_TABLE, "Kiem tra cac Control hien thi day du tren LOGIN");
-		SessionData.addSoftAssertion(DATA_TABLE, "B1_V", "VISIBLE/INVISIBLE: Email", true, loginSteps.exist_email());
-		SessionData.addSoftAssertion(DATA_TABLE, "B2_V", "VISIBLE/INVISIBLE: Mật khẩu", true,
-				loginSteps.exist_mat_khau());
-		SessionData.addSoftAssertion(DATA_TABLE, "B3_V", "VISIBLE/INVISIBLE: Đăng nhập", true,
-				loginSteps.exist_dang_nhap());
-		SessionData.addSoftAssertion(DATA_TABLE, "B4_V", "VISIBLE/INVISIBLE: Đặt lại mật khẩu", true,
-				loginSteps.exist_dat_lai_mat_khau());
-		SessionData.addSoftAssertion(DATA_TABLE, "B5_V", "VISIBLE/INVISIBLE: Message error login", true,
-				loginSteps.exist_message_error_login());
-		commonSteps.assertion_result(SessionData.generateSoftAssertion(DATA_TABLE));
-		try {
-			SessionData.generateExcelReport();
-		} catch (Exception e) {
-		}
-//		commonSteps.assertion_result_then_assert(DATA_TABLE, SessionData.generateSoftAssertion(DATA_TABLE));
-		commonSteps.clear_assertion(DATA_TABLE);
-	}
-
-	@Then("^Kiem tra Tab Index cac Control tren LOGIN$")
-	public void Kiem_tra_Tab_Index_cac_Control_tren_LOGIN() throws Exception {
-		String DATA_TABLE = "LOGIN_VERIFY_CONTROL_TAB";
-		SessionData.declareSoftAssertion(DATA_TABLE, "Kiem tra Tab Index cua Control tren LOGIN");
-		commonSteps.assertion_result(SessionData.generateSoftAssertion(DATA_TABLE));
-		try {
-			SessionData.generateExcelReport();
-		} catch (Exception e) {
-		}
-//		commonSteps.assertion_result_then_assert(DATA_TABLE, SessionData.generateSoftAssertion(DATA_TABLE));
-		commonSteps.clear_assertion(DATA_TABLE);
-	}
 }
