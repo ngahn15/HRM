@@ -13,17 +13,18 @@ Feature: Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ
       | KEY | MENU                                   |
       | 001 | Quản lý ngày nghỉ>Đăng ký nghỉ>Tạo mới |
     Given Nhap TẠO MỚI ĐĂNG KÝ NGHỈ nhu "<NHAP TMDKN>"
-      | KEY    | Kính gửi                   | Người duyệt          | Lý do      | Địa điểm nghỉ phép | Loại nghỉ | Từ ngày           | Đến ngày          | Số ngày nghỉ |
-      | TC-003 | @BLANK@                    | Trần Thị Lương Huyền |            |                    |           |                   |                   |              |
-      | TC-005 | Ông/ bà trưởng phòng QLCL  | Trần Thị Lương Huyền | @BLANK@    |                    |           |                   |                   |              |
-      | TC-006 |                            |                      | Nằm viện   |                    | @BLANK@   |                   |                   |              |
-      | TC-007 |                            |                      |            |                    | nghỉ bù   | @BLANK@           | @DATEdd/MM/yyyy@@ |              |
-      | TC-008 |                            |                      |            |                    |           | @DATEdd/MM/yyyy@@ | @BLANK@           |              |
-      | TC-009 |                            |                      |            |                    |           | 01/12/2019        | 01/11/2019        |              |
-      | TC-010 |                            |                      |            |                    |           | 01/12/2019        | 01/12/2019        |         -100 |
-      | TC-011 | Ông/ Bà: Trưởng phòng QLCL |                      | Đi du lịch | Đà Nẵng            | phép      | 02/12/2019        | 5/12/2019         |          3,6 |
-      | TC-012 |                            |                      | Đi du lịch | Đà Nẵng            | phép      | 02/12/2019        | 5/12/2019         |            4 |
-      | TC-013 | Ông/ Bà: Trưởng phòng QLCL |                      | Con ốm     |                    | nghỉ bù   | 05/12/2019        | 07/12/2019        |            3 |
+      | KEY    | Kính gửi                   | Người duyệt          | Lý do      | Loại nghỉ | Từ ngày           | Đến ngày          | Số ngày nghỉ |
+      | TC-003 | @BLANK@                    | Trần Thị Lương Huyền |            |           |                   |                   |              |
+      | TC-005 | Ông/ bà trưởng phòng QLCL  | Trần Thị Lương Huyền | @BLANK@    |           |                   |                   |              |
+      | TC-006 |                            |                      | Nằm viện   | @BLANK@   |                   |                   |              |
+      | TC-007 |                            |                      |            | nghỉ bù   | @BLANK@           | @DATEdd/MM/yyyy@@ |              |
+      | TC-008 |                            |                      |            |           | @DATEdd/MM/yyyy@@ | @BLANK@           |              |
+      | TC-009 |                            |                      |            |           | 01/12/2019        | 01/11/2019        |              |
+      | TC-010 |                            |                      |            |           | 01/12/2019        | 01/12/2019        |         -100 |
+      | TC-011 | Ông/ Bà: Trưởng phòng QLCL |                      | Đi du lịch | phép      | 02/12/2019        | 5/12/2019         |          3,6 |
+      | TC-012 |                            |                      |            | phép      | 02/12/2019        | 7/12/2019         |              |
+      | TC-013 |                            |                      |            | phép      | 02/12/2019        | 4/12/2019         |            2 |
+      | TC-014 | Ông/ Bà: Trưởng phòng QLCL |                      | bị ốm      | bù        | 04/12/2019        | 05/12/2019        |              |
     When Thuc hien TẠO MỚI ĐĂNG KÝ NGHỈ nhu "<THUC HIEN TMDKN>"
       | KEY           | Lưu | Hủy bỏ | Gửi phê duyệt | Sửa | Tạo | Soạn thảo |
       | TAO           |     |        |               |     | Y   |           |
@@ -38,8 +39,9 @@ Feature: Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ
       | TC-009        | Y   |        |               |     |     |           |
       | TC-010        | Y   |        |               |     |     |           |
       | TC-011        | Y   |        |               |     |     |           |
-      | TC-012        | Y   |        |               |     |     |           |
+      | TC-012        |     |        | Y             |     |     |           |
       | TC-013        | Y   |        |               |     |     |           |
+      | TC-014        | Y   |        |               |     |     |           |
     Then Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu "<KIEM TRA TMDKN>"
       | KEY    | MESSAGE       | MESSAGE_ACTION | MODAL                                                                               | MODAL_ACTION |
       | TC-003 | Kính gửi      |                |                                                                                     |              |
@@ -50,8 +52,9 @@ Feature: Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ
       | TC-009 |               |                | Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!                              | Y            |
       | TC-010 | Số ngày nghỉ  |                |                                                                                     |              |
       | TC-011 |               |                | Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!                                   | Y            |
-      | TC-012 | Success       |                |                                                                                     |              |
-      | TC-013 |               |                | Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)! | Y            |
+      | TC-012 |               |                | Số ngày xin nghỉ lớn hơn số ngày phép còn lại!                                      | Y            |
+      | TC-013 | Success       |                |                                                                                     |              |
+      | TC-014 |               |                | Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)! | Y            |
     When Thuc hien MAIN PAGE nhu "<THUC HIEN MP>"
       | KEY    | User profile | Signout | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
       | LOGOUT | Y            | Y       |         |                |       |              |
@@ -69,9 +72,10 @@ Feature: Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ
       |       |          |      |            |                | TAO             |              |
       |       |          |      | TC-011     | TC-011         | TC-011          |              |
       |       |          |      | TC-012     | TC-012         | TC-012          |              |
+      |       |          |      | TC-013     | TC-013         | TC-013          |              |
       |       |          |      |            |                | GUI_PHE_DUYET   |              |
       |       |          |      |            |                | TAO             |              |
-      |       |          |      | TC-013     | TC-013         | TC-013          |              |
+      |       |          |      | TC-014     | TC-014         | TC-014          |              |
       |       |          |      |            |                | HUY             |              |
       |       |          |      |            |                |                 | LOGOUT       |
 

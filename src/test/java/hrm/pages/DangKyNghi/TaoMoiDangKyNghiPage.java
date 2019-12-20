@@ -19,12 +19,8 @@ public class TaoMoiDangKyNghiPage extends MyPageObject {
 	private static final String INPUT_NAME_DATE_TO = "//div[@name='date_to']//input[@name='date_to']";
 	private static final String INPUT_NAME_DATE_FROM = "//div[@name='date_from']//input[@name='date_from']";
 	private static final String INPUT_NAME_KINH_GUI = "//input[@name='kinh_gui']";
-	private static final String INPUT_NAME_NGHI_DI_NUOC_NGOAI = "//div[@name='nghi_di_nuoc_ngoai']//input";
-	private static final String TEXTAREA_NAME_DIADIEM_NGHIPHEP = "//textarea[@name='diadiem_nghiphep']";
 	private static final String TEXTAREA_NAME_LYDO = "//textarea[@name='lydo']";
 	private static final String combobox_LoaiNghi = "//div[@name='holiday_status_id']//div[@class='o_input_dropdown']//input";
-	private static final String ComboboxNHANSU_UYQUYEN = "//div[@name='nhansu_uyquyen']//div[@class='o_input_dropdown']//input";
-	private static final String comboboxNguoiLienQuan = "//div[@name='nguoi_lien_quan']//div[@name='nguoi_lien_quan']//input";
 	private static final String comboboxNguoiDuyet = "//div[@name='nguoi_duyet']//div[@class='o_input_dropdown']//input";
 
 	public TaoMoiDangKyNghiPage(WebDriver driver) {
@@ -32,7 +28,6 @@ public class TaoMoiDangKyNghiPage extends MyPageObject {
 	}
 
 	// BEGIN TẠO MỚI ĐĂNG KÝ NGHỈ
-	private final String xPathTMDKN = "";
 
 	// Kính gửi
 	public void enter_kinh_gui(String sKinhGui) {
@@ -96,91 +91,6 @@ public class TaoMoiDangKyNghiPage extends MyPageObject {
 
 	public boolean focus_ly_do() {
 		return XH(TEXTAREA_NAME_LYDO).hasFocus();
-	}
-
-	// Người liên quan
-	public void select_nguoi_lien_quan(String sNguoiLienQuan) {
-		selectSearchDDL(comboboxNguoiLienQuan, sNguoiLienQuan);
-	}
-
-	public String nguoi_lien_quan() {
-		return getSelectedSearchDDLText(comboboxNguoiLienQuan);
-	}
-
-	public boolean exist_nguoi_lien_quan() {
-		return isElementExistNow(comboboxNguoiLienQuan);
-	}
-
-	public boolean enabled_nguoi_lien_quan() {
-		return XH(comboboxNguoiLienQuan).isEnabled();
-	}
-
-	public boolean focus_nguoi_lien_quan() {
-		return XH(comboboxNguoiLienQuan).hasFocus();
-	}
-
-	// Địa điểm nghỉ phép
-	public void enter_dia_diem_nghi_phep(String sDiaDiemNghiPhep) {
-		waitClearAndType(TEXTAREA_NAME_DIADIEM_NGHIPHEP, sDiaDiemNghiPhep);
-	}
-
-	public String dia_diem_nghi_phep() {
-		return XH(TEXTAREA_NAME_DIADIEM_NGHIPHEP).getAttribute("value");
-	}
-
-	public boolean exist_dia_diem_nghi_phep() {
-		return isElementExistNow(TEXTAREA_NAME_DIADIEM_NGHIPHEP);
-	}
-
-	public boolean enabled_dia_diem_nghi_phep() {
-		// return XH(TEXTAREA_NAME_DIADIEM_NGHIPHEP).isEnabled();
-		return !isElemenReadonly(TEXTAREA_NAME_DIADIEM_NGHIPHEP);
-	}
-
-	public boolean focus_dia_diem_nghi_phep() {
-		return XH(TEXTAREA_NAME_DIADIEM_NGHIPHEP).hasFocus();
-	}
-
-	// Nhân sự được ủy quyền
-	public void select_nhan_su_duoc_uy_quyen(String sNhanSuDuocUyQuyen) {
-		selectSearchDDL(ComboboxNHANSU_UYQUYEN, sNhanSuDuocUyQuyen);
-	}
-
-	public String nhan_su_duoc_uy_quyen() {
-		return getSelectedSearchDDLText(ComboboxNHANSU_UYQUYEN);
-	}
-
-	public boolean exist_nhan_su_duoc_uy_quyen() {
-		return isElementExistNow(ComboboxNHANSU_UYQUYEN);
-	}
-
-	public boolean enabled_nhan_su_duoc_uy_quyen() {
-		return XH(ComboboxNHANSU_UYQUYEN).isEnabled();
-	}
-
-	public boolean focus_nhan_su_duoc_uy_quyen() {
-		return XH(ComboboxNHANSU_UYQUYEN).hasFocus();
-	}
-
-	// Nghỉ đi nước ngoài
-	public void set_nghi_di_nuoc_ngoai(String sNghiDiNuocNgoai) {
-		setChkbox(INPUT_NAME_NGHI_DI_NUOC_NGOAI, sNghiDiNuocNgoai);
-	}
-
-	public boolean nghi_di_nuoc_ngoai() {
-		return XH(INPUT_NAME_NGHI_DI_NUOC_NGOAI).isSelected();
-	}
-
-	public boolean exist_nghi_di_nuoc_ngoai() {
-		return isElementExistNow(INPUT_NAME_NGHI_DI_NUOC_NGOAI);
-	}
-
-	public boolean enabled_nghi_di_nuoc_ngoai() {
-		return XH(INPUT_NAME_NGHI_DI_NUOC_NGOAI).isEnabled();
-	}
-
-	public boolean focus_nghi_di_nuoc_ngoai() {
-		return XH(INPUT_NAME_NGHI_DI_NUOC_NGOAI).hasFocus();
 	}
 
 	// Loại nghỉ

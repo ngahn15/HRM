@@ -554,7 +554,8 @@ public abstract class MyPageObject extends PageObject {
 		if (_value.equals("@BLANK@")) {
 			_value = "";
 		}
-		XH(_xPath).clear();
+//		XH(_xPath).type(_value);
+		$(_xPath).clear();
 		XH(_xPath).sendKeys(_value);
 	}
 
@@ -2670,11 +2671,11 @@ public abstract class MyPageObject extends PageObject {
 	 * @param _resOrder
 	 * @param _option
 	 */
-	public List<String> getText_listElement(String xPath) {
+	public List<String> getText_In_List_Element(String xPath) {
 		List<WebElementFacade> listElements = new ArrayList<>();
 		List<String> text = new ArrayList<>();
-//		System.out.println("XH(xPath).isVisible()" + XH(xPath).isVisible());
-		if (XH(xPath).isVisible()) {
+		System.out.println("XH(xPath).isVisible()" + XH(xPath).isVisible());
+		if ($(xPath).isVisible()) {
 			listElements = findAll(xPath);
 			for (WebElementFacade e : listElements) {
 				text.add(e.getText().toLowerCase());
@@ -2687,15 +2688,15 @@ public abstract class MyPageObject extends PageObject {
 	public void selectSearchDDL(String _xPath, String _option) {
 		if (_option.equals("@BLANK@")) {
 			_option = "";
-			XH(_xPath).clear();
+			$(_xPath).clear();
 			XH(_xPath).sendKeys(_option);
 			return;
 		}
-		XH(_xPath).clear();
+		$(_xPath).clear();
 		XH(_xPath).sendKeys(_option);
 		_option = _option.toLowerCase();
 		String xPath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content'][contains(@style,'display: block')]//li";
-		List<String> text = getText_listElement(xPath);
+		List<String> text = getText_In_List_Element(xPath);
 //		for (String string : text) {
 //			System.out.println(string);
 //		}
@@ -2704,7 +2705,6 @@ public abstract class MyPageObject extends PageObject {
 			int i = text.indexOf(_option) + 1;
 			clickOnElement(xPath + "[" + i + "]");
 		} else {
-			_option = _option.toLowerCase();
 			for (int i = 0; i < text.size(); i++) {
 				String str = text.get(i);
 //				System.out.println("Str " + str);

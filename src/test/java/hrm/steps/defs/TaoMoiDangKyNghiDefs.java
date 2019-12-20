@@ -40,10 +40,6 @@ public class TaoMoiDangKyNghiDefs {
 			String sKinhGui = SessionData.getDataTbVal(DATA_TABLE, row, "Kính gửi");
 			String sNguoiDuyet = SessionData.getDataTbVal(DATA_TABLE, row, "Người duyệt");
 			String sLyDo = SessionData.getDataTbVal(DATA_TABLE, row, "Lý do");
-			String sNguoiLienQuan = SessionData.getDataTbVal(DATA_TABLE, row, "Người liên quan");
-			String sDiaDiemNghiPhep = SessionData.getDataTbVal(DATA_TABLE, row, "Địa điểm nghỉ phép");
-			String sNhanSuDuocUyQuyen = SessionData.getDataTbVal(DATA_TABLE, row, "Nhân sự được ủy quyền");
-			String sNghiDiNuocNgoai = SessionData.getDataTbVal(DATA_TABLE, row, "Nghỉ đi nước ngoài");
 			String sLoaiNghi = SessionData.getDataTbVal(DATA_TABLE, row, "Loại nghỉ");
 			String sTuNgay = SessionData.getDataTbVal(DATA_TABLE, row, "Từ ngày");
 			String sDenNgay = SessionData.getDataTbVal(DATA_TABLE, row, "Đến ngày");
@@ -57,18 +53,6 @@ public class TaoMoiDangKyNghiDefs {
 			}
 			if (!sLyDo.isEmpty()) {
 				TMDKN.enter_ly_do(sLyDo);
-			}
-			if (!sNguoiLienQuan.isEmpty()) {
-				TMDKN.select_nguoi_lien_quan(sNguoiLienQuan);
-			}
-			if (!sDiaDiemNghiPhep.isEmpty()) {
-				TMDKN.enter_dia_diem_nghi_phep(sDiaDiemNghiPhep);
-			}
-			if (!sNhanSuDuocUyQuyen.isEmpty()) {
-				TMDKN.select_nhan_su_duoc_uy_quyen(sNhanSuDuocUyQuyen);
-			}
-			if (!sNghiDiNuocNgoai.isEmpty()) {
-				TMDKN.set_nghi_di_nuoc_ngoai(sNghiDiNuocNgoai);
 			}
 			if (!sLoaiNghi.isEmpty()) {
 				TMDKN.select_loai_nghi(sLoaiNghi);
@@ -118,7 +102,7 @@ public class TaoMoiDangKyNghiDefs {
 			if (!sMessage.isEmpty()) {
 				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage,
 						Common.get_message(sMessage));
-			} else {
+			} else if(sMessage.equals("Success")){
 				String actualMessage = "Success";
 				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage, actualMessage);
 			}
@@ -129,7 +113,7 @@ public class TaoMoiDangKyNghiDefs {
 				String actualMassage = Common.get_modal();
 				System.out.println("actualMassage: " + actualMassage);
 				if (actualMassage.contains(sModal)) {
-					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Alert.", sModal, Common.get_modal());
+					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sModal, actualMassage);
 				}
 			}
 			if (!sModalAction.isEmpty()) {

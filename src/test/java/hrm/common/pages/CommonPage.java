@@ -47,11 +47,11 @@ public class CommonPage extends MyPageObject {
 
 	}
 
-	// Get message
+	// Get message in modal
 	public String get_modal() {
 		String xPath = "//div[@class='o_dialog_warning modal-body']";
 		String message = "";
-		if (XH(xPath).isVisible()) {
+		if ($(xPath).isVisible()) {
 			System.out.println("Hellel");
 			message = String.valueOf(XH(xPath).getText());
 			System.out.println("***** INFO ***** Message : [" + message + "]");
