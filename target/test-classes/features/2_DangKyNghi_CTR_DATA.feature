@@ -43,18 +43,18 @@ Feature: Kịch bản kiểm thử chức năng Đăng ký ngày nghỉ
       | TC-013        | Y   |        |               |     |     |           |
       | TC-014        | Y   |        |               |     |     |           |
     Then Kiem tra TẠO MỚI ĐĂNG KÝ NGHỈ nhu "<KIEM TRA TMDKN>"
-      | KEY    | MESSAGE       | MESSAGE_ACTION | MODAL                                                                               | MODAL_ACTION |
-      | TC-003 | Kính gửi      |                |                                                                                     |              |
-      | TC-005 | Lý do         |                |                                                                                     |              |
-      | TC-006 | Loại nghỉ     |                |                                                                                     |              |
-      | TC-007 | Ngày bắt đầu  |                |                                                                                     |              |
-      | TC-008 | Ngày kết thúc |                |                                                                                     |              |
-      | TC-009 |               |                | Từ ngày: 01/11/2019 phải nhỏ hơn Đến ngày: 01/12/2019!                              | Y            |
-      | TC-010 | Số ngày nghỉ  |                |                                                                                     |              |
-      | TC-011 |               |                | Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!                                   | Y            |
-      | TC-012 |               |                | Số ngày xin nghỉ lớn hơn số ngày phép còn lại!                                      | Y            |
-      | TC-013 | Success       |                |                                                                                     |              |
-      | TC-014 |               |                | Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)! | Y            |
+      | KEY    | TITLE                      | MESSAGE       | MESSAGE_ACTION | MODAL                                                                               | MODAL_ACTION |
+      | TC-003 |                            | Kính gửi      |                |                                                                                     |              |
+      | TC-005 |                            | Lý do         |                |                                                                                     |              |
+      | TC-006 |                            | Loại nghỉ     |                |                                                                                     |              |
+      | TC-007 |                            | Ngày bắt đầu  |                |                                                                                     |              |
+      | TC-008 |                            | Ngày kết thúc |                |                                                                                     |              |
+      | TC-009 |                            |               |                | Từ ngày: 01/12/2019 phải nhỏ hơn Đến ngày: 01/11/2019!                              | Y            |
+      | TC-010 |                            | Số ngày nghỉ  |                |                                                                                     |              |
+      | TC-011 |                            |               |                | Số ngày xin nghỉ phải là nửa ngày hoặc tròn ngày!                                   | Y            |
+      | TC-012 |                            |               |                | Số ngày xin nghỉ lớn hơn số ngày phép còn lại!                                      | Y            |
+      | TC-013 | 0121 - Trần ngọc Anh - HRM | Success       |                |                                                                                     |              |
+      | TC-014 |                            |               |                | Khai báo thời gian nghỉ không hợp lệ. (Đã tồn tại bản ghi đăng ký nghỉ trùng ngày)! | Y            |
     When Thuc hien MAIN PAGE nhu "<THUC HIEN MP>"
       | KEY    | User profile | Signout | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
       | LOGOUT | Y            | Y       |         |                |       |              |

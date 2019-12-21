@@ -20,7 +20,7 @@ Feature: Sample of DuyetDangKyNghi_CTR
       | NA  |      |           |     |              |         |                    |              |               |            |              |             |            |               |         |                |       |              |
     Then Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu "<KIEM TRA LHTTTDKN>"
       | KEY        | Page | Page Size | Row | Total Record | Nhân sự              | Đơn vị / Phong ban                                   | Ngày bắt đầu | Ngày kết thúc | Lý do nghỉ | Số ngày nghỉ | Người duyệt         | Trạng thái    | Lý do từ chối | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
-      | TimKiem-01 |      |           |   1 |            1 | 0114 - Trần Ngọc Anh | VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT | 02/12/2019   | 05/12/2019    | Đi du lịch |          4,0 | 0002 - Account Test | Chờ phê duyệt |               |         |                |       |              |
+      | TimKiem-01 |      |           |   1 |            1 | 0114 - Trần Ngọc Anh | VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT | 02/12/2019   | 04/12/2019    | Đi du lịch |          2,0 | 0114 - Trần Thị Lương Huyền | Chờ phê duyệt |               |         |                |       |              |
     When Thuc hien LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu "<THUC HIEN LHTTTDKN>"
       | KEY | Page | Page Size | Row | Total Record | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
       | NA  |      |           |     |              |         |                |       |              |

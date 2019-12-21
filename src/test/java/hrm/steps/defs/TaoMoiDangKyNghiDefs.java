@@ -94,17 +94,20 @@ public class TaoMoiDangKyNghiDefs {
 		}
 		for (int row : data.keySet()) {
 			String sKey = SessionData.getDataTbVal(DATA_TABLE, row, "KEY");
+			String sTitle = SessionData.getDataTbVal(DATA_TABLE, row, "TITLE");
 			String sMessage = SessionData.getDataTbVal(DATA_TABLE, row, "MESSAGE");
 			String sMessageAction = SessionData.getDataTbVal(DATA_TABLE, row, "MESSAGE_ACTION");
 			String sModal = SessionData.getDataTbVal(DATA_TABLE, row, "MODAL");
 			String sModalAction = SessionData.getDataTbVal(DATA_TABLE, row, "MODAL_ACTION");
 
 			if (!sMessage.isEmpty()) {
-				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage,
-						Common.get_message(sMessage));
-			} else if(sMessage.equals("Success")){
-				String actualMessage = "Success";
-				SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage, actualMessage);
+				if (sMessage.equals("Success")) {
+					String actualTitle = Common.getTitle();
+					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sTitle, actualTitle);
+				} else {
+					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sMessage,
+							Common.get_message(sMessage));
+				}
 			}
 			if (!sMessageAction.isEmpty()) {
 				Common.close_message(sMessageAction);
@@ -113,6 +116,7 @@ public class TaoMoiDangKyNghiDefs {
 				String actualMassage = Common.get_modal();
 				System.out.println("actualMassage: " + actualMassage);
 				if (actualMassage.contains(sModal)) {
+					actualMassage = sModal;
 					SessionData.addSoftAssertion(DATA_TABLE, sKey, "Expected Message.", sModal, actualMassage);
 				}
 			}

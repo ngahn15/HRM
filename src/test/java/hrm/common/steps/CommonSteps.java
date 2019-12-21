@@ -25,6 +25,11 @@ public class CommonSteps extends ScenarioSteps {
 		commonPage.open();
 		getDriver().manage().window().maximize();
 	}
+	
+	@Step
+	public String getTitle() {
+		return commonPage.getTitle();
+	}
 
 	// BEGIN Press keyboard
 	@Step

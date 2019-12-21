@@ -2671,12 +2671,11 @@ public abstract class MyPageObject extends PageObject {
 	 * @param _resOrder
 	 * @param _option
 	 */
-	public List<String> getText_In_List_Element(String xPath) {
+	public List<String> get_Text_In_List_Element(String xPath) {
 		List<WebElementFacade> listElements = new ArrayList<>();
 		List<String> text = new ArrayList<>();
-		System.out.println("XH(xPath).isVisible()" + XH(xPath).isVisible());
 		if ($(xPath).isVisible()) {
-			listElements = findAll(xPath);
+			listElements = $$(xPath);
 			for (WebElementFacade e : listElements) {
 				text.add(e.getText().toLowerCase());
 			}
@@ -2694,12 +2693,13 @@ public abstract class MyPageObject extends PageObject {
 		}
 		$(_xPath).clear();
 		XH(_xPath).sendKeys(_option);
+		waitForEverythingComplete();
 		_option = _option.toLowerCase();
 		String xPath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content'][contains(@style,'display: block')]//li";
-		List<String> text = getText_In_List_Element(xPath);
-//		for (String string : text) {
-//			System.out.println(string);
-//		}
+		List<String> text = get_Text_In_List_Element(xPath);
+		for (String string : text) {
+			System.out.println("++++++++++++++++" + string);
+		}
 		if (text.contains(_option)) {
 //			System.out.println("text.contains(_option) " + _option);
 			int i = text.indexOf(_option) + 1;

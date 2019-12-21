@@ -14,6 +14,7 @@ public class CommonPage extends MyPageObject {
 	public CommonPage(WebDriver driver) {
 		super(driver);
 	}
+	
 
 	public String get_message() {
 		return null;
