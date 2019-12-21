@@ -12,14 +12,14 @@ Feature: Sample of DuyetDangKyNghi_CTR
     When Nguoi dung vao menu nhu "<MENU>"
       | KEY  | MENU                                  |
       | MENU | Quản lý ngày nghỉ>Phê duyệt ngày nghỉ |
-    Given Nhap DUYỆT ĐĂNG KÝ NGHỈ nhu "<NHAP DDKN>"
+    Given Tim kiem ban ghi can phe duyet nhu "<TIMKIEM>"
       | KEY        | Tìm kiếm               | Các bộ lọc    | Nhóm theo | Yêu thích | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
       | TimKiem-01 | Trần Ngọc Anh, Nhân sự | Chờ phê duyệt |           |           |         |                |       |              |
     Given Nhap LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu "<NHAP LHTTTDKN>"
       | KEY | Page | Page Size | Row | Total Record | Nhân sự | Đơn vị / Phong ban | Ngày bắt đầu | Ngày kết thúc | Lý do nghỉ | Số ngày nghỉ | Người duyệt | Trạng thái | Lý do từ chối | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
       | NA  |      |           |     |              |         |                    |              |               |            |              |             |            |               |         |                |       |              |
     Then Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu "<KIEM TRA LHTTTDKN>"
-      | KEY        | Page | Page Size | Row | Total Record | Nhân sự              | Đơn vị / Phong ban                                   | Ngày bắt đầu | Ngày kết thúc | Lý do nghỉ | Số ngày nghỉ | Người duyệt         | Trạng thái    | Lý do từ chối | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
+      | KEY        | Page | Page Size | Row | Total Record | Nhân sự              | Đơn vị / Phong ban                                   | Ngày bắt đầu | Ngày kết thúc | Lý do nghỉ | Số ngày nghỉ | Người duyệt                 | Trạng thái    | Lý do từ chối | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
       | TimKiem-01 |      |           |   1 |            1 | 0114 - Trần Ngọc Anh | VNPT-Vinaphone / Công ty Công nghệ thông tin VNPT-IT | 02/12/2019   | 04/12/2019    | Đi du lịch |          2,0 | 0114 - Trần Thị Lương Huyền | Chờ phê duyệt |               |         |                |       |              |
     When Thuc hien LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu "<THUC HIEN LHTTTDKN>"
       | KEY | Page | Page Size | Row | Total Record | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
@@ -61,5 +61,5 @@ Feature: Sample of DuyetDangKyNghi_CTR
       | KEY | Session Data KEY | SQL Statement |
 
     Examples: 
-      | DATA KEY | LOGIN | MENU | NHAP DDKN  | KIEM TRA DDKN | THUC HIEN DDKN | NHAP LHTTTDKN | KIEM TRA LHTTTDKN | THUC HIEN LHTTTDKN | NHAP XCTDKN | KIEM TRA XCTDKN | THUC HIEN XCTDKN | NHAP PD     | KIEM TRA PD | THUC HIEN PD | NHAP TC | KIEM TRA TC | THUC HIEN TC | VERIFY DB |
+      | DATA KEY | LOGIN | MENU | TIMKIEM  | KIEM TRA DDKN | THUC HIEN DDKN | NHAP LHTTTDKN | KIEM TRA LHTTTDKN | THUC HIEN LHTTTDKN | NHAP XCTDKN | KIEM TRA XCTDKN | THUC HIEN XCTDKN | NHAP PD     | KIEM TRA PD | THUC HIEN PD | NHAP TC | KIEM TRA TC | THUC HIEN TC | VERIFY DB |
       | LOGIN    | LOGIN | MENU | TimKiem-01 |               | TimKiem-01     |               | TimKiem-01        |                    |             | XemChiTiet      | Pheduyet-01      | Pheduyet-01 |             | Pheduyet-01  |         |             |              |           |

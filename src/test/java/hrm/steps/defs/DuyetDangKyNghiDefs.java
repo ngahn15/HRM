@@ -504,9 +504,9 @@ public class DuyetDangKyNghiDefs {
 		Common.clear_assertion(DATA_TABLE);
 	}
 
-	@Given("^Nhap DUYỆT ĐĂNG KÝ NGHỈ nhu \"([^\"]*)\"$")
-	public void Nhap_DUYET_DANG_KY_NGHI_nhu(String dataKey, List<List<String>> dataTable) throws Exception {
-		String DATA_TABLE = "DUYET_DANG_KY_NGHI_NHAP";
+	@Given("^Tim kiem ban ghi can phe duyet nhu \"([^\"]*)\"$")
+	public void Tim_kiem_ban_ghi_can_phe_duyet (String dataKey, List<List<String>> dataTable) throws Exception {
+		String DATA_TABLE = "DUYET_DANG_KY_NGHI_TIM_KIEM";
 		SessionData.addDataTable(DATA_TABLE, dataTable, false);
 		LinkedHashMap<Integer, List<String>> data = new LinkedHashMap<>();
 		data = SessionData.getDataTbRowsByValEqualInCol(DATA_TABLE, "KEY", dataKey);
@@ -560,8 +560,6 @@ public class DuyetDangKyNghiDefs {
 			SessionData.generateExcelReport();
 		} catch (Exception e) {
 		}
-		// Common.assertion_result_then_assert(DATA_TABLE,
-		// SessionData.generateSoftAssertion(DATA_TABLE));
 		Common.clear_assertion(DATA_TABLE);
 	}
 
