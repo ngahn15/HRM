@@ -1,12 +1,8 @@
 package hrm.pages.ChamCongThang;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import hrm.lib.MyPageObject;
-import net.serenitybdd.core.annotations.findby.By;
 
 /**
  * @author AUTO
@@ -133,20 +129,12 @@ public class TaoMoiBangChamCongThangPage extends MyPageObject {
 
 	// Tải lên tệp tin của bạn
 	public void click_tai_len_tep_tin_cua_ban(String sDir) {
-		clickOnElement("//button[@class='btn btn-primary o_select_file_button']");
+		if ($("//button[@class='btn btn-primary o_select_file_button']").isVisible()) {
+			clickOnElement("//button[@class='btn btn-primary o_select_file_button']");
+		} else {
+			clickOnElement("//button[@class='btn btn-secondary fa fa-pencil o_select_file_button']");
+		}
 		uploadFile(sDir);
-//		getInputHidden("//input[@name='vnpt_file']");
-//		loadLogoFrom(sDir, "//input[@name='vnpt_file']");
-//		clickOnElement("//input[@name='vnpt_file']");
-//		System.out.println("FILE:" + sDir);
-//		switchActiveElement(sDir);
-//		element("//input[@name='vnpt_file']").sendKeys(sDir);
-//		try {
-//			Thread.sleep(2000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 	}
 
 	public boolean exist_tai_len_tep_tin_cua_ban() {
