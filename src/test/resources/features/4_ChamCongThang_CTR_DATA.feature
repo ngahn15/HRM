@@ -13,14 +13,14 @@ Feature: Sample of ChamCongThang_CTR
       | KEY  | MENU                                       |
       | MENU | Quản lý chấm công>Bảng chấm công tháng>Tạo |
     Given Nhap TẠO MỚI BẢNG CHẤM CÔNG THÁNG nhu "<NHAP TMBCCT>"
-      | KEY        | Đơn vị     | Import dữ liệu | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
-      | Taomoi-001 | ERP - QLCL | Y              |         |                |       |              |
+      | KEY        | Đơn vị        | Import dữ liệu | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
+      | Taomoi-001 | Phần mềm số 1 | Y              |         |                |       |              |
     Then Kiem tra TẠO MỚI BẢNG CHẤM CÔNG THÁNG nhu "<KIEM TRA TMBCCT>"
       | KEY | Đơn vị | Import dữ liệu | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
       | NA  |        |                |         |                |       |              |
     When Thuc hien TẠO MỚI BẢNG CHẤM CÔNG THÁNG nhu "<THUC HIEN TMBCCT>"
       | KEY        | Tải lên tệp tin của bạn                                | Tải dữ liệu chấm công | Lưu | Hủy bỏ | Xác nhận | Cập nhật ngày nghỉ | Sửa | Xóa | MESSAGE | MESSAGE_ACTION | ALERT | ALERT_ACTION |
-      | Taomoi-001 | C:\\Users\\ngocn\\Desktop\\Upload test\\chamcong.xlsx |                       |     |        |          |                    |     |     |         |                |       |              |
+      | Taomoi-001 | C:\\Users\\\ngocn\\Desktop\\Upload test\\chamcong.xlsx |                       |     |        |          |                    |     |     |         |                |       |              |
       | TAI        |                                                        | Y                     |     |        |          |                    |     |     |         |                |       |              |
       | LUU        |                                                        |                       | Y   |        |          |                    |     |     |         |                |       |              |
     Given Nhap XEM BẢNG CHẤM CÔNG THÁNG nhu "<NHAP XBCCT>"

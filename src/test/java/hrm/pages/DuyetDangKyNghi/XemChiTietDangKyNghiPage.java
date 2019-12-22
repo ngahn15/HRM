@@ -18,6 +18,7 @@ public class XemChiTietDangKyNghiPage extends MyPageObject {
 	private static final String SPAN_EMPLOYEE_ID = "//span[@name='employee_id']";
 	private static final String BUTTON_TU_CHOI = "//button[@id='btn_refuse']//span[contains(text(),'Từ chối')]";
 	private static final String BUTTON_PHE_DUYET = "//button[@id='btn_approve']//span[contains(text(),'Phê duyệt')]";
+	private static final String TRANG_THAI_HIEN_TAI = "//button[@title='Giai đoạn hiện tại']";
 
 	public XemChiTietDangKyNghiPage(WebDriver driver) {
 		super(driver);
@@ -58,6 +59,19 @@ public class XemChiTietDangKyNghiPage extends MyPageObject {
 
 	public boolean focus_tu_choi() {
 		return XH(BUTTON_TU_CHOI).hasFocus();
+	}
+
+//	Status
+	public String trang_thai_hien_tai() {
+		return XH(TRANG_THAI_HIEN_TAI).getText();
+	}
+
+	public boolean exist_status() {
+		return isElementExistNow(TRANG_THAI_HIEN_TAI);
+	}
+
+	public boolean focus_status() {
+		return XH(TRANG_THAI_HIEN_TAI).hasFocus();
 	}
 
 	// Nhân sự

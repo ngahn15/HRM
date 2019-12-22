@@ -77,12 +77,12 @@ public class DuyetDangKyNghiDefs {
 					}
 					if (sRow.equals("@LAST@")) {
 						if (iPageSize != 0) {
-							sRow = String.valueOf((int) iTotalRecord % iPageSize);
+							sRow = String.valueOf(iTotalRecord % iPageSize);
 							if (sRow.equals("0")) {
 								sRow = String.valueOf(iPageSize);
-								sPage = String.valueOf((int) iTotalRecord / iPageSize);
+								sPage = String.valueOf(iTotalRecord / iPageSize);
 							} else {
-								sPage = String.valueOf((int) iTotalRecord / iPageSize + 1);
+								sPage = String.valueOf(iTotalRecord / iPageSize + 1);
 							}
 							DDKN.lhtttdkn_set_tb_page_size(sPageSize);
 							DDKN.lhtttdkn_go_to_tb_page(sPage);
@@ -214,7 +214,7 @@ public class DuyetDangKyNghiDefs {
 		Common.clear_assertion(DATA_TABLE);
 	}
 
-	@Then("^Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"([^\"]*)\"$")
+	@When("^Kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"([^\"]*)\"$")
 	public void Kiem_tra_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String dataKey,
 			List<List<String>> dataTable) throws Exception {
 		String DATA_TABLE = "DUYET_DANG_KY_NGHI_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_KIEM_TRA";
@@ -267,12 +267,12 @@ public class DuyetDangKyNghiDefs {
 					}
 					if (sRow.equals("@LAST@")) {
 						if (iPageSize != 0) {
-							sRow = String.valueOf((int) iTotalRecord % iPageSize);
+							sRow = String.valueOf(iTotalRecord % iPageSize);
 							if (sRow.equals("0")) {
 								sRow = String.valueOf(iPageSize);
-								sPage = String.valueOf((int) iTotalRecord / iPageSize);
+								sPage = String.valueOf(iTotalRecord / iPageSize);
 							} else {
-								sPage = String.valueOf((int) iTotalRecord / iPageSize + 1);
+								sPage = String.valueOf(iTotalRecord / iPageSize + 1);
 							}
 							DDKN.lhtttdkn_set_tb_page_size(sPageSize);
 							DDKN.lhtttdkn_go_to_tb_page(sPage);
@@ -395,8 +395,8 @@ public class DuyetDangKyNghiDefs {
 		Common.clear_assertion(DATA_TABLE);
 	}
 
-	@When("^Thuc hien LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"([^\"]*)\"$")
-	public void Thuc_hien_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String dataKey,
+	@Then("^Ket qua kiem tra LƯỚI HIỂN THỊ THÔNG TIN ĐĂNG KÝ NGHỈ trong DUYỆT ĐĂNG KÝ NGHỈ nhu \"([^\"]*)\"$")
+	public void Ket_qua_kiem_tra_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_trong_DUYET_DANG_KY_NGHI_nhu(String dataKey,
 			List<List<String>> dataTable) throws Exception {
 		String DATA_TABLE = "DUYET_DANG_KY_NGHI_LUOI_HIEN_THI_THONG_TIN_DANG_KY_NGHI_THUC_HIEN";
 		SessionData.addDataTable(DATA_TABLE, dataTable, false);
@@ -439,12 +439,12 @@ public class DuyetDangKyNghiDefs {
 					}
 					if (sRow.equals("@LAST@")) {
 						if (iPageSize != 0) {
-							sRow = String.valueOf((int) iTotalRecord % iPageSize);
+							sRow = String.valueOf(iTotalRecord % iPageSize);
 							if (sRow.equals("0")) {
 								sRow = String.valueOf(iPageSize);
-								sPage = String.valueOf((int) iTotalRecord / iPageSize);
+								sPage = String.valueOf(iTotalRecord / iPageSize);
 							} else {
-								sPage = String.valueOf((int) iTotalRecord / iPageSize + 1);
+								sPage = String.valueOf(iTotalRecord / iPageSize + 1);
 							}
 							DDKN.lhtttdkn_set_tb_page_size(sPageSize);
 							DDKN.lhtttdkn_go_to_tb_page(sPage);
@@ -505,7 +505,7 @@ public class DuyetDangKyNghiDefs {
 	}
 
 	@Given("^Tim kiem ban ghi can phe duyet nhu \"([^\"]*)\"$")
-	public void Tim_kiem_ban_ghi_can_phe_duyet (String dataKey, List<List<String>> dataTable) throws Exception {
+	public void Tim_kiem_ban_ghi_can_phe_duyet(String dataKey, List<List<String>> dataTable) throws Exception {
 		String DATA_TABLE = "DUYET_DANG_KY_NGHI_TIM_KIEM";
 		SessionData.addDataTable(DATA_TABLE, dataTable, false);
 		LinkedHashMap<Integer, List<String>> data = new LinkedHashMap<>();
@@ -713,16 +713,16 @@ public class DuyetDangKyNghiDefs {
 		Common.clear_assertion(DATA_TABLE);
 	}
 
-	@When("^Thuc hien DUYỆT ĐĂNG KÝ NGHỈ nhu \"([^\"]*)\"$")
-	public void Thuc_hien_DUYET_DANG_KY_NGHI_nhu(String dataKey, List<List<String>> dataTable) throws Exception {
-		String DATA_TABLE = "DUYET_DANG_KY_NGHI_THUC_HIEN";
+	@When("^Xem chi tiet ĐĂNG KÝ NGHỈ nhu \"([^\"]*)\"$")
+	public void Xem_chi_tiet_DANG_KY_NGHI_nhu(String dataKey, List<List<String>> dataTable) throws Exception {
+		String DATA_TABLE = "DANG_KY_NGHI_XEM_CHI_TIET";
 		SessionData.addDataTable(DATA_TABLE, dataTable, false);
 		LinkedHashMap<Integer, List<String>> data = new LinkedHashMap<>();
 		data = SessionData.getDataTbRowsByValEqualInCol(DATA_TABLE, "KEY", dataKey);
 		if (data.isEmpty()) {
 			return;
 		} else {
-			SessionData.declareSoftAssertion(DATA_TABLE, "Kiem tra Duyệt đăng ký nghỉ");
+			SessionData.declareSoftAssertion(DATA_TABLE, "Xem chi tiét Đăng ký nghỉ");
 		}
 		for (int row : data.keySet()) {
 			String sKey = SessionData.getDataTbVal(DATA_TABLE, row, "KEY");
